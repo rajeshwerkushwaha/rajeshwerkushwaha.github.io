@@ -1,0 +1,415 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 20, 2015, 5:50:11 PM
+    Author     : rajesh
+*/
+.login-icon{
+    border-radius: 50%;
+}
+.login-anchor{
+    position: relative;
+}
+a{
+    color: black;
+}
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.header-logo{
+   height: 45px;
+    margin: -11px;
+    width: 120px;
+}
+#header-menu .navbar-default{
+    background-color: #BBBDBE;
+}
+#search{
+    margin-top: 50px;
+}
+.orange-font{
+    color: #dd5a2b;
+}
+.image-div{
+    display: none;
+}
+.top-buffer{ 
+    margin-top:20px; 
+}
+.bottom-buffer{ 
+    margin-bottom:20px; 
+}
+.left-buffer{ 
+    margin-left:20px; 
+}
+.right-buffer{ 
+    margin-right:20px; 
+}
+.buffer{
+    margin: 20px;
+}
+.bg-light-gray{
+    background-color: lightgray;
+}
+.portfolio-div{
+    height: 280px;
+    width: 300px;
+    background-color: white;
+    color: black;
+}
+.portfolio-div:hover{
+    background-color: #dd5a2b;
+    color: white;
+}
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	
+	border-bottom: 5px solid black;
+}
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 500px solid transparent;
+	border-right: 500px solid transparent;
+	border-top: 60px solid #f00;
+}
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-left: 60px solid green;
+}
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	border-right:10px solid blue; 
+}
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.portfolio-item {
+    margin: 0 0 45px;
+}
+.copyright{
+    background-color: #dd5a2b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.follow-us{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #464648;
+    font-size: 10px;
+}
+.follow-us a{
+    background-color: white;
+    border-radius: 100%;
+    color: #464648;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    outline: 0 none;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+}
+.resources .head{
+    font-size: 20px;
+    border-bottom: 3px solid #dd5a2b;
+    padding-bottom: 2px;
+}
+.resources ul{
+    padding-top: 20px;
+    color: #777;
+}
+.resources ul li{
+    padding-bottom: 10px;
+}
+.resources ul a{
+    color: #777;
+}
+.resources i{
+    color: #dd5a2b;
+}
+.contact .head{
+    font-size: 20px;
+    border-bottom: 3px solid #dd5a2b;
+    padding-bottom: 2px;
+}
+.contact ul{
+    padding-top: 10px;
+    color: #777;
+}
+.contact ul li{
+    padding-bottom: 10px;
+}
+.contact ul a{
+    color: #777;
+}
+.contact i{
+    color: #dd5a2b;
+}
+.arrow-div{
+    background-color: lightgray;
+}
+.grid-arrow {
+    position: relative;
+    text-align: center;
+    background-color: red;
+    line-height: 2em;
+    border-top:300px solid #fff;
+    top:-300px;
+}
+.grid-arrow::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: red;
+    padding-bottom: 50%;
+    width:57.7%;
+    z-index:-1;
+    
+    -webkit-transform-origin:0 0;
+    -ms-transform-origin:0 0;
+    transform-origin:0 0;
+    
+    -webkit-transform: rotate(-30deg) skewX(30deg);;
+    -ms-transform: rotate(-30deg) skewX(30deg);
+    transform: rotate(-30deg) skewX(30deg);
+}
+.ready-section{
+    margin: 100px 50px;
+}
+.ready-section h1{
+    font-size: 50px;
+}
+.diamond-seperator{
+    float: none;
+    margin: 0 auto;
+    position: relative;
+    width: 130px;
+}
+.diamond-seperator .div1{
+    margin-top: 20px;
+    width: 40px;
+    background-color: lightgray;
+    height: 3px;
+}
+.diamond-seperator .div2{
+    background-color: #dd5a2b;
+    height: 20px;
+    margin: -10px 0 0 55px;
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 20px;
+}
+.diamond-seperator .div3{
+    background-color: lightgray;
+    height: 3px;
+    margin: -3px 90px 30px 90px;
+    width: 40px;
+}
+.orange-font{
+    color: #dd5a2b;
+}
+.register-button{
+    background-color: #dd5a2b;
+    border-radius: 20px;
+    color: white;
+    font-size: 23px;
+    margin-top: 40px;
+}
+
+/* Search section Css Start*/
+#search .search-option-button{
+    background: lightgray none repeat scroll 0 0;
+    border-radius: 10px 0 0 10px;
+    color: #777;
+    float: left;
+    font-size: 13px;
+    height: 46px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    width: 165px;
+}
+#search .search-input{
+    border-bottom-right-radius: 10px;
+    border-left: 0 none;
+    border-top-right-radius: 10px;
+    height: 46px;
+    padding-right: 40px;
+}
+.search-button {
+    background: #298fc8 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: white;
+    float: right;
+    font-size: 16px;
+    height: 33px;
+    margin-left: -37px;
+    margin-top: 6px;
+    padding-left: 9px;
+    padding-top: 4px;
+    position: absolute;
+    width: 33px;
+    z-index: 10;
+}
+#search .browse-option-button{
+    background: white none repeat scroll 0 0;
+    border: 0 none;
+    color: #777;
+    font-size: 13px;
+    height: 43px;
+}
+#search_concept{
+    font-size: 12px;
+}
+/* Search section Css End*/
+
+/* Services Css Start*/
+.services-div-circle{
+    display: inline-block;
+    text-align: center;
+}
+.service-link{
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    position: relative;
+}
+.services-div-circle img{
+    display: inline-block;
+    position: absolute;
+}
+.services-div-circle:hover .services-div-text{
+    display: inline-block;
+}
+.services-div-circle:hover .services-div-circle{
+    display: none;
+}
+.services-div-hover{
+    background: #dd5a2b none repeat scroll 0 0;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+#services .portfolio-item .portfolio-link {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    position: relative;
+}
+#services .portfolio-item .portfolio-link .portfolio-hover {
+    background: #dd5a2b none repeat scroll 0 0;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+#services .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    color: #fff;
+    font-size: 20px;
+    height: 20px;
+    margin-top: -12px;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    width: 100%;
+}
+#services .portfolio-link:hover .portfolio-hover{
+    opacity: 1;
+}
+.portfolio-div-font{
+    font-size: 15px;
+}
+.portfolio-hover-content .head{
+    font-size: 30px;
+    
+}
+/* Services Css End*/
+
+/* Portfolio Css Start*/
+#services{
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.portfolio-div{
+    display: inline-block;
+    text-align: center;
+}
+.portfolio-div-icon{
+    margin: 35px 110px;
+    font-size: 65px;
+}
+.portfolio-div:hover a{
+    color: white;
+}
+.portfolio-div:hover span{
+    color: white;
+}
+.portfolio-div-text{
+    padding: 10px 20px;
+}
+.bold{
+    font-weight: bold;
+}
+.span-line{
+    border-top: 1px solid;
+    margin-left: 95px;
+    width: 110px;
+}
+/* Services Css End*/
+
+/* Slider Css Start*/
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 500px;
+}
+/* Slider Css End*/
+
+/* Ready section Css Start*/
+.head-icon{
+    background-image: url('../images/head.gif');
+    background-repeat: no-repeat;
+    background-position: right 80px center;
+}
+/* Ready section Css End*/
+
+/* Portfolio Css Start*/
+#portfolio{
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+/* Portfolio Css End*/
+
+/* Footer Css Start*/
+#footer{
+    background-color: lightgray;
+    padding-top: 100px;
+}
+/* Footer Css End*/
