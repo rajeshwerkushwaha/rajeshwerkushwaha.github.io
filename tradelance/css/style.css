@@ -7,6 +7,469 @@ and open the template in the editor.
     Created on : Jun 20, 2015, 5:50:11 PM
     Author     : rajesh
 */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+  .logo-sm{
+    display: block;
+  }
+  .logo-lg{
+    display: none;
+  }
+  
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  
+  .logo-sm{
+    display: block;
+  }
+  .logo-lg{
+    display: none;
+  }
+  
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  
+  .logo-sm{
+    display: block;
+  }
+  .logo-lg{
+    display: none;
+  }
+  
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  
+  .logo-sm{
+    display: none;
+  }
+  .logo-lg{
+    display: block;
+  }
+  
+/* Fixed dots css start */
+#fullslide-nav {
+    top: 50%;
+    left: 2%;
+    visibility: visible;
+    transform: translate3d(0px, -50%, 0px);
+}
+#fullslide-nav {
+    visibility: visible;
+}
+#fullslide-nav ul{
+  list-style: none;
+}
+.fullslide-dot > a:after {
+    content: attr(data-tooltip);
+    top: 0px;
+    left: 100%;
+    background-color: #FFF;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    line-height: 1.2;
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+    color: #DD5A2B;
+    opacity: 0;
+    overflow: hidden;
+    width: 0px;
+    white-space: pre;
+    transition: opacity 0.3s ease 0s;
+}
+.fullslide-dot.active > a:before {
+    border-color: transparent;
+    background-color: #DD5A2B;
+    transform: scale(0.4);
+}
+.fullslide-dot > a:before {
+    content: "";
+    top: 6px;
+    left: 6px;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+    border: 1px solid #000;
+    width: 17px;
+    height: 17px;
+}
+.fullslide-dot > a:after, .fullslide-dot > a:before {
+    position: absolute;
+    display: block;
+}
+.fullslide-dot > a {
+    position: relative;
+    display: block;
+    width: 29px;
+    height: 29px;
+}
+.fullslide-dot > span{
+  display: none;
+  position: absolute;
+  width: 150px;
+  margin: -26px 30px;
+  font-size: 16px;
+  color: #DD5A2B;
+}
+.fullslide-dot:hover span{
+  display: block;
+}
+/* Fixed dots css end */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Fixed dots css start */
+  .logo-sm{
+    display: none;
+  }
+  .logo-lg{
+    display: block;
+  }
+#fullslide-nav {
+    top: 50%;
+    left: 2%;
+    visibility: visible;
+    transform: translate3d(0px, -50%, 0px);
+}
+#fullslide-nav {
+    visibility: visible;
+}
+#fullslide-nav ul{
+  list-style: none;
+}
+.fullslide-dot > a:after {
+    content: attr(data-tooltip);
+    top: 0px;
+    left: 100%;
+    background-color: #FFF;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    line-height: 1.2;
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+    color: #DD5A2B;
+    opacity: 0;
+    overflow: hidden;
+    width: 0px;
+    white-space: pre;
+    transition: opacity 0.3s ease 0s;
+}
+.fullslide-dot.active > a:before {
+    border-color: transparent;
+    background-color: #DD5A2B;
+    transform: scale(0.4);
+}
+.fullslide-dot > a:before {
+    content: "";
+    top: 6px;
+    left: 6px;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+    border: 1px solid #000;
+    width: 17px;
+    height: 17px;
+}
+.fullslide-dot > a:after, .fullslide-dot > a:before {
+    position: absolute;
+    display: block;
+}
+.fullslide-dot > a {
+    position: relative;
+    display: block;
+    width: 29px;
+    height: 29px;
+}
+.fullslide-dot > span{
+  display: none;
+  position: absolute;
+  width: 150px;
+  margin: -26px 30px;
+  font-size: 16px;
+  color: #DD5A2B;
+}
+.fullslide-dot:hover span{
+  display: block;
+}
+/* Fixed dots css end */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  .logo-sm{
+    display: none;
+  }
+  .logo-lg{
+    display: block;
+  }
+/* Fixed dots css start */
+#fullslide-nav {
+    top: 50%;
+    left: 2%;
+    visibility: visible;
+    transform: translate3d(0px, -50%, 0px);
+}
+#fullslide-nav {
+    visibility: visible;
+}
+#fullslide-nav ul{
+  list-style: none;
+}
+.fullslide-dot > a:after {
+    content: attr(data-tooltip);
+    top: 0px;
+    left: 100%;
+    background-color: #FFF;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    line-height: 1.2;
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+    color: #DD5A2B;
+    opacity: 0;
+    overflow: hidden;
+    width: 0px;
+    white-space: pre;
+    transition: opacity 0.3s ease 0s;
+}
+.fullslide-dot.active > a:before {
+    border-color: transparent;
+    background-color: #DD5A2B;
+    transform: scale(0.4);
+}
+.fullslide-dot > a:before {
+    content: "";
+    top: 6px;
+    left: 6px;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+    border: 1px solid #000;
+    width: 17px;
+    height: 17px;
+}
+.fullslide-dot > a:after, .fullslide-dot > a:before {
+    position: absolute;
+    display: block;
+}
+.fullslide-dot > a {
+    position: relative;
+    display: block;
+    width: 29px;
+    height: 29px;
+}
+.fullslide-dot > span{
+  display: none;
+  position: absolute;
+  width: 150px;
+  margin: -26px 30px;
+  font-size: 16px;
+  color: #DD5A2B;
+}
+.fullslide-dot:hover span{
+  display: block;
+}
+/* Fixed dots css end */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  .logo-sm{
+    display: none;
+  }
+  .logo-lg{
+    display: block;
+  }
+/* Fixed dots css start */
+#fullslide-nav {
+    top: 50%;
+    left: 2%;
+    visibility: visible;
+    transform: translate3d(0px, -50%, 0px);
+}
+#fullslide-nav {
+    visibility: visible;
+}
+#fullslide-nav ul{
+  list-style: none;
+}
+.fullslide-dot > a:after {
+    content: attr(data-tooltip);
+    top: 0px;
+    left: 100%;
+    background-color: #FFF;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    line-height: 1.2;
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+    color: #DD5A2B;
+    opacity: 0;
+    overflow: hidden;
+    width: 0px;
+    white-space: pre;
+    transition: opacity 0.3s ease 0s;
+}
+.fullslide-dot.active > a:before {
+    border-color: transparent;
+    background-color: #DD5A2B;
+    transform: scale(0.4);
+}
+.fullslide-dot > a:before {
+    content: "";
+    top: 6px;
+    left: 6px;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+    border: 1px solid #000;
+    width: 17px;
+    height: 17px;
+}
+.fullslide-dot > a:after, .fullslide-dot > a:before {
+    position: absolute;
+    display: block;
+}
+.fullslide-dot > a {
+    position: relative;
+    display: block;
+    width: 29px;
+    height: 29px;
+}
+.fullslide-dot > span{
+  display: none;
+  position: absolute;
+  width: 150px;
+  margin: -26px 30px;
+  font-size: 16px;
+  color: #DD5A2B;
+}
+.fullslide-dot:hover span{
+  display: block;
+}
+/* Fixed dots css end */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  .logo-sm{
+    display: none;
+  }
+  .logo-lg{
+    display: block;
+  }
+/* Fixed dots css start */
+#fullslide-nav {
+    top: 50%;
+    left: 2%;
+    visibility: visible;
+    transform: translate3d(0px, -50%, 0px);
+}
+#fullslide-nav {
+    visibility: visible;
+}
+#fullslide-nav ul{
+  list-style: none;
+}
+.fullslide-dot > a:after {
+    content: attr(data-tooltip);
+    top: 0px;
+    left: 100%;
+    background-color: #FFF;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    line-height: 1.2;
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+    color: #DD5A2B;
+    opacity: 0;
+    overflow: hidden;
+    width: 0px;
+    white-space: pre;
+    transition: opacity 0.3s ease 0s;
+}
+.fullslide-dot.active > a:before {
+    border-color: transparent;
+    background-color: #DD5A2B;
+    transform: scale(0.4);
+}
+.fullslide-dot > a:before {
+    content: "";
+    top: 6px;
+    left: 6px;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+    border: 1px solid #000;
+    width: 17px;
+    height: 17px;
+}
+.fullslide-dot > a:after, .fullslide-dot > a:before {
+    position: absolute;
+    display: block;
+}
+.fullslide-dot > a {
+    position: relative;
+    display: block;
+    width: 29px;
+    height: 29px;
+}
+.fullslide-dot > span{
+  display: none;
+  position: absolute;
+  width: 150px;
+  margin: -26px 30px;
+  font-size: 16px;
+  color: #DD5A2B;
+}
+.fullslide-dot:hover span{
+  display: block;
+}
+/* Fixed dots css end */
+}
+
+/* iPhone 4 - 5s ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  /* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media
+only screen and (max-device-width: 667px) 
+only screen and (-webkit-device-pixel-ratio: 2) {
+  .logo-sm{
+    display: block;
+  }
+  .logo-lg{
+    display: none;
+  }
+}
+
+/* iPhone 6+ ----------- */
+@media
+only screen and (min-device-width : 414px) 
+only screen and (-webkit-device-pixel-ratio: 3) {
+  /*** You've spent way too much on a phone ***/
+}
+
 .login-icon{
     border-radius: 50%;
 }
@@ -235,16 +698,16 @@ a{
 }
 .register-button{
     background-color: #dd5a2b;
-    border-radius: 20px;
+    border-radius: 0px;
     color: white;
     font-size: 23px;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 /* Search section Css Start*/
 #search .search-option-button{
     background: lightgray none repeat scroll 0 0;
-    border-radius: 10px 0 0 10px;
+    border-radius: 0px;
     color: #777;
     float: left;
     font-size: 13px;
@@ -255,9 +718,7 @@ a{
     width: 165px;
 }
 #search .search-input{
-    border-bottom-right-radius: 10px;
     border-left: 0 none;
-    border-top-right-radius: 10px;
     height: 46px;
     padding-right: 40px;
 }
@@ -383,6 +844,9 @@ a{
     margin-left: 95px;
     width: 110px;
 }
+.img-circle{
+  border: 12px solid #777;
+}
 /* Services Css End*/
 
 /* Slider Css Start*/
@@ -414,71 +878,3 @@ a{
     padding-top: 100px;
 }
 /* Footer Css End*/
-
-/* Fixed dots css start */
-#fullslide-nav {
-    top: 50%;
-    left: 3.57143%;
-    visibility: visible;
-    transform: translate3d(0px, -50%, 0px);
-}
-#fullslide-nav {
-    visibility: visible;
-}
-#fullslide-nav ul{
-  list-style: none;
-}
-.fullslide-dot > a:after {
-    content: attr(data-tooltip);
-    top: 0px;
-    left: 100%;
-    background-color: #FFF;
-    border-top-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    line-height: 1.2;
-    font-size: 1.125rem;
-    letter-spacing: 0.02em;
-    color: #DD5A2B;
-    opacity: 0;
-    overflow: hidden;
-    width: 0px;
-    white-space: pre;
-    transition: opacity 0.3s ease 0s;
-}
-.fullslide-dot.active > a:before {
-    border-color: transparent;
-    background-color: #DD5A2B;
-    transform: scale(0.4);
-}
-.fullslide-dot > a:before {
-    content: "";
-    top: 6px;
-    left: 6px;
-    border-radius: 50%;
-    transition: all 0.3s ease 0s;
-    border: 1px solid #000;
-    width: 17px;
-    height: 17px;
-}
-.fullslide-dot > a:after, .fullslide-dot > a:before {
-    position: absolute;
-    display: block;
-}
-.fullslide-dot > a {
-    position: relative;
-    display: block;
-    width: 29px;
-    height: 29px;
-}
-.fullslide-dot > span{
-  display: none;
-  position: absolute;
-  width: 150px;
-  margin: -26px 30px;
-  font-size: 16px;
-  color: #DD5A2B;
-}
-.fullslide-dot:hover span{
-  display: block;
-}
-/* Fixed dots css end */
