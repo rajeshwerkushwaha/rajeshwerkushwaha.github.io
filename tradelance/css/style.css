@@ -438,7 +438,7 @@ a{
     line-height: 1.2;
     font-size: 1.125rem;
     letter-spacing: 0.02em;
-    color: #D50032;
+    color: #DD5A2B;
     opacity: 0;
     overflow: hidden;
     width: 0px;
@@ -447,7 +447,7 @@ a{
 }
 .fullslide-dot.active > a:before {
     border-color: transparent;
-    background-color: #D50032;
+    background-color: #DD5A2B;
     transform: scale(0.4);
 }
 .fullslide-dot > a:before {
@@ -476,7 +476,7 @@ a{
   width: 150px;
   margin: -26px 30px;
   font-size: 16px;
-  color: #D50032;
+  color: #DD5A2B;
 }
 .fullslide-dot:hover span{
   display: block;
