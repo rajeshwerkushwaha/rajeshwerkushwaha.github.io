@@ -18,6 +18,16 @@ and (max-device-width : 480px) {
   .logo-lg{
     display: none;
   }
+  .col-sm-12{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .top-buffer{
+    margin-top: 5px;
+  }
+  #search{
+    margin-top: 50px;
+  }
   
 }
 
@@ -30,6 +40,16 @@ and (min-width : 321px) {
   }
   .logo-lg{
     display: none;
+  }
+  .col-sm-12{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .top-buffer{
+    margin-top: 5px;
+  }
+  #search{
+    margin-top: 50px;
   }
   
 }
@@ -44,6 +64,16 @@ and (max-width : 320px) {
   .logo-lg{
     display: none;
   }
+  .col-sm-12{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .top-buffer{
+    margin-top: 5px;
+  }
+  #search{
+    margin-top: 50px;
+  }
   
 }
 
@@ -57,6 +87,16 @@ and (max-device-width : 1024px) {
   }
   .logo-lg{
     display: block;
+  }
+  .top-buffer{
+    margin-top: 20px;
+  }
+  #search{
+    background-color: white;
+    margin-top: 50px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 10;
   }
   
 /* Fixed dots css start */
@@ -140,6 +180,17 @@ and (orientation : landscape) {
   .logo-lg{
     display: block;
   }
+  .top-buffer{
+    margin-top: 20px;
+  }
+  #search{
+    background-color: white;
+    margin-top: 50px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 10;
+  }
+  
 #fullslide-nav {
     top: 50%;
     left: 2%;
@@ -219,6 +270,17 @@ and (orientation : portrait) {
   .logo-lg{
     display: block;
   }
+  .top-buffer{
+    margin-top: 20px;
+  }
+  #search{
+    background-color: white;
+    margin-top: 50px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 10;
+  }
+  
 /* Fixed dots css start */
 #fullslide-nav {
     top: 50%;
@@ -297,6 +359,17 @@ and (min-width : 1224px) {
   .logo-lg{
     display: block;
   }
+  .top-buffer{
+    margin-top: 20px;
+  }
+  #search{
+    background-color: white;
+    margin-top: 50px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 10;
+  }
+  
 /* Fixed dots css start */
 #fullslide-nav {
     top: 50%;
@@ -375,6 +448,17 @@ and (min-width : 1824px) {
   .logo-lg{
     display: block;
   }
+  .top-buffer{
+    margin-top: 20px;
+  }
+  #search{
+    background-color: white;
+    margin-top: 50px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 10;
+  }
+  
 /* Fixed dots css start */
 #fullslide-nav {
     top: 50%;
@@ -461,6 +545,16 @@ only screen and (-webkit-device-pixel-ratio: 2) {
   .logo-lg{
     display: none;
   }
+  .top-buffer{
+    margin-top: 20px;
+  }
+  #search{
+    background-color: white;
+    margin-top: 50px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 10;
+  }
 }
 
 /* iPhone 6+ ----------- */
@@ -491,17 +585,11 @@ a{
 #header-menu .navbar-default{
     background-color: #BBBDBE;
 }
-#search{
-    margin-top: 50px;
-}
 .orange-font{
     color: #dd5a2b;
 }
 .image-div{
     display: none;
-}
-.top-buffer{ 
-    margin-top:20px; 
 }
 .bottom-buffer{ 
     margin-bottom:20px; 
@@ -878,3 +966,83 @@ a{
     padding-top: 100px;
 }
 /* Footer Css End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax-1 {
+  background-image: url("../images/demo/_small/1.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("../images/demo/_small/2.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../images/demo/_small/3.jpg");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
