@@ -256,7 +256,7 @@
     </section>
     
     <!-- Slide -->
-    <section>
+    <section id="slides">
         <div class="row">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
@@ -308,7 +308,7 @@
     </section>
     
     <!-- Ready -->
-    <section>
+    <section id="ready-section">
         <div class="container ready-section text-center">
             <div class="row head-icon">
                 <h1>READY TO BEGIN ?</h1>
@@ -424,5 +424,31 @@
     <script src="js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/home.js"></script>
+    
+    <div style="position: fixed; z-index: 100;" id="fullslide-nav">
+      <ul class="fullslide-dots">
+        <li class="fullslide-dot active">
+          <a href="#services" data-tooltip="Section 1"></a>
+          <span>Section 1</span>
+        </li>
+        <li class="fullslide-dot">
+          <a href="#portfolio" data-tooltip="Section 2"></a>
+          <span>Section 2</span>
+        </li>
+        <li class="fullslide-dot">
+          <a href="#slides" data-tooltip="Section 3"></a>
+          <span>Section 3</span>
+        </li>
+        <li class="fullslide-dot">
+          <a href="#ready-section" data-tooltip="Section 4"></a>
+          <span>Section 4</span>
+        </li>
+        <li class="fullslide-dot">
+          <a href="#footer" data-tooltip="Section 5"></a>
+          <span>Section 5</span>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

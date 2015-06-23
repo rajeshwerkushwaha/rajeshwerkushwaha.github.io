@@ -198,7 +198,8 @@ a{
     transform: rotate(-30deg) skewX(30deg);
 }
 .ready-section{
-    margin: 100px 50px;
+    margin: 50px auto;
+    padding: 100px 0px;
 }
 .ready-section h1{
     font-size: 50px;
@@ -413,3 +414,71 @@ a{
     padding-top: 100px;
 }
 /* Footer Css End*/
+
+/* Fixed dots css start */
+#fullslide-nav {
+    top: 50%;
+    left: 3.57143%;
+    visibility: visible;
+    transform: translate3d(0px, -50%, 0px);
+}
+#fullslide-nav {
+    visibility: visible;
+}
+#fullslide-nav ul{
+  list-style: none;
+}
+.fullslide-dot > a:after {
+    content: attr(data-tooltip);
+    top: 0px;
+    left: 100%;
+    background-color: #FFF;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    line-height: 1.2;
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+    color: #D50032;
+    opacity: 0;
+    overflow: hidden;
+    width: 0px;
+    white-space: pre;
+    transition: opacity 0.3s ease 0s;
+}
+.fullslide-dot.active > a:before {
+    border-color: transparent;
+    background-color: #D50032;
+    transform: scale(0.4);
+}
+.fullslide-dot > a:before {
+    content: "";
+    top: 6px;
+    left: 6px;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+    border: 1px solid #000;
+    width: 17px;
+    height: 17px;
+}
+.fullslide-dot > a:after, .fullslide-dot > a:before {
+    position: absolute;
+    display: block;
+}
+.fullslide-dot > a {
+    position: relative;
+    display: block;
+    width: 29px;
+    height: 29px;
+}
+.fullslide-dot > span{
+  display: none;
+  position: absolute;
+  width: 150px;
+  margin: -26px 30px;
+  font-size: 16px;
+  color: #D50032;
+}
+.fullslide-dot:hover span{
+  display: block;
+}
+/* Fixed dots css end */
