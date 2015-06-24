@@ -1106,7 +1106,7 @@ section.module.content {
   padding: 40px 0;
 }
 section.module.parallax {
-  height: 600px;
+  height: 700px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1131,8 +1131,7 @@ section.module.parallax h2 {
   text-transform: uppercase;
 }
 section.module.parallax-1 {
-  background-image: url("../images/demo/4.jpg");
-  transform: scaleX(-1);
+  background-image: url("../images/demo/7.jpg");
 }
 section.module.parallax-2 {
   background-image: url("../images/demo/2.jpg");
@@ -1144,20 +1143,19 @@ section.module.parallax-4 {
   background-image: url("../images/demo/1.jpg");
 }
 section.module.parallax-5 {
-  background-image: url("../images/demo/5.jpg");
+  background-image: url("../images/demo/4.jpg");
 }
 section.module.parallax-6 {
   background-image: url("../images/demo/6.jpg");
 }
 section.module.parallax-7 {
-  background-image: url("../images/demo/7.png");
+  background-image: url("../images/demo/5.jpg");
 }
 
 
 @media all and (min-width: 600px) {
 .parallax1-div{
     margin-top: 160px;
-  transform: scaleX(-1);
   }
 }
 @media all and (min-width: 960px) {
