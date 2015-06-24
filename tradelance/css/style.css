@@ -28,6 +28,16 @@ and (max-device-width : 480px) {
   #search{
     margin-top: 50px;
   }
+  .vertical-line{
+    display: none;
+    padding-left: 20px;
+  }
+  .margin-from-login{
+    padding-right: 0px;
+  }
+  .get-started-arrow-div{
+    display: none;
+  }
   
 }
 
@@ -50,6 +60,16 @@ and (min-width : 321px) {
   }
   #search{
     margin-top: 50px;
+  }
+  .vertical-line{
+    display: none;
+    padding-left: 20px;
+  }
+  .margin-from-login{
+    padding-right: 0px;
+  }
+  .get-started-arrow-div{
+    display: none;
   }
   
 }
@@ -74,6 +94,16 @@ and (max-width : 320px) {
   #search{
     margin-top: 50px;
   }
+  .vertical-line{
+    display: none;
+    padding-left: 20px;
+  }
+  .margin-from-login{
+    padding-right: 0px;
+  }
+  .get-started-arrow-div{
+    display: none;
+  }
   
 }
 
@@ -97,6 +127,14 @@ and (max-device-width : 1024px) {
     padding: 0px 100px;
     position: fixed;
     z-index: 10;
+    height: 70px;
+  }
+  .vertical-line{
+    display: inline-block;
+    padding-left: 25px;
+  }
+  .margin-from-login{
+    padding-right: 50px;
   }
   
 /* Fixed dots css start */
@@ -159,7 +197,7 @@ and (max-device-width : 1024px) {
   position: absolute;
   width: 150px;
   margin: -26px 30px;
-  font-size: 16px;
+  font-size: 20px;
   color: #DD5A2B;
 }
 .fullslide-dot:hover span{
@@ -189,6 +227,14 @@ and (orientation : landscape) {
     padding: 0px 100px;
     position: fixed;
     z-index: 10;
+    height: 70px;
+  }
+  .vertical-line{
+    display: inline-block;
+    padding-left: 25px;
+  }
+  .margin-from-login{
+    padding-right: 50px;
   }
   
 #fullslide-nav {
@@ -250,7 +296,7 @@ and (orientation : landscape) {
   position: absolute;
   width: 150px;
   margin: -26px 30px;
-  font-size: 16px;
+  font-size: 20px;
   color: #DD5A2B;
 }
 .fullslide-dot:hover span{
@@ -279,6 +325,14 @@ and (orientation : portrait) {
     padding: 0px 100px;
     position: fixed;
     z-index: 10;
+    height: 70px;
+  }
+  .vertical-line{
+    display: inline-block;
+    padding-left: 25px;
+  }
+  .margin-from-login{
+    padding-right: 50px;
   }
   
 /* Fixed dots css start */
@@ -341,7 +395,7 @@ and (orientation : portrait) {
   position: absolute;
   width: 150px;
   margin: -26px 30px;
-  font-size: 16px;
+  font-size: 20px;
   color: #DD5A2B;
 }
 .fullslide-dot:hover span{
@@ -368,6 +422,14 @@ and (min-width : 1224px) {
     padding: 0px 100px;
     position: fixed;
     z-index: 10;
+    height: 70px;
+  }
+  .vertical-line{
+    display: inline-block;
+    padding-left: 25px;
+  }
+  .margin-from-login{
+    padding-right: 50px;
   }
   
 /* Fixed dots css start */
@@ -430,7 +492,7 @@ and (min-width : 1224px) {
   position: absolute;
   width: 150px;
   margin: -26px 30px;
-  font-size: 16px;
+  font-size: 20px;
   color: #DD5A2B;
 }
 .fullslide-dot:hover span{
@@ -457,6 +519,14 @@ and (min-width : 1824px) {
     padding: 0px 100px;
     position: fixed;
     z-index: 10;
+    height: 70px;
+  }
+  .vertical-line{
+    display: inline-block;
+    padding-left: 25px;
+  }
+  .margin-from-login{
+    padding-right: 50px;
   }
   
 /* Fixed dots css start */
@@ -519,7 +589,7 @@ and (min-width : 1824px) {
   position: absolute;
   width: 150px;
   margin: -26px 30px;
-  font-size: 16px;
+  font-size: 20px;
   color: #DD5A2B;
 }
 .fullslide-dot:hover span{
@@ -540,7 +610,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 only screen and (max-device-width: 667px) 
 only screen and (-webkit-device-pixel-ratio: 2) {
   .logo-sm{
-    display: block;
+    display: inline-block;
   }
   .logo-lg{
     display: none;
@@ -554,6 +624,10 @@ only screen and (-webkit-device-pixel-ratio: 2) {
     padding: 0px 100px;
     position: fixed;
     z-index: 10;
+  }
+  .vertical-line{
+    display: block;
+    padding-left: 20px;
   }
 }
 
@@ -582,11 +656,17 @@ a{
     margin: -11px;
     width: 120px;
 }
+.logo-lg-img{
+  height: 70px;
+}
 #header-menu .navbar-default{
-    background-color: #BBBDBE;
+    /*background-color: #BBBDBE;*/
 }
 .orange-font{
     color: #dd5a2b;
+}
+.white-font{
+   color: white;
 }
 .image-div{
     display: none;
@@ -799,7 +879,7 @@ a{
     color: #777;
     float: left;
     font-size: 13px;
-    height: 46px;
+    height: 35px;
     padding-left: 5px;
     padding-right: 5px;
     position: relative;
@@ -807,7 +887,7 @@ a{
 }
 #search .search-input{
     border-left: 0 none;
-    height: 46px;
+    height: 35px;
     padding-right: 40px;
 }
 .search-button {
@@ -816,13 +896,13 @@ a{
     color: white;
     float: right;
     font-size: 16px;
-    height: 33px;
-    margin-left: -37px;
-    margin-top: 6px;
-    padding-left: 9px;
-    padding-top: 4px;
+    height: 30px;
+    margin-left: -32px;
+    margin-top: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
     position: absolute;
-    width: 33px;
+    width: 30px;
     z-index: 10;
 }
 #search .browse-option-button{
@@ -830,7 +910,7 @@ a{
     border: 0 none;
     color: #777;
     font-size: 13px;
-    height: 43px;
+    height: 35px;
 }
 #search_concept{
     font-size: 12px;
@@ -866,13 +946,13 @@ a{
     transition: all 0.5s ease 0s;
     width: 100%;
 }
-#services .portfolio-item .portfolio-link {
+.services .portfolio-item .portfolio-link {
     display: block;
     margin: 0 auto;
     max-width: 300px;
     position: relative;
 }
-#services .portfolio-item .portfolio-link .portfolio-hover {
+.services .portfolio-item .portfolio-link .portfolio-hover {
     background: #dd5a2b none repeat scroll 0 0;
     height: 100%;
     opacity: 0;
@@ -880,7 +960,7 @@ a{
     transition: all 0.5s ease 0s;
     width: 100%;
 }
-#services .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+.services .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     color: #fff;
     font-size: 20px;
     height: 20px;
@@ -890,7 +970,7 @@ a{
     top: 20%;
     width: 100%;
 }
-#services .portfolio-link:hover .portfolio-hover{
+.services .portfolio-link:hover .portfolio-hover{
     opacity: 1;
 }
 .portfolio-div-font{
@@ -903,7 +983,7 @@ a{
 /* Services Css End*/
 
 /* Portfolio Css Start*/
-#services{
+.services{
     padding-bottom: 100px;
     padding-top: 100px;
 }
@@ -929,11 +1009,11 @@ a{
 }
 .span-line{
     border-top: 1px solid;
-    margin-left: 95px;
+    margin-left: 85px;
     width: 110px;
 }
 .img-circle{
-  border: 12px solid #777;
+  border: 12px solid #bbbdbe;
 }
 /* Services Css End*/
 
@@ -951,6 +1031,24 @@ a{
     background-repeat: no-repeat;
     background-position: right 80px center;
 }
+.get-started-button{
+  background-color: #dd5a2b;
+    border-radius: 0;
+    color: white;
+    font-size: 23px;
+    margin: 20px auto;
+}
+.twisted-arrow-right{
+  background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+  height: 44px;
+  width: 80px;
+}
+.twisted-arrow-left{
+  background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    transform: scaleX(-1);
+    width: 80px;
+}
 /* Ready section Css End*/
 
 /* Portfolio Css Start*/
@@ -960,9 +1058,16 @@ a{
 }
 /* Portfolio Css End*/
 
+/* Googlemap Css Start*/
+#map_canvas{
+  height: 300px;
+}
+
+/* Googlemap Css End*/
+
 /* Footer Css Start*/
 #footer{
-    background-color: lightgray;
+    background-color: #e7e7e7;
     padding-top: 100px;
 }
 /* Footer Css End*/
@@ -987,7 +1092,6 @@ section.module:last-child {
 }
 section.module h2 {
   margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
   font-size: 30px;
 }
 section.module p {
@@ -1012,16 +1116,23 @@ section.module.parallax {
   background-size: cover;
 }
 section.module.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-  line-height: 600px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
+  margin: 0 auto;
+  font-size: 50px;
+  text-align: right;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+section.module.parallax h2 {
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 40px;
+  text-align: right;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
 }
 section.module.parallax-1 {
-  background-image: url("../images/demo/1.jpg");
+  background-image: url("../images/demo/4.jpg");
+  transform: scaleX(-1);
 }
 section.module.parallax-2 {
   background-image: url("../images/demo/2.jpg");
@@ -1029,20 +1140,26 @@ section.module.parallax-2 {
 section.module.parallax-3 {
   background-image: url("../images/demo/3.jpg");
 }
+section.module.parallax-4 {
+  background-image: url("../images/demo/1.jpg");
+}
+section.module.parallax-5 {
+  background-image: url("../images/demo/5.jpg");
+}
+section.module.parallax-6 {
+  background-image: url("../images/demo/6.jpg");
+}
+section.module.parallax-7 {
+  background-image: url("../images/demo/7.png");
+}
+
 
 @media all and (min-width: 600px) {
-  section.module h2 {
-    font-size: 42px;
-  }
-  section.module p {
-    font-size: 20px;
-  }
-  section.module.parallax h1 {
-    font-size: 96px;
+.parallax1-div{
+    margin-top: 160px;
+  transform: scaleX(-1);
   }
 }
 @media all and (min-width: 960px) {
-  section.module.parallax h1 {
-    font-size: 160px;
-  }
+
 }
