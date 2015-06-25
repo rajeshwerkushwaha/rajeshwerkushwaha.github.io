@@ -38,6 +38,22 @@ and (max-device-width : 480px) {
   .get-started-arrow-div{
     display: none;
   }
+  .twisted-arrow-right {
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 34px auto;
+    height: 25px;
+    width: 42px;
+    margin-top: 20px;
+  }
+  .twisted-arrow-left {
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 34px auto;
+    height: 25px;
+    margin-top: 20px;
+    transform: scaleX(-1);
+    width: 42px;
+  }
+  .xs-font{
+    font-size: 11px;
+  }
   
 }
 
@@ -70,6 +86,22 @@ and (min-width : 321px) {
   }
   .get-started-arrow-div{
     display: none;
+  }
+  .twisted-arrow-right {
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 34px auto;
+    height: 25px;
+    width: 42px;
+    margin-top: 20px;
+  }
+  .twisted-arrow-left {
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 34px auto;
+    height: 25px;
+    margin-top: 20px;
+    transform: scaleX(-1);
+    width: 42px;
+  }
+  .xs-font{
+    font-size: 11px;
   }
   
 }
@@ -104,6 +136,22 @@ and (max-width : 320px) {
   .get-started-arrow-div{
     display: none;
   }
+  .twisted-arrow-right {
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 34px auto;
+    height: 25px;
+    width: 42px;
+    margin-top: 20px;
+  }
+  .twisted-arrow-left {
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 34px auto;
+    height: 25px;
+    margin-top: 20px;
+    transform: scaleX(-1);
+    width: 42px;
+  }
+  .xs-font{
+    font-size: 11px;
+  }
   
 }
 
@@ -111,7 +159,9 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-  
+  .xs-font{
+    font-size: 16px;
+  }
   .logo-sm{
     display: none;
   }
@@ -128,6 +178,7 @@ and (max-device-width : 1024px) {
     position: fixed;
     z-index: 10;
     height: 70px;
+    width: 100%;
   }
   .vertical-line{
     display: inline-block;
@@ -135,6 +186,17 @@ and (max-device-width : 1024px) {
   }
   .margin-from-login{
     padding-right: 50px;
+  }
+  .twisted-arrow-right{
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    width: 80px;
+  }
+  .twisted-arrow-left{
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    transform: scaleX(-1);
+    width: 80px;
   }
   
 /* Fixed dots css start */
@@ -211,6 +273,9 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  .xs-font{
+    font-size: 16px;
+  }
 /* Fixed dots css start */
   .logo-sm{
     display: none;
@@ -228,6 +293,7 @@ and (orientation : landscape) {
     position: fixed;
     z-index: 10;
     height: 70px;
+    width: 100%;
   }
   .vertical-line{
     display: inline-block;
@@ -235,6 +301,17 @@ and (orientation : landscape) {
   }
   .margin-from-login{
     padding-right: 50px;
+  }
+  .twisted-arrow-right{
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    width: 80px;
+  }
+  .twisted-arrow-left{
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    transform: scaleX(-1);
+    width: 80px;
   }
   
 #fullslide-nav {
@@ -310,6 +387,9 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  .xs-font{
+    font-size: 16px;
+  }
   .logo-sm{
     display: none;
   }
@@ -326,6 +406,7 @@ and (orientation : portrait) {
     position: fixed;
     z-index: 10;
     height: 70px;
+    width: 100%;
   }
   .vertical-line{
     display: inline-block;
@@ -333,6 +414,17 @@ and (orientation : portrait) {
   }
   .margin-from-login{
     padding-right: 50px;
+  }
+  .twisted-arrow-right{
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    width: 80px;
+  }
+  .twisted-arrow-left{
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    transform: scaleX(-1);
+    width: 80px;
   }
   
 /* Fixed dots css start */
@@ -407,6 +499,9 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  .xs-font{
+    font-size: 16px;
+  }
   .logo-sm{
     display: none;
   }
@@ -423,6 +518,7 @@ and (min-width : 1224px) {
     position: fixed;
     z-index: 10;
     height: 70px;
+    width: 100%;
   }
   .vertical-line{
     display: inline-block;
@@ -430,6 +526,17 @@ and (min-width : 1224px) {
   }
   .margin-from-login{
     padding-right: 50px;
+  }
+  .twisted-arrow-right{
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    width: 80px;
+  }
+  .twisted-arrow-left{
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    transform: scaleX(-1);
+    width: 80px;
   }
   
 /* Fixed dots css start */
@@ -504,6 +611,20 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+  .xs-font{
+    font-size: 16px;
+  }
+  .twisted-arrow-right{
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    width: 80px;
+  }
+  .twisted-arrow-left{
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    transform: scaleX(-1);
+    width: 80px;
+  }
   .logo-sm{
     display: none;
   }
@@ -520,6 +641,7 @@ and (min-width : 1824px) {
     position: fixed;
     z-index: 10;
     height: 70px;
+    width: 100%;
   }
   .vertical-line{
     display: inline-block;
@@ -609,6 +731,17 @@ only screen and (min-device-pixel-ratio : 1.5) {
 @media
 only screen and (max-device-width: 667px) 
 only screen and (-webkit-device-pixel-ratio: 2) {
+  .twisted-arrow-right{
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    width: 80px;
+  }
+  .twisted-arrow-left{
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
+    height: 44px;
+    transform: scaleX(-1);
+    width: 80px;
+  }
   .logo-sm{
     display: inline-block;
   }
@@ -624,6 +757,7 @@ only screen and (-webkit-device-pixel-ratio: 2) {
     padding: 0px 100px;
     position: fixed;
     z-index: 10;
+    width: 100%;
   }
   .vertical-line{
     display: block;
@@ -1037,17 +1171,6 @@ a{
     color: white;
     font-size: 23px;
     margin: 20px auto;
-}
-.twisted-arrow-right{
-  background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
-  height: 44px;
-  width: 80px;
-}
-.twisted-arrow-left{
-  background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
-    height: 44px;
-    transform: scaleX(-1);
-    width: 80px;
 }
 /* Ready section Css End*/
 
