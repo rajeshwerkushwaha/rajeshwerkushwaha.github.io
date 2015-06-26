@@ -827,6 +827,7 @@ only screen and (-webkit-device-pixel-ratio: 3) {
   margin-top: -45px;
   position: absolute;
   width: 100.55%;
+  z-index: 1;
 }
 .bg-e0{
   background-color: #e0e0e0;
@@ -847,7 +848,7 @@ only screen and (-webkit-device-pixel-ratio: 3) {
   background-color: gray;
   border-radius: 50%;
   color: white;
-  padding: 40px;
+  padding: 25px;
 }
 .icon-circle:hover{
   background-color: #dd5a2b;
@@ -1432,22 +1433,22 @@ section.module.parallax-1 {
   background-image: url("../images/demo/7.jpg");
 }
 section.module.parallax-2 {
-  background-image: url("../images/live/2_1.jpg");
+  background-image: url("../images/compress/2_1.jpg");
 }
 section.module.parallax-3 {
-  background-image: url("../images/demo/3.jpg");
+  background-image: url("../images/compress/3_1.jpg");
 }
 section.module.parallax-4 {
-  background-image: url("../images/demo/1.jpg");
+  background-image: url("../images/compress/4_1.jpg");
 }
 section.module.parallax-5 {
-  background-image: url("../images/demo/4.jpg");
+  background-image: url("../images/compress/5_1.jpg");
 }
 section.module.parallax-6 {
   background-image: url("../images/demo/6.jpg");
 }
 section.module.parallax-7 {
-  background-image: url("../images/demo/5.jpg");
+  background-image: url("../images/demo/4.jpg");
 }
 
 
