@@ -11,7 +11,10 @@ and open the template in the editor.
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-
+  #search_concept:after{
+    content: "SEARCH TRADELANCERS";
+    font-size: 10px;
+  }
   .logo-sm{
     display: block;
   }
@@ -60,6 +63,10 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
+  #search_concept:after{
+    content: "SEARCH TRADELANCERS";
+    font-size: 10px;
+  }
   .portfolio-first-item{
     margin-left: 0px;
   }
@@ -111,6 +118,10 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
+  #search_concept:after{
+    content: "SEARCH TRADELANCERS";
+    font-size: 10px;
+  }
   .portfolio-first-item{
     margin-left: 0px;
   }
@@ -163,6 +174,10 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+  #search_concept:after{
+    content: "SEARCH TRADELANCERS";
+    font-size: 12px;
+  }
   .xs-font{
     font-size: 16px;
   }
@@ -277,6 +292,10 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  #search_concept:after{
+    content: "SEARCH TRADELANCERS";
+    font-size: 12px;
+  }
   .portfolio-first-item{
     margin-left: 25% !important;
   }
@@ -394,6 +413,10 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  #search_concept:after{
+    content: "SEARCH TRADELANCERS";
+    font-size: 12px;
+  }
   .portfolio-first-item{
     margin-left: 25% !important;
   }
@@ -509,6 +532,10 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  #search_concept:after{
+    content: "SEARCH TRADELANCERS";
+    font-size: 12px;
+  }
   .portfolio-first-item{
     margin-left: 25% !important;
   }
@@ -623,7 +650,11 @@ and (min-width : 1224px) {
 
 /* Large screens ----------- */
 @media only screen 
-and (min-width : 1824px) {\
+and (min-width : 1824px) {
+  #search_concept:after{
+    content: "SEARCH TRADELANCERS";
+    font-size: 12px;
+  }
   .portfolio-first-item{
      margin-left: 25% !important;
   } 
@@ -787,11 +818,15 @@ only screen and (min-device-width : 414px)
 only screen and (-webkit-device-pixel-ratio: 3) {
   /*** You've spent way too much on a phone ***/
 }
+#search .container{
+  padding-left: 0px;
+  padding-right: 0px;
+}
 #we-offer .trans-gray-down-arrow{
   height: 100px;
   margin-left: -6px;
   margin-right: -3px;
-  margin-top: -180px;
+  margin-top: -150px;
   position: absolute;
   width: 100.55%;
 }
@@ -799,7 +834,7 @@ only screen and (-webkit-device-pixel-ratio: 3) {
   height: 100px;
   margin-left: -6px;
   margin-right: -3px;
-  margin-top: 80px;
+  margin-top: 30px;
   position: absolute;
   width: 100.55%;
 }
@@ -815,7 +850,7 @@ only screen and (-webkit-device-pixel-ratio: 3) {
   height: 100px;
   margin-left: -6px;
   margin-right: -3px;
-  margin-top: -180px;
+  margin-top: -125px;
   position: absolute;
   width: 100.55%;
 }
@@ -832,7 +867,7 @@ only screen and (-webkit-device-pixel-ratio: 3) {
   height: 100px;
   margin-left: -6px;
   margin-right: -3px;
-  margin-top: 90px;
+  margin-top: 5px;
   position: absolute;
   width: 100.55%;
 }
@@ -1127,7 +1162,7 @@ a{
     padding-left: 5px;
     padding-right: 5px;
     position: relative;
-    width: 165px;
+    width: auto;
 }
 #search .search-input{
     border-left: 0 none;
@@ -1155,9 +1190,6 @@ a{
     color: #777;
     font-size: 13px;
     height: 35px;
-}
-#search_concept{
-    font-size: 12px;
 }
 /* Search section Css End*/
 
@@ -1228,8 +1260,8 @@ a{
 
 /* Portfolio Css Start*/
 .services{
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .portfolio-div{
     display: inline-block;
