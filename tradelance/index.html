@@ -16,7 +16,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<!--     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWq1T58h7aHXu0ZlbipmeyAk7-VIWy6Ag&sensor=false"></script>
+    
   </head>
  <body onload="initialize()">
     <!-- Navigation -->
@@ -327,6 +329,9 @@
     <!-- Parallax 3 -->
     <section class="module parallax parallax-3">
         <div class="container">
+          <div class="parallax-3-man">
+            <img height="760px" width="520px" src="images/live/3_2.png">
+          </div>
         </div>
     </section>
 
@@ -659,16 +664,22 @@
     <script src="js/imagesloaded.js"></script>
     <script src="js/skrollr.js"></script>
     <script src="js/_main.js"></script>
-    <script type="text/javascript">
+<!--     <script type="text/javascript">
       var parliament = new google.maps.LatLng(53.3243201,-6.245704);
       var marker;
 
         function initialize() {
-          var myOptions = {
-            zoom: 12,
-            center: parliament ,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-          };
+          var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 15,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(53.3243201,-6.245704), // Dublin
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]
+                };
           var map = new google.maps.Map(document.getElementById("map_canvas"),
               myOptions);
 
@@ -678,7 +689,48 @@
             title:"Hello World!"
         });   
         }
-    </script>
+    </script> -->
+    <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 15,
+                    mapTypeControl: false,
+                    panControl: false,
+                    zoomControl: false,
+                    scaleControl: false,
+                    streetViewControl: false,
+                    mapTypeId:google.maps.MapTypeId.ROADMAP,
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(53.3243201,-6.245704), // Dublin
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map_canvas');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(53.3243201,-6.245704),
+                    map: map,
+                    title: 'Tradelance!',
+                    //icon: 'images/logo.gif'
+                });
+
+            }
+        </script>
 
     
     <div style="position: fixed; z-index: 100;" id="fullslide-nav">
