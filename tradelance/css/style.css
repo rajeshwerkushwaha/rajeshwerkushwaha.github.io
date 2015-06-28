@@ -818,6 +818,11 @@ only screen and (min-device-width : 414px)
 only screen and (-webkit-device-pixel-ratio: 3) {
   /*** You've spent way too much on a phone ***/
 }
+.parallax-3-man {
+  margin-top: -90px;
+  position: absolute;
+  right: 0;
+}
 #search .container{
   padding-left: 0px;
   padding-right: 0px;
@@ -1451,7 +1456,7 @@ section.module.content {
 }
 section.module.parallax {
   height: 700px;
-  background-position: 50% 50%;
+  background-position: 50% -20%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -1488,6 +1493,7 @@ section.module.parallax-4 {
 }
 section.module.parallax-5 {
   background-image: url("../images/compress/5_1.jpg");
+  background-position: 50% 10%;
 }
 section.module.parallax-6 {
   background-image: url("../images/demo/6.jpg");
