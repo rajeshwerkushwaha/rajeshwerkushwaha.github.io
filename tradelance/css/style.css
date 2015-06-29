@@ -11,6 +11,17 @@ and open the template in the editor.
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+  section h1{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 26px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  section h2{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 23px;
+    font-weight: normal;
+  }
   #search_concept:after{
     content: "SEARCH TRADELANCERS";
     font-size: 10px;
@@ -63,6 +74,17 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
+  section h1{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 26px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  section h2{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 23px;
+    font-weight: normal;
+  }
   #search_concept:after{
     content: "SEARCH TRADELANCERS";
     font-size: 10px;
@@ -118,6 +140,17 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
+  section h1{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 26px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  section h2{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 23px;
+    font-weight: normal;
+  }
   #search_concept:after{
     content: "SEARCH TRADELANCERS";
     font-size: 10px;
@@ -174,6 +207,17 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+  section h1{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 42px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  section h2{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+  }
   #search_concept:after{
     content: "SEARCH TRADELANCERS";
     font-size: 12px;
@@ -292,6 +336,17 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  section h1{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 42px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  section h2{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+  }
   #search_concept:after{
     content: "SEARCH TRADELANCERS";
     font-size: 12px;
@@ -413,6 +468,17 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  section h1{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 42px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  section h2{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+  }
   #search_concept:after{
     content: "SEARCH TRADELANCERS";
     font-size: 12px;
@@ -532,6 +598,17 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  section h1{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 42px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  section h2{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+  }
   #search_concept:after{
     content: "SEARCH TRADELANCERS";
     font-size: 12px;
@@ -651,6 +728,17 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+  section h1{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 42px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  section h2{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+  }
   #search_concept:after{
     content: "SEARCH TRADELANCERS";
     font-size: 12px;
@@ -818,12 +906,25 @@ only screen and (min-device-width : 414px)
 only screen and (-webkit-device-pixel-ratio: 3) {
   /*** You've spent way too much on a phone ***/
 }
+
+body{
+  font-family: 'Open Sans';
+}
+button{
+  font-family: 'Open Sans';
+}
+.navbar-default .navbar-nav > li > a{
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-size: 13px;
+}
 .parallax-3-man {
   margin-top: -90px;
   position: absolute;
   right: 0;
 }
 #search .container{
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-size: 13px;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -945,9 +1046,6 @@ a{
 }
 #header-menu .navbar-default{
     /*background-color: #BBBDBE;*/
-}
-.orange-font{
-    color: #dd5a2b;
 }
 .white-font{
    color: white;
@@ -1117,7 +1215,7 @@ a{
     padding: 40px 0px;
 }
 .ready-section h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 .diamond-seperator{
     float: none;
@@ -1146,7 +1244,13 @@ a{
     width: 40px;
 }
 .orange-font{
-    color: #dd5a2b;
+  color: #dd5a2b;
+}
+.blue-font{
+  color: #298fc8;
+}
+.gray-font{
+  color: graytext;
 }
 .register-button{
     background-color: #dd5a2b;
@@ -1310,13 +1414,20 @@ a{
   right: 2%;
   top: -35px;
 }
-.parallax1-div h1{
-  margin-top: 2px;
-  margin-bottom: 2px;
-}
-.parallax1-div h2{
-  font-size: 25px;
+section h3{
+  font-family: 'Open Sans';
+  font-size: 20px;
   font-weight: normal;
+}
+section h4{
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 2em;
+}
+.parallax1-div span{
+  font-family: 'Open Sans';
+  font-size: 13px;
 }
 .top-buffer-10{
   margin-top: 10px;
@@ -1505,7 +1616,8 @@ section.module.parallax-7 {
 
 @media all and (min-width: 600px) {
 .parallax1-div{
-    margin-top: 110px;
+    margin-top: 80px;
+    text-shadow: none;
   }
 }
 @media all and (min-width: 960px) {
