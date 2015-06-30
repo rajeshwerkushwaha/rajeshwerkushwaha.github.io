@@ -11,6 +11,12 @@ and open the template in the editor.
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+  .arrow-text{
+    float: left;
+    font-family: Comic Sans MS;
+    padding: 0;
+    width: 80px;
+  }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-size: 26px;
@@ -74,6 +80,12 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
+  .arrow-text{
+    float: left;
+    font-family: Comic Sans MS;
+    padding: 0;
+    width: 80px;
+  }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-size: 26px;
@@ -140,6 +152,12 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
+  .arrow-text{
+    float: left;
+    font-family: Comic Sans MS;
+    padding: 0;
+    width: 80px;
+  }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-size: 26px;
@@ -207,6 +225,12 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+  .arrow-text{
+    float: left;
+    font-family: Comic Sans MS;
+    padding: 0;
+    width: 100px;
+  }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-size: 42px;
@@ -336,6 +360,12 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  .arrow-text{
+    float: left;
+    font-family: Comic Sans MS;
+    padding: 0;
+    width: 100px;
+  }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-size: 42px;
@@ -468,6 +498,12 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  .arrow-text{
+    float: left;
+    font-family: Comic Sans MS;
+    padding: 0;
+    width: 100px;
+  }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-size: 42px;
@@ -598,6 +634,12 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  .arrow-text{
+    float: left;
+    font-family: Comic Sans MS;
+    padding: 0;
+    width: 100px;
+  }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-size: 42px;
@@ -697,7 +739,7 @@ and (min-width : 1224px) {
     left: 6px;
     border-radius: 50%;
     transition: all 0.3s ease 0s;
-    border: 1px solid #000;
+    border: 1px solid #DD5A2B;
     width: 17px;
     height: 17px;
 }
@@ -728,6 +770,12 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+  .arrow-text{
+    float: left;
+    font-family: Comic Sans MS;
+    padding: 0;
+    width: 100px;
+  }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-size: 42px;
@@ -1012,7 +1060,7 @@ button{
   color: #dd5a2b;
 }
 .font-color-black{
-  color: black;
+  color: #595959;
 }
 .font-color-gray{
   color: gray;
@@ -1216,6 +1264,10 @@ a{
 }
 .ready-section h1{
     font-size: 40px;
+}
+#contact-us .ready-section{
+  margin: 30px auto 0;
+  padding: 12px 0;
 }
 .diamond-seperator{
     float: none;
@@ -1496,6 +1548,26 @@ section h4{
     background-image: url('../images/head.gif');
     background-repeat: no-repeat;
     background-position: right 80px center;
+}
+.helmet-icon{
+    background-image: url("../images/helmet.gif");
+    background-position: 30% 10%;
+    background-repeat: no-repeat;
+}
+.mike-icon {
+    background-image: url("../images/mike.gif");
+    background-position: 75% -5%;
+    background-repeat: no-repeat;
+}
+.checkbox-icon {
+    background-image: url("../images/checkbox.gif");
+    background-position: 90% 10%;
+    background-repeat: no-repeat;
+}
+.clip-icon {
+    background-image: url("../images/clip.gif");
+    background-position: 50% 102%;
+    background-repeat: no-repeat;
 }
 .bulb-icon{
     background-image: url('../images/bulb.gif');

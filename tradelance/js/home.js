@@ -8,8 +8,10 @@
 $(document).ready(function(){
   
   $('.fullslide-dot a').click(function(){
+    //alert($( $.attr(this, 'href') ).offset().top + 50);
+    
     $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
+        scrollTop: ($( $.attr(this, 'href') ).offset().top - 100)
     }, 600);
     $('#fullslide-nav .fullslide-dot').removeClass('active');
     $(this).parent().addClass('active');
