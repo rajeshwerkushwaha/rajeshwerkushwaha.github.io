@@ -954,7 +954,12 @@ only screen and (min-device-width : 414px)
 only screen and (-webkit-device-pixel-ratio: 3) {
   /*** You've spent way too much on a phone ***/
 }
-
+.service-item:hover > .service-circle > .portfolio-hover-content{
+  display: block;
+}
+.portfolio-hover-content{
+  display: none;
+}
 body{
   font-family: 'Open Sans';
 }
