@@ -954,11 +954,25 @@ only screen and (min-device-width : 414px)
 only screen and (-webkit-device-pixel-ratio: 3) {
   /*** You've spent way too much on a phone ***/
 }
+.service-item:hover .portfolio-hover-content{
+  background-color: black;
+  opacity: .7;
+  color: white;
+}
 .service-item:hover > .service-circle > .portfolio-hover-content{
-  display: block;
+  color: white;
+}
+.service-item:hover .portfolio-hover-content div{
+  opacity: 1;
+}
+.service-item:hover img{
+  opacity: 1;
+}
+.service-item:hover p{
+  opacity: 1;
 }
 .portfolio-hover-content{
-  display: none;
+  opacity: 0;
 }
 body{
   font-family: 'Open Sans';
@@ -1680,7 +1694,7 @@ section.module.parallax-4 {
   background-image: url("../images/compress/4_1.jpg");
 }
 section.module.parallax-5 {
-  background-image: url("../images/compress/5_1.jpg");
+  background-image: url("../images/compress/5_11.jpg");
   background-position: 50% 10%;
 }
 section.module.parallax-6 {
@@ -1700,3 +1714,120 @@ section.module.parallax-7 {
 @media all and (min-width: 960px) {
 
 }
+
+//----circle css
+.view {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center
+}
+.view .mask, .view .content {
+    border-radius: 50%;
+    height: 300px;
+    left: 48px;
+    overflow: hidden;
+    position: absolute;
+    top: 11px;
+    width: 300px;
+}
+.view>img {
+    display: block;
+    position: relative;
+    border-radius: 50%;
+}
+.view h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 22px;
+    font-family: 'Open Sans'
+    font-weight: normal;
+    padding-top: 10px;
+    margin: 20px 0 0 0;
+    font-style: italic;
+}
+.view p {
+    color: 	rgb(235,235,235);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 40px 20px;
+    position: relative;
+    text-align: center;
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+.view-first img { 
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(0,0,0, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-first a.info{
+    background: #dd5a2b none repeat scroll 0 0;
+    margin-top: -1px;
+    opacity: 0;
+    padding: 15px 100px;
+    transition: all 0.2s ease-in-out 0s;
+}
+.view-first:hover img { 
+	transform: scale(1);
+} 
+.view-first:hover .mask { 
+	opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
+.carousel-control {
+  width: 0px !important;
+}
+#testimonial_Carousel{
+  margin-top: 100px;
+}
+.carousel-caption {
+  float: right;
+  left:0px;
+}
+#testimonial_Carousel h3{
+  margin-top: 10px;
+}
+//----
