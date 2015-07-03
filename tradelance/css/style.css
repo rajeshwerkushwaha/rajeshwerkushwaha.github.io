@@ -11,6 +11,12 @@ and open the template in the editor.
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    margin-top: 50px;
+  }
   .arrow-text{
     float: left;
     font-family: Comic Sans MS;
@@ -80,6 +86,12 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    margin-top: 50px;
+  }
   .arrow-text{
     float: left;
     font-family: Comic Sans MS;
@@ -152,6 +164,12 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    margin-top: 50px;
+  }
   .arrow-text{
     float: left;
     font-family: Comic Sans MS;
@@ -225,6 +243,12 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    margin-top: 100px;
+  }
   .arrow-text{
     float: left;
     font-family: Comic Sans MS;
@@ -360,6 +384,12 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    margin-top: 100px;
+  }
   .arrow-text{
     float: left;
     font-family: Comic Sans MS;
@@ -498,6 +528,12 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    margin-top: 100px;
+  }
   .arrow-text{
     float: left;
     font-family: Comic Sans MS;
@@ -634,6 +670,12 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    margin-top: 100px;
+  }
   .arrow-text{
     float: left;
     font-family: Comic Sans MS;
@@ -770,6 +812,12 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 800px;
+    margin-top: 100px;
+  }
   .arrow-text{
     float: left;
     font-family: Comic Sans MS;
@@ -914,6 +962,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
 @media
 only screen and (max-device-width: 667px) 
 only screen and (-webkit-device-pixel-ratio: 2) {
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    margin-top: 100px;
+  }
   .twisted-arrow-right{
     background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 58px auto;
     height: 44px;
@@ -1474,16 +1528,11 @@ a{
 /* Services Css End*/
 
 /* Slider Css Start*/
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
-    margin: auto;
-    height: 600px;
-    margin-top: 100px;
-}
 .updated-carousel-caption{
   left: 0;
   right: 2%;
   top: -35px;
+  padding-right: 30px;
 }
 section h3{
   font-family: 'Open Sans';
@@ -1816,6 +1865,12 @@ section.module.parallax-7 {
 }
 .view-first:hover a.info {
     transition-delay: 0.2s;
+}
+.carousel-inner > .item {
+    -webkit-transition: 1s ease-in-out left;
+    -moz-transition: 1s ease-in-out left;
+    -o-transition: 1s ease-in-out left;
+    transition: 1s ease-in-out left;
 }
 .carousel-control {
   width: 0px !important;
