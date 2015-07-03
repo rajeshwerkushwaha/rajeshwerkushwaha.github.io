@@ -15,7 +15,7 @@ and (max-device-width : 480px) {
     width: 100%;
     margin: auto;
     height: 600px;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .arrow-text{
     float: left;
@@ -90,7 +90,7 @@ and (min-width : 321px) {
     width: 100%;
     margin: auto;
     height: 600px;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .arrow-text{
     float: left;
@@ -168,7 +168,7 @@ and (max-width : 320px) {
     width: 100%;
     margin: auto;
     height: 600px;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .arrow-text{
     float: left;
