@@ -11,6 +11,9 @@ and open the template in the editor.
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+  #contact-us-section{
+    margin-top: 50px;
+  }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     margin: auto;
@@ -86,6 +89,9 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
+  #contact-us-section{
+    margin-top: 50px;
+  }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     margin: auto;
@@ -164,6 +170,9 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
+  #contact-us-section{
+    margin-top: 50px;
+  }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     margin: auto;
@@ -243,6 +252,9 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+  #contact-us-section{
+    margin-top: 150px;
+  }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     margin: auto;
@@ -384,6 +396,9 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  #contact-us-section{
+    margin-top: 150px;
+  }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     margin: auto;
@@ -528,6 +543,9 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  #contact-us-section{
+    margin-top: 150px;
+  }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     margin: auto;
@@ -670,6 +688,9 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  #contact-us-section{
+    margin-top: 150px;
+  }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     margin: auto;
@@ -812,6 +833,9 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+  #contact-us-section{
+    margin-top: 150px;
+  }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     margin: auto;
@@ -962,6 +986,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
 @media
 only screen and (max-device-width: 667px) 
 only screen and (-webkit-device-pixel-ratio: 2) {
+  #contact-us-section{
+    margin-top: 150px;
+  }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     margin: auto;
@@ -1887,9 +1914,6 @@ section.module.parallax-7 {
 }
 
 /* contact us page css start*/
-#contact-us-section{
-  margin-top: 150px;
-}
 .contact-us-footer{
   background-color: #e0e0e0;
   padding-top: 0px;
