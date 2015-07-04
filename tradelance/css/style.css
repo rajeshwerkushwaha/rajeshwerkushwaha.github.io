@@ -1885,4 +1885,29 @@ section.module.parallax-7 {
 #testimonial_Carousel h3{
   margin-top: 10px;
 }
-//----
+
+/* contact us page css start*/
+#contact-us-section{
+  margin-top: 150px;
+}
+.contact-us-footer{
+  background-color: #e0e0e0;
+  padding-top: 0px;
+}
+.input-text{
+  border: 1px solid #ebebeb;
+  height: 40px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  width: 100%;
+  color: #777;
+}
+.textarea-text{
+  border: 1px solid #ebebeb;
+  margin-bottom: 12px;
+  padding: 5px;
+  resize: none;
+  width: 100%;
+  color: #777;
+}
+/* contact us page css end*/

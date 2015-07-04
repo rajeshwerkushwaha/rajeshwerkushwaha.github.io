@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tradelancer</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!--     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWq1T58h7aHXu0ZlbipmeyAk7-VIWy6Ag&sensor=false"></script>
+    
+  </head>
+ <body>
+    <!-- Navigation -->
+    <section id="header-menu">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll logo-sm" href="#page-top"><img src="images/logo.gif" class="header-logo"/></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#">FIND TRADELANCER<span class="vertical-line">|</span></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#">FIND WORK<span class="vertical-line">|</span></a>
+                            </li>
+                            <li class="margin-from-login">
+                                <a class="page-scroll" href="#">HOW IT WORKS</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll login-anchor" href="#">
+                                    <span class="login-icon orange-font"><i class="fa fa-sign-in"></i></span>
+                                    LOGIN
+                                </a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#">
+                                    <span class="glyphicon glyphicon-pencil orange-font"></span>
+                                    SIGNUP
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </section>
+    
+    <!-- Search -->
+    <section id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 logo-lg">
+                    <a href="#"><img src="images/logo.gif" class="logo-lg-img" /></a>
+                </div>
+                <div class="col-md-9 col-sm-9 top-buffer">
+                    <div class="row">    
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-xs-12">
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-default dropdown-toggle search-option-button" data-toggle="dropdown">
+                                        <span id="search_concept"></span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#contains">Option 1</a></li>
+                                      <li><a href="#its_equal">Option 2</a></li>
+                                      <li><a href="#greather_than">Option 3</a></li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="search_param" value="all" id="search_param">         
+                                <input type="text" class="form-control search-input" name="x" placeholder="Search...">
+                                <a href="#" class="search-button">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-default dropdown-toggle browse-option-button" data-toggle="dropdown">
+                                        <span id="browse_concept">BROWSE</span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#contains">Option 1</a></li>
+                                      <li><a href="#its_equal">Option 2</a></li>
+                                      <li><a href="#greather_than">Option 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Section 3 -->
+    <section id="contact-us-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center bottom-buffer">
+            <h1>CONTACT US</h1>
+            <div class="diamond-seperator">
+              <div class="div1"></div>
+              <div class="div2"></div>
+              <div class="div3"></div>
+            </div>
+            <br>
+            <h3>LEAVE US A MESSAGE</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 top-buffer contact text-center">
+            <div class="col-centered">
+              <div class="">
+                <div class="col-md-1">
+                  <i class="fa fa-map-marker fa-2x"></i>
+                </div>
+                <div class="col-md-10">
+                  <div class="col-centered">
+                    <span class="head">ADDRESS INFORAMTION</span>
+                    <ul class="list-unstyled">
+                      <li>DieSachbearbeiter, Schonhauser Alle 167c 10435 Berlin, Germany</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="col-md-1">
+                  <i class="fa fa-envelope-o fa-2x"></i>
+                </div>
+                <div class="col-md-10">
+                  <div class="col-centered">
+                    <span class="head">EMAIL</span>
+                    <ul class="list-unstyled">
+                      <li>moin@textgenerator.de</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="col-md-1">
+                  <i class="fa fa-phone fa-2x"></i>
+                </div>
+                <div class="col-md-10">
+                  <div class="col-centered">
+                    <span class="head">TOLL FREE CALL</span>
+                    <ul class="list-unstyled">
+                      <li>+4930473726995</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 top-buffer contact text-center">
+            <div class="col-centered">
+              <input class="input-text" type="text" name="name" placeholder="NAME" />
+              <input class="input-text" type="email" validate="true" name="email" placeholder="EMAIL" />
+              <input class="input-text" type="text" name="subject" placeholder="SUBJECT" />
+              <span style="color:#777;">WE WILL CONTACT YOU WITHIN ONE BUSINESS DAY.</span>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 top-buffer contact text-center">
+            <div class="col-centered">
+              <textarea class="textarea-text" placeholder="MESSAGE" rows="7"></textarea>
+              <button class="btn btn-lg bold" style="background-color:#dd5a2b;color:white;width:100%;border-radius:0px;">GET STARTED</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <img src="images/buildings.png" width="100%" height="90%"/>
+      </div>
+    </section>
+    
+    <!-- Section 4 -->
+    <section id="contact-us" class="bg-e0">
+        <div class="gray-down-arrow text-center">
+          <img width="100.5%" height="100px" src="images/gray_down_arrow.gif"/>
+          <h3 style="position: absolute; width: 100%; top: 10px;">OPEN THE LOCATION MAP</h3>
+        </div>
+    </section>
+    
+    <!-- Section 4 -->
+    <section id="contact-us-map">
+        <div id="map_canvas" class="row">
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact-us-footer">
+        <div class="row follow-us">
+            <div>
+                <h4>FOLLOW US</h4>
+                <div>
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <span>Copyright &copy; 2015 TRADELANCE</span>
+        </div>
+    </footer>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/_main.js"></script>
+    <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 15,
+                    mapTypeControl: false,
+                    panControl: false,
+                    zoomControl: false,
+                    scaleControl: false,
+                    streetViewControl: false,
+                    mapTypeId:google.maps.MapTypeId.ROADMAP,
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(53.3243201,-6.245704), // Dublin
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map_canvas');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(53.3243201,-6.245704),
+                    map: map,
+                    title: 'Tradelance!',
+                    icon: 'images/logo_icon.gif'
+                });
+
+            }
+        </script>
+  </body>
+</html>
