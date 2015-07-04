@@ -11,7 +11,11 @@ and open the template in the editor.
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-  #contact-us-section{
+  .carousel-caption {
+    float: left;
+    left:0px;
+  }
+  .top-section{
     margin-top: 50px;
   }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -89,7 +93,11 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
-  #contact-us-section{
+  .carousel-caption {
+    float: left;
+    left:0px;
+  }
+  .top-section{
     margin-top: 50px;
   }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -170,7 +178,11 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
-  #contact-us-section{
+  .carousel-caption {
+    float: left;
+    left:0px;
+  }
+  .top-section{
     margin-top: 50px;
   }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -252,7 +264,11 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-  #contact-us-section{
+  .carousel-caption {
+    float: right;
+    left:0px;
+  }
+  .top-section{
     margin-top: 150px;
   }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -396,6 +412,10 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  .carousel-caption {
+    float: right;
+    left:0px;
+  }
   #contact-us-section{
     margin-top: 150px;
   }
@@ -543,6 +563,10 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  .carousel-caption {
+    float: right;
+    left:0px;
+  }
   #contact-us-section{
     margin-top: 150px;
   }
@@ -688,7 +712,11 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
-  #contact-us-section{
+  .carousel-caption {
+    float: right;
+    left:0px;
+  }
+  .top-section{
     margin-top: 150px;
   }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -833,7 +861,11 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
-  #contact-us-section{
+  .carousel-caption {
+    float: right;
+    left:0px;
+  }
+  .top-section{
     margin-top: 150px;
   }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -986,7 +1018,11 @@ only screen and (min-device-pixel-ratio : 1.5) {
 @media
 only screen and (max-device-width: 667px) 
 only screen and (-webkit-device-pixel-ratio: 2) {
-  #contact-us-section{
+  .carousel-caption {
+    float: right;
+    left:0px;
+  }
+  .top-section{
     margin-top: 150px;
   }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -1905,10 +1941,6 @@ section.module.parallax-7 {
 #testimonial_Carousel{
   margin-top: 100px;
 }
-.carousel-caption {
-  float: right;
-  left:0px;
-}
 #testimonial_Carousel h3{
   margin-top: 10px;
 }
@@ -1921,7 +1953,7 @@ section.module.parallax-7 {
 .input-text{
   border: 1px solid #ebebeb;
   height: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   padding-left: 10px;
   width: 100%;
   color: #777;
@@ -1929,9 +1961,21 @@ section.module.parallax-7 {
 .textarea-text{
   border: 1px solid #ebebeb;
   margin-bottom: 12px;
-  padding: 5px;
+  padding: 10px;
   resize: none;
   width: 100%;
   color: #777;
 }
+.send-button{
+  background-color:#dd5a2b;
+  color:white;
+  width:100%;
+  border-radius:0px;
+}
 /* contact us page css end*/
+#signup-us-section h2{
+  font-family: "Open Sans";
+}
+#signup-us-section h3{
+  font-family: "Open Sans";
+}
