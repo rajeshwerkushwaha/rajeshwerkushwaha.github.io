@@ -11,6 +11,9 @@ and open the template in the editor.
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+  #map_canvas{
+    height: 300px;
+  }
   .carousel-caption {
     float: left;
     left:0px;
@@ -93,6 +96,9 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
+  #map_canvas{
+    height: 300px;
+  }
   .carousel-caption {
     float: left;
     left:0px;
@@ -178,6 +184,9 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
+  #map_canvas{
+    height: 300px;
+  }
   .carousel-caption {
     float: left;
     left:0px;
@@ -264,12 +273,15 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+  #map_canvas{
+    height: 300px;
+  }
   .carousel-caption {
     float: right;
     left:0px;
   }
   .top-section{
-    margin-top: 150px;
+    margin-top: 130px;
   }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
@@ -281,7 +293,7 @@ and (max-device-width : 1024px) {
     float: left;
     font-family: Comic Sans MS;
     padding: 0;
-    width: 100px;
+    width: 130px;
   }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -412,6 +424,9 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  #map_canvas{
+    height: 300px;
+  }
   .carousel-caption {
     float: right;
     left:0px;
@@ -429,7 +444,7 @@ and (orientation : landscape) {
     float: left;
     font-family: Comic Sans MS;
     padding: 0;
-    width: 100px;
+    width: 130px;
   }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -563,6 +578,9 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  #map_canvas{
+    height: 300px;
+  }
   .carousel-caption {
     float: right;
     left:0px;
@@ -580,7 +598,7 @@ and (orientation : portrait) {
     float: left;
     font-family: Comic Sans MS;
     padding: 0;
-    width: 100px;
+    width: 130px;
   }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -712,12 +730,15 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  #map_canvas{
+    height: 400px;
+  }
   .carousel-caption {
     float: right;
     left:0px;
   }
   .top-section{
-    margin-top: 150px;
+    margin-top: 130px;
   }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
@@ -729,7 +750,7 @@ and (min-width : 1224px) {
     float: left;
     font-family: Comic Sans MS;
     padding: 0;
-    width: 100px;
+    width: 130px;
   }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -861,12 +882,15 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+  #map_canvas{
+    height: 400px;
+  }
   .carousel-caption {
     float: right;
     left:0px;
   }
   .top-section{
-    margin-top: 150px;
+    margin-top: 130px;
   }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
@@ -878,7 +902,7 @@ and (min-width : 1824px) {
     float: left;
     font-family: Comic Sans MS;
     padding: 0;
-    width: 100px;
+    width: 130px;
   }
   section h1{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -1018,12 +1042,15 @@ only screen and (min-device-pixel-ratio : 1.5) {
 @media
 only screen and (max-device-width: 667px) 
 only screen and (-webkit-device-pixel-ratio: 2) {
+  #map_canvas{
+    height: 300px;
+  }
   .carousel-caption {
     float: right;
     left:0px;
   }
   .top-section{
-    margin-top: 150px;
+    margin-top: 130px;
   }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
@@ -1181,20 +1208,30 @@ button{
   padding-top: 20px;
 }
 .icon-circle{
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: gray;
   border-radius: 50%;
   color: white;
-  padding: 25px;
+  padding: 50px;
 }
 .icon-circle:hover{
   background-color: #dd5a2b;
   color: white;
+  transform: scale(1.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.icon-circle:hover + h4{
+#we-offer .portfolio-item h3{
+  opacity: 0;
+}
+.icon-circle:hover + h3{
   color: #dd5a2b;
+  opacity: 1 !important;
 }
+
 .font-color-black{
   color: #595959;
 }
@@ -1721,13 +1758,6 @@ section h4{
 }
 /* Portfolio Css End*/
 
-/* Googlemap Css Start*/
-#map_canvas{
-  height: 300px;
-}
-
-/* Googlemap Css End*/
-
 /* Footer Css Start*/
 #footer{
     background-color: #e0e0e0;
@@ -1939,6 +1969,14 @@ section.module.parallax-7 {
   background-color: #e0e0e0;
   padding-top: 0px;
 }
+#signup-us-section .input-text{
+  border: 1px solid #ebebeb;
+  height: 40px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  width: 100%;
+  color: #777;
+}
 .input-text{
   border: 1px solid #ebebeb;
   height: 40px;
@@ -1970,4 +2008,25 @@ section.module.parallax-7 {
 }
 .navbar-nav li{
   padding-left: 10px;
+}
+
+.follow-us a.facebook:hover {
+  color:white;
+  background-color: #28338d;
+}
+.follow-us a.twitter:hover {
+  color:white;
+  background-color: #0eb1f2;
+}
+.follow-us a.youtube:hover {
+  color:white;
+  background-color: #bc1213;
+}
+.follow-us a.googleplus:hover {
+  color:white;
+  background-color: #bc1213;
+}
+.follow-us a.linkedin:hover {
+  color:white;
+  background-color: #1d82d4;
 }
