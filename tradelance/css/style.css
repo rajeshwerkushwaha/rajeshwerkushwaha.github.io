@@ -11,6 +11,9 @@ and open the template in the editor.
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+  .slider-h1{
+    font-size:50px;
+  }
   #map_canvas{
     height: 300px;
   }
@@ -96,6 +99,9 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
+  .slider-h1{
+    font-size:50px;
+  }
   #map_canvas{
     height: 300px;
   }
@@ -184,6 +190,9 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
+  .slider-h1{
+    font-size:50px;
+  }
   #map_canvas{
     height: 300px;
   }
@@ -273,6 +282,9 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+  .slider-h1{
+    font-size:62px;
+  }
   #map_canvas{
     height: 300px;
   }
@@ -325,7 +337,7 @@ and (max-device-width : 1024px) {
   #search{
     background-color: white;
     margin-top: 50px;
-    padding: 0px 100px;
+    padding: 0px;
     position: fixed;
     z-index: 100;
     height: 70px;
@@ -424,6 +436,9 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  .slider-h1{
+    font-size:62px;
+  }
   #map_canvas{
     height: 300px;
   }
@@ -480,7 +495,7 @@ and (orientation : landscape) {
   #search{
     background-color: white;
     margin-top: 50px;
-    padding: 0px 100px;
+    padding: 0px;
     position: fixed;
     z-index: 100;
     height: 70px;
@@ -578,6 +593,9 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  .slider-h1{
+    font-size:62px;
+  }
   #map_canvas{
     height: 300px;
   }
@@ -633,7 +651,7 @@ and (orientation : portrait) {
   #search{
     background-color: white;
     margin-top: 50px;
-    padding: 0px 100px;
+    padding: 0px;
     position: fixed;
     z-index: 100;
     height: 70px;
@@ -730,6 +748,9 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  .slider-h1{
+    font-size:62px;
+  }
   #map_canvas{
     height: 400px;
   }
@@ -785,7 +806,7 @@ and (min-width : 1224px) {
   #search{
     background-color: white;
     margin-top: 50px;
-    padding: 0px 100px;
+    padding: 0px;
     position: fixed;
     z-index: 100;
     height: 70px;
@@ -882,6 +903,9 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+  .slider-h1{
+    font-size:62px;
+  }
   #map_canvas{
     height: 400px;
   }
@@ -948,7 +972,7 @@ and (min-width : 1824px) {
   #search{
     background-color: white;
     margin-top: 50px;
-    padding: 0px 100px;
+    padding: 0px;
     position: fixed;
     z-index: 100;
     height: 70px;
@@ -1042,6 +1066,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
 @media
 only screen and (max-device-width: 667px) 
 only screen and (-webkit-device-pixel-ratio: 2) {
+  .slider-h1{
+    font-size:62px;
+  }
   #map_canvas{
     height: 300px;
   }
@@ -1081,7 +1108,7 @@ only screen and (-webkit-device-pixel-ratio: 2) {
   #search{
     background-color: white;
     margin-top: 50px;
-    padding: 0px 100px;
+    padding: 0px;
     position: fixed;
     z-index: 100;
     width: 100%;
