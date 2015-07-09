@@ -1872,6 +1872,9 @@ section.module.parallax-6 {
 section.module.parallax-7 {
   background-image: url("../images/demo/4.jpg");
 }
+section.module.parallax-man-with-laptop{
+  background-image: url("../images/about_us/man-with-laptop.jpg");
+}
 
 
 @media all and (min-width: 600px) {
@@ -2056,4 +2059,36 @@ section.module.parallax-7 {
 .follow-us a.linkedin:hover {
   color:white;
   background-color: #1d82d4;
+}
+.team-detail{
+  color: #333;
+}
+.team-detail h3{
+  padding-bottom: 40px;
+  margin-bottom: 0px;
+}
+.team-detail ul{
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.team-detail ul li{
+  padding-bottom: 10px;
+  color: #777;
+}
+.team-detail ul li span{
+  color: #333;
+}
+.dashed-border-right{
+  border-right: 1px dashed #777;
+}
+.goggle{
+  background-image: url('../images/about_us/goggle.png');
+  background-position: 95% 100%;
+  background-repeat: no-repeat;
+}
+.parallax-3-baloon {
+  margin-top: -90px;
+  position: absolute;
+  left: 0;
 }
