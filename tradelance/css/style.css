@@ -300,6 +300,13 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+  .find-work-padding{
+    padding: 0px 90px !important;
+  }
+  .browse-button .dropdown-menu{
+    right: 0 !important;
+    left: unset !important;
+  }
   .about-us-text2 div:last-child{
     padding-bottom: 50px;
   }
@@ -460,6 +467,9 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  .find-work-padding{
+    padding: 0px 90px !important;
+  }
   .about-us-text2 div:last-child{
     padding-bottom: 50px;
   }
@@ -623,6 +633,9 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  .find-work-padding{
+    padding: 0px 90px !important;
+  }
   .about-us-text2 div:last-child{
     padding-bottom: 50px;
   }
@@ -784,6 +797,9 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  .find-work-padding{
+    padding: 0px 150px !important;
+  }
   .about-us-text2 div:last-child{
     padding-bottom: 50px;
   }
@@ -945,6 +961,9 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+  .find-work-padding{
+    padding: 0px 150px !important;
+  }
   .about-us-text2 div:last-child{
     padding-bottom: 50px;
   }
@@ -1371,10 +1390,11 @@ a{
     background-color: lightgray;
 }
 .portfolio-div{
-    height: 280px;
-    width: 300px;
+    height: 260px;
+    width: 260px;
     background-color: white;
     color: black;
+    padding: 20px 0px;
 }
 .portfolio-div:hover{
     background-color: #dd5a2b;
@@ -1422,6 +1442,9 @@ a{
 }
 .portfolio-item {
     margin: 0 0 45px;
+}
+.find-portfolio .portfolio-item{
+  margin: 0 0 25px;
 }
 .copyright{
     background-color: #dd5a2b;
@@ -1683,7 +1706,6 @@ a{
     text-align: center;
 }
 .portfolio-div-icon{
-    margin: 35px 110px;
     font-size: 65px;
 }
 .portfolio-div:hover a{
@@ -1700,7 +1722,8 @@ a{
 }
 .span-line{
     border-top: 1px solid;
-    margin-left: 85px;
+    margin-left: 75px;
+    margin-top: 50px;
     width: 110px;
 }
 .img-circle{
@@ -1823,6 +1846,51 @@ section h4{
     background-repeat: no-repeat;
     background-position: right 300px top -50px;
 }
+.mixer-icon{
+    background-image: url('../images/find/mixer.png');
+    background-repeat: no-repeat;
+    background-position: right 40px top 0px;
+}
+.sofa-icon{
+    background-image: url('../images/services/icon-1.png');
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+}
+.building-icon{
+    background-image: url('../images/services/icon-2.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+.construction-icon{
+    background-image: url('../images/services/icon-3.png');
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+}
+.meter-icon{
+    background-image: url('../images/services/icon-4.png');
+    background-repeat: no-repeat;
+    background-position: 0 90%;
+}
+.cleaning-icon{
+    background-image: url('../images/services/icon-5.png');
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+}
+.toolman-icon{
+    background-image: url('../images/services/icon-6.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+.workingman1-icon{
+    background-image: url('../images/services/icon-4.png');
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+}
+.workingman2-icon{
+    background-image: url('../images/services/icon-7.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
 .get-started-button{
   background-color: #dd5a2b;
     border-radius: 0;
@@ -1925,6 +1993,46 @@ section.module.parallax-6 {
 }
 section.module.parallax-7 {
   background-image: url("../images/demo/4.jpg");
+}
+section.module.parallax-8 {
+  background-image: url("../images/find/testimonial_cover.jpg");
+}
+section.module.parallax-9 {
+  background-image: url("../images/services/1.jpg");
+  background-position: 50% 30%;
+}
+section.module.parallax-10 {
+  background-image: url("../images/services/2.jpg");
+}
+section.module.parallax-11 {
+  background-image: url("../images/services/3.jpg");
+  background-position: 50% 20%;
+}
+section.module.parallax-12 {
+  background-image: url("../images/services/4.jpg");
+  background-position: 50% 30%;
+}
+section.module.parallax-13 {
+  background-image: url("../images/services/5.jpg");
+}
+section.module.parallax-14 {
+  background-image: url("../images/services/6.jpg");
+  background-position: 50% 20%;
+}
+section.module.parallax-15 {
+  background-image: url("../images/services/7.jpg");
+  background-position: 50% 0%;
+}
+section.module.parallax-16 {
+  background-image: url("../images/services/8.jpg");
+  background-position: 50% 0%;
+}
+section.module.parallax-17 {
+  background-image: url("../images/services/9.jpg");
+}
+section.module.parallax-18 {
+  background-image: url("../images/services/10.jpg");
+  background-position: 50% 20%;
 }
 section.module.parallax-man-with-laptop{
   background-image: url("../images/about_us/man-with-laptop.jpg");
@@ -2185,4 +2293,37 @@ section.module.parallax-man-with-laptop{
   background-image: url("../images/about_us/baloon.png");
   background-position: 100% 0;
   background-repeat: no-repeat;
+}
+.blog-date-tag{
+  background-color: #29374e;
+  color: #ffffff;
+  position: absolute;
+  right: 20px;
+  text-align: center;
+  width: 30px;
+  display: none;
+  top: 0px;
+}
+.blog-date-tag .div1{
+  height: 10px;
+}
+.blog-date-tag .div2{
+  background-color: #dd5a2b;
+  font-size:10px;
+}
+.blog-date-tag .icon{
+  font-size: 15px;
+  height: 12px;
+}
+.blog-date-tag .icon-text{
+  font-size: 8px;
+}
+.blog-section > div{
+  height: 285px;
+}
+div.blog-item-img:hover + .blog-date-tag{
+  display: block;
+}
+.flag-us{
+  background-image:url('../images/flags.png') -17px -44px;
 }

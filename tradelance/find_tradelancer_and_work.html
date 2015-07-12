@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Find Tradelancer and Work</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!--     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWq1T58h7aHXu0ZlbipmeyAk7-VIWy6Ag&sensor=false"></script>
+    
+  </head>
+ <body onload="initialize()">
+    <!-- Navigation -->
+    <section id="header-menu">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll logo-sm" href="#page-top"><img src="images/logo.gif" class="header-logo"/></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#">FIND TRADELANCERS<span class="vertical-line">|</span></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#">FIND WORK<span class="vertical-line">|</span></a>
+                            </li>
+                            <li class="margin-from-login">
+                                <a class="page-scroll" href="#">HOW IT WORKS</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll login-anchor" href="#">
+                                  <div style="background-color: #298fc8; width: 20px; border-radius: 50%; position: absolute; padding-left: 3px; left: -10px; top: 13px;">
+                                    <span style="color:white;"><i class="fa fa-sign-in"></i></span>
+                                  </div>
+                                  LOGIN
+                                </a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="signup.html" style="color:#dd5a2b;">
+                                  <div style="background-color: #dd5a2b; width: 20px; border-radius: 50%; position: absolute; padding-left: 5px; left: -10px; top: 13px;">
+                                    <span style="color:white;"><i class="fa fa-pencil"></i></span>
+                                  </div>
+                                  SIGNUP
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </section>
+    
+    <!-- Search -->
+    <section id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 logo-lg">
+                    <a href="#"><img src="images/logo.gif" class="logo-lg-img" /></a>
+                </div>
+                <div class="col-md-9 col-sm-9 top-buffer">
+                    <div class="row">    
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-xs-12">
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-default dropdown-toggle search-option-button" data-toggle="dropdown">
+                                        <span id="search_concept"></span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Search Tradelancers</a></li>
+                                      <li><a href="#">Search Jobs</a></li>
+                                      <li><a href="#">Search Portfolio Samples</a></li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="search_param" value="all" id="search_param">         
+                                <input type="text" class="form-control search-input" name="x" placeholder="Search...">
+                                <a href="#" class="search-button">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-default dropdown-toggle browse-option-button" data-toggle="dropdown">
+                                        <span id="browse_concept">BROWSE</span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Interior Designers</a></li>
+                                      <li><a href="#">Architects</a></li>
+                                      <li><a href="#">Civil Engineers</a></li>
+                                      <li><a href="#">Domestic Electricians</a></li>
+                                      <li><a href="#">Domestic Plumbers</a></li>
+                                      <li><a href="#">Cleaners</a></li>
+                                      <li><a href="#">Handymen</a></li>
+                                      <li><a href="#">Industrial Electricians</a></li>
+                                      <li><a href="#">Industrial Plumbers</a></li>
+                                      <li><a href="#">General Builders</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Slide -->
+    <section class="find-work-header">
+        <div class="row">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+<!--           <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+          </ol> -->
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/find/header.jpg">
+              <img src="images/find/head-bg.png" style="position:absolute;">
+              <div class="carousel-caption updated-carousel-caption">
+                <div class="row parallax1-div text-right">
+                  <div class="user-short-info text-left" style="height: 50px; position: absolute; left: 54.5%; background-image: url(&quot;images/find/head-bg.png&quot;); width: 250px; background-repeat: no-repeat; background-size: cover; padding-left: 20px;">
+                    <div style="position: relative; float: left;">
+                      <span style="font-size:20px;float:left;position:relative;">LIZZA DAYNA</span>
+                      <div class="flag-us"></div>
+                      <span style="position: relative; float: left; top: 7px;">United States</span>
+                    </div>
+                    <br>
+                    <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><span style="font-size: 15px; font-family: comic sans ms; padding-left: 10px;">&nbsp;Interior designer</span></span>
+                  </div>
+                  <div class="col-md-5 col-md-offset-7 top-buffer-100">
+                    <h1 style="color:black;">FIND</h1>
+                    <h1 class="orange-font">GREAT JOBS</h1>   
+                    <a href="signup.html"><button class="btn btn-lg get-started-button">REGISTER NOW</button></a>
+                    <br>
+                    <div class="text-center top-buffer-0" style="float:right;">
+                      <div class="row">
+                        <div style="float: left; position: relative; height: 70px; margin-left: 10px; overflow: hidden; transform: rotate(150deg); width: 120px; margin-right: -120px;" class="twisted-arrow-black"><img style="position: absolute; margin-left: -110px;" src="images/twisted-arrow-black.gif"></div>
+                        <span style="font-size: 20px; width: 200px; font-family: comic sans ms; margin-left: -55px; margin-top: 50px; transform: rotate(-10deg); color: black;" class="xs-font text-center arrow-text">124,012 jobs posted in the past 10 days</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+      
+    <!-- Section 2 -->
+    <section id="our-services" class="services">
+        <div class="trans-white-down-arrow">
+          <img width="100.5%" height="100px" src="images/trans_white_down_arrow.gif"/>
+        </div>
+        <div class="container">
+            <div class="row mixer-icon bottom-buffer">
+                <div class="col-md-8 col-md-offset-2 text-center bottom-buffer">
+                  <h1>LOREM IPSUM</h1>
+                  <div class="diamond-seperator">
+                      <div class="div1"></div>
+                      <div class="div2"></div>
+                      <div class="div3"></div>
+                  </div>
+                  <h3 class="orange-font">Forward-thinking and intuituive contractor freelancing marketplace</h3>
+                  <h4>With innovative functionalities, impeccable support level and various protection guarantees, we are an ultimate out-of-box customer experience</h4>
+                </div>
+            </div>
+            <div class="row text-center bottom-buffer">
+                <div style="height: 304px; padding: 0px; left: 0px; right: 0px; margin: 0px auto 50px;" class="col-md-4 service-item">
+                  <div class="view view-first">
+                    <div>
+                      <img src="images/live/s1.jpg" style="border: 10px solid rgb(235, 235, 235); width: 300px; height: 300px; border-radius: 50%;">
+                    </div>
+                    <div class="mask">
+                        <img style="float: none; margin: 30px auto 0px auto; width: 70px; height: 70px;" src="images/bulb.png"><br><br>
+                        <h2 class="orange-font">CONCEPT &amp; DESIGN</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing</p>
+                        <a class="info" href="#">Read More</a>
+                    </div>
+                  </div>  
+                </div>
+                <div style="height: 304px; padding: 0px; left: 0px; right: 0px; margin: 0px auto 50px;" class="col-md-4 service-item">
+                  <div class="view view-first">
+                    <div>
+                      <img src="images/live/s2.jpg" style="border: 10px solid rgb(235, 235, 235); width: 300px; height: 300px; border-radius: 50%;">
+                    </div>
+                    <div class="mask">
+                        <img style="float: none; margin: 30px auto 0px auto; width: 70px; height: 70px;" src="images/paint-brush.png"><br>
+                        <h2 class="orange-font">HOME REFURBISHMENT <br>& CLEANING</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing</p>
+                        <a class="info" href="#">Read More</a>
+                    </div>
+                  </div>  
+                </div>
+                <div style="height: 304px; padding: 0px; left: 0px; right: 0px; margin: 0px auto 50px;" class="col-md-4 service-item">
+                  <div class="view view-first">
+                    <div>
+                      <img src="images/live/s3.jpg" style="border: 10px solid rgb(235, 235, 235); width: 300px; height: 300px; border-radius: 50%;">
+                    </div>
+                    <div class="mask">
+                        <img style="float: none; margin: 30px auto 0px auto; width: 70px; height: 70px;" src="images/crain.png"><br>
+                        <h2 class="orange-font">GENERAL CONSTRUCTION<br>& BUILD</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing</p>
+                        <a class="info" href="#">Read More</a>
+                    </div>
+                  </div>  
+                </div>
+            </div>
+        </div>
+        <div class="white-down-arrow">
+          <img width="100.5%" height="100px" src="images/white_down_arrow.gif"/>
+        </div>
+    </section>
+    
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-e0 find-portfolio">
+        <div class="container find-work-padding">
+            <div class="row bottom-buffer">
+                <div class="col-md-8 col-md-offset-2 text-center bottom-buffer">
+                  <h1>LOREM IPSUM</h1>
+                  <div class="diamond-seperator">
+                      <div class="div1"></div>
+                      <div class="div2"></div>
+                      <div class="div3"></div>
+                  </div>
+                  <h3 class="orange-font">Lorem ipsum is simply a dummy text for printing</h3>
+                  <h4>Lorem ipsum is simply a dummy text for printing various protection guarantees, we are an ultimate out-of-box customer experience</h4>
+                </div>
+            </div>
+            <div class="row row-centered">
+                <div class="col-md-4 col-sm-6  portfolio-item">
+                    <div class="portfolio-div col-centered">
+                        <a class="portfolio-div-icon" href="#"><i class="fa fa-euro"></i></a>
+                        <div class="span-line"></div>
+                        <div class="portfolio-div-text">
+                            <span>100% <span class="bold">ESCROW</span><br>
+                            <span class="bold">PAYMENT PROTECTION</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6  portfolio-item">
+                    <div class="portfolio-div col-centered">
+                        <a class="portfolio-div-icon" href="#"><i class="fa fa-lock"></i></a>
+                        <div class="span-line"></div>
+                        <div class="portfolio-div-text">
+                            <span>SAFEST<br>
+                            <span>ON-LINE MARKETPLACE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6  portfolio-item">
+                    <div class="portfolio-div col-centered">
+                        <a class="portfolio-div-icon" href="#"><i class="fa fa-legal"></i></a>
+                        <div class="span-line"></div>
+                        <div class="portfolio-div-text">
+                            <span>FREE LEGAL</span><br>
+                            <span>ASSESSMENTS AND FORMS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6  portfolio-item">
+                    <div class="portfolio-div col-centered">
+                        <a class="portfolio-div-icon" href="#"><i class="fa fa-group"></i></a>
+                        <div class="span-line"></div>
+                        <div class="portfolio-div-text">
+                            <span>NUMEROUS</span><br>
+                            <span>JOB OPPORTUNITIES</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6  portfolio-item">
+                    <div class="portfolio-div col-centered">
+                        <a class="portfolio-div-icon" href="#"><i class="fa fa-graduation-cap"></i></a>
+                        <div class="span-line"></div>
+                        <div class="portfolio-div-text">
+                            <span>FREE PROFESIONAL PROFILE</span><br>
+                            <span>NO COST TO APPLY FOR JOBS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6  portfolio-item">
+                    <div class="portfolio-div col-centered">
+                        <a class="portfolio-div-icon" href="#"><i class="fa fa-plus"></i></a>
+                        <div class="span-line"></div>
+                        <div class="portfolio-div-text">
+                            <span>AND</span><br>
+                            <span>MANY MORE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gray-down-arrow" style="margin-top:55px;">
+          <img width="100.5%" height="100px" src="images/gray_down_arrow.gif"/>
+        </div>
+    </section>
+
+    <!-- Parallax 5 -->
+    <section class="module parallax parallax-5">
+        <div class="container">
+          <div id="testimonial_Carousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+<!--           <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol> -->
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div style="width:400px; height:100%; position:relative;text-align:left;" class="carousel-caption">
+                <img src="images/open_quote.png" style="width: 100px; height: 100px; margin-left: -20px; margin-bottom: -20px;">
+                <h3 style="padding-left:70px;margin-top:-25px; width:300px;color:black;text-shadow:none;font-weight:bold;">Testimonials by Tradelancers and Clients to be posted here!</h3>
+                <br>
+                <h3 style="margin-left:70px;text-shadow:none;" class="orange-font bold">LOGO 1</h3>
+                <h3 style="margin-left:70px;text-shadow:none;" class="orange-font bold">Client Name 1</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div style="width:400px; height:100%; position:relative;text-align:left;" class="carousel-caption">
+                <img src="images/open_quote.png" style="width: 100px; height: 100px; margin-left: -20px; margin-bottom: -20px;">
+                <h3 style="padding-left:70px;margin-top:-25px; width:300px;color:black;text-shadow:none;font-weight:bold;">Testimonials by Tradelancers and Clients to be posted here!</h3>
+                <br>
+                <h3 style="margin-left:70px;text-shadow:none;" class="orange-font bold">LOGO 2</h3>
+                <h3 style="margin-left:70px;text-shadow:none;" class="orange-font bold">Client Name 2</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div style="width:400px; height:100%; position:relative;text-align:left;" class="carousel-caption">
+                <img src="images/open_quote.png" style="width: 100px; height: 100px; margin-left: -20px; margin-bottom: -20px;">
+                <h3 style="padding-left:70px;margin-top:-25px; width:300px;color:black;text-shadow:none;font-weight:bold;">Testimonials by Tradelancers and Clients to be posted here!</h3>
+                <br>
+                <h3 style="margin-left:70px;text-shadow:none;" class="orange-font bold">LOGO 3</h3>
+                <h3 style="margin-left:70px;text-shadow:none;" class="orange-font bold">Client Name 3</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#testimonial_Carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#testimonial_Carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+       </div>
+    </section>
+    
+    <!-- Ready -->
+    <section>
+        <div class="container ready-section text-center">
+            <div class="row head-icon">
+                <h1>READY TO BEGIN ?</h1>
+                <div class="diamond-seperator">
+                    <div class="div1"></div>
+                    <div class="div2"></div>
+                    <div class="div3"></div>
+                </div>
+                <h3 class="orange-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                <button class="btn btn-lg register-button">REGISTER NOW</button>
+            </div>
+        </div>
+        <div class="white-down-arrow" style="margin-top:-45px;">
+          <img width="100.5%" height="100px" src="images/white_down_arrow.gif"/>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 resources top-buffer text-center">
+                        <a href="#"><img src="images/logo.gif" /></a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 resources top-buffer text-center">
+                        <div class="col-centered">
+                            <span class="head">RESOURCES</span>
+                            <ul class="list-unstyled">
+                                <li><a href="#">HELP</a></li>
+                                <li><a href="#">TERMS OF USE</a></li>
+                                <li><a href="#">PRIVACY POLICY</a></li>
+                                <li><a href="#">COOKIE POLICY</a></li>
+                                <li><a href="contact_us.html">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 resources top-buffer text-center">
+                        <div class="col-centered">
+                            <span class="head">COMMUNITY</span>
+                            <ul class="list-unstyled">
+                                <li><a href="about_us.html">ABOUT US</a></li>
+                                <li><a href="#">CAREERS</a></li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">TESTIMONIALS</a></li>
+                                <li><a href="#">PARTNERS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 top-buffer contact text-center">
+                        <div class="col-centered">
+                        <div class="">
+                            <div class="col-md-1">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="col-centered">
+                                    <span class="head">ADDRESS INFORAMTION</span>
+                                    <ul class="list-unstyled">
+                                        <li>DieSachbearbeiter, Schonhauser Alle 167c 10435 Berlin, Germany</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="col-md-1">
+                                <i class="fa fa-envelope-o fa-2x"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="col-centered">
+                                    <span class="head">EMAIL</span>
+                                    <ul class="list-unstyled">
+                                        <li>moin@textgenerator.de</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="col-md-1">
+                                <i class="fa fa-phone fa-2x"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="col-centered">
+                                    <span class="head">TOLL FREE CALL</span>
+                                    <ul class="list-unstyled">
+                                        <li>+4930473726995</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row follow-us">
+            <div>
+                <h4>FOLLOW US</h4>
+                <div>
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#" class="googleplus"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <span>Copyright &copy; 2015 TRADELANCE</span>
+        </div>
+    </footer>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/_main.js"></script>
+  </body>
+</html>
