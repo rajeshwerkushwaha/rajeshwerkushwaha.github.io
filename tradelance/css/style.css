@@ -2031,8 +2031,12 @@ section.module.parallax-17 {
   background-image: url("../images/services/9.jpg");
 }
 section.module.parallax-18 {
-  background-image: url("../images/services/10.jpg");
+  background-image: url("../images/demo/33.jpg");
   background-position: 50% 20%;
+}
+section.module.parallax-19 {
+  background-image: url("../images/find/cup.jpg");
+  background-position: 50% 40%;
 }
 section.module.parallax-man-with-laptop{
   background-image: url("../images/about_us/man-with-laptop.jpg");
@@ -2324,8 +2328,7 @@ section.module.parallax-man-with-laptop{
 div.blog-item-img:hover + .blog-date-tag{
   display: block;
 }
-.flag-us{
-  background: rgba(0, 0, 0, 0) url("../images/flags.png") repeat scroll -16px -43px;
+.flag{
   float: left;
   height: 10px;
   margin-left: 5px;
@@ -2333,4 +2336,16 @@ div.blog-item-img:hover + .blog-date-tag{
   margin-top: 11px;
   position: relative;
   width: 16px;
+}
+.flag-us{
+  background: rgba(0, 0, 0, 0) url("../images/flags.png") repeat scroll -16px -43px;
+}
+.flag-ir{
+  background: rgba(0, 0, 0, 0) url("../images/flags.png") repeat scroll -64px -89px;
+}
+.find-portfolio a{
+  color: #777;
+}
+.find-portfolio a:hover{
+  color: white;
 }
