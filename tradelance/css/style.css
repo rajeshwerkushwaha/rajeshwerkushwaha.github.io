@@ -1218,7 +1218,7 @@ only screen and (-webkit-device-pixel-ratio: 3) {
 .portfolio-hover-content{
   opacity: 0;
 }
-body{
+#484749{
   font-family: 'Open Sans';
 }
 button{
@@ -2344,7 +2344,7 @@ div.blog-item-img:hover + .blog-date-tag{
   background: rgba(0, 0, 0, 0) url("../images/flags.png") repeat scroll -160px -43px;
 }
 .find-portfolio a{
-  color: #777;
+  color: #484749;
 }
 .find-portfolio a:hover{
   color: white;
@@ -2422,7 +2422,7 @@ div.blog-item-img:hover + .blog-date-tag{
   top: 100px;
 }
 body{
-  color: #404040;
+  color: #484749;
 }
 #register-now-btn{
   display: none;
