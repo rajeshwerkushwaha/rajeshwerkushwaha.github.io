@@ -22,6 +22,18 @@
     
   </head>
  <body onload="initialize()">
+   
+  <section>
+      <div class="row find-register-fix-div">
+        <div style="border-right:1px solid #484749;" class="col-md-3 col-md-offset-3 text-right">
+          <span style="margin-right: 10px">Find Work</span><button class="btn btn-sm">Register For Free</button>
+        </div>
+        <div class="col-md-3">
+          <span style="margin-right: 10px">Hire Tradelancer</span><button class="btn btn-sm">Post a Job</button>
+        </div>
+      </div>
+  </section>
+   
     <!-- Navigation -->
     <section id="header-menu">
         <div class="container">
@@ -506,6 +518,18 @@
     <script src="js/imagesloaded.js"></script>
     <script src="js/skrollr.js"></script>
     <script src="js/_main.js"></script>
-    
+    <script>
+      $(function(){
+        $(window).scroll(function(){
+          if( $(window).scrollTop() > 200 ) {
+            $('.find-register-fix-div').css({display:'block'});
+            $('#search').css({display:'none'});
+          } else {
+            $('.find-register-fix-div').css({display:'none'});
+            $('#search').css({display:'block'});
+          }
+        });
+      });
+    </script>
   </body>
 </html>

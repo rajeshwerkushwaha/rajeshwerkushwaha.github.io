@@ -2428,3 +2428,20 @@ body{
   display: none;
   z-index: 1;
 }
+.find-register-fix-div{
+  position: fixed;
+  height: 50px;
+  display: none;
+  z-index: 1000000;
+  background-color: #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+.find-register-fix-div button:hover{
+  border: 1px solid #777;
+}
+.find-register-fix-div button:hover{
+  color: white;
+  background-color: #dd5a2b;
+  border: 1px solid #dd5a2b;
+}
