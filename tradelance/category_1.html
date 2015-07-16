@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Concept and Design</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!--     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWq1T58h7aHXu0ZlbipmeyAk7-VIWy6Ag&sensor=false"></script>
+    
+  </head>
+ <body onload="initialize()">
+    <!-- Navigation -->
+    <section id="header-menu">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll logo-sm" href="#page-top"><img src="images/logo.gif" class="header-logo"/></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#">FIND TRADELANCERS<span class="vertical-line">|</span></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#">FIND WORK<span class="vertical-line">|</span></a>
+                            </li>
+                            <li class="margin-from-login">
+                                <a class="page-scroll" href="#">HOW IT WORKS</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll login-anchor" href="#">
+                                  <div style="background-color: #298fc8; width: 20px; border-radius: 50%; position: absolute; padding-left: 3px; left: -10px; top: 13px;">
+                                    <span style="color:white;"><i class="fa fa-sign-in"></i></span>
+                                  </div>
+                                  LOGIN
+                                </a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="signup.html" style="color:#dd5a2b;">
+                                  <div style="background-color: #dd5a2b; width: 20px; border-radius: 50%; position: absolute; padding-left: 5px; left: -10px; top: 13px;">
+                                    <span style="color:white;"><i class="fa fa-pencil"></i></span>
+                                  </div>
+                                  SIGNUP
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </section>
+    
+    <!-- Search -->
+    <section id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 logo-lg">
+                    <a href="#"><img src="images/logo.gif" class="logo-lg-img" /></a>
+                </div>
+                <div class="col-md-9 col-sm-9 top-buffer">
+                    <div class="row">    
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-xs-12">
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-default dropdown-toggle search-option-button" data-toggle="dropdown">
+                                        <span id="search_concept"></span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Search Tradelancers</a></li>
+                                      <li><a href="#">Search Jobs</a></li>
+                                      <li><a href="#">Search Portfolio Samples</a></li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="search_param" value="all" id="search_param">         
+                                <input type="text" class="form-control search-input" name="x" placeholder="Search...">
+                                <a href="#" class="search-button">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-default dropdown-toggle browse-option-button" data-toggle="dropdown">
+                                        <span id="browse_concept">BROWSE</span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Interior Designers</a></li>
+                                      <li><a href="#">Architects</a></li>
+                                      <li><a href="#">Civil Engineers</a></li>
+                                      <li><a href="#">Domestic Electricians</a></li>
+                                      <li><a href="#">Domestic Plumbers</a></li>
+                                      <li><a href="#">Cleaners</a></li>
+                                      <li><a href="#">Handymen</a></li>
+                                      <li><a href="#">Industrial Electricians</a></li>
+                                      <li><a href="#">Industrial Plumbers</a></li>
+                                      <li><a href="#">General Builders</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Slide -->
+    <section class="find-work-header">
+      <div class="row">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/categories/1.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="category-items">
+        <div class="trans-white-down-arrow" style="margin-top: -175px;">
+          <img width="100.5%" height="100px" src="images/trans_white_down_arrow.gif"/>
+        </div>
+        <div class="container find-work-padding">
+            <div class="row bottom-buffer">
+                <div class="col-md-8 col-md-offset-2 text-center bottom-buffer">
+                  <h1>CONCEPT AND DESIGN</h1>
+                  <div class="diamond-seperator">
+                      <div class="div1"></div>
+                      <div class="div2"></div>
+                      <div class="div3"></div>
+                  </div>
+                  <h3 class="orange-font">Lorem ipsum</h3>
+                  <h4>Lorem ipsum is simply a dummy text for printing various protection guarantees, we are an ultimate out-of-box customer experience</h4>
+                </div>
+            </div>
+            <div class="row row-centered category-button">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <button class="btn btn-lg btn-block active">Enterior Designers</button>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <button class="btn btn-lg btn-block">Architects</button>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <button class="btn btn-lg btn-block">Engineers</button>
+                </div>
+            </div>
+            <div class="row row-centered portfolio-square">
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-8.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>CONSULTATION</span><br>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-9.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>CONCEPT DEVELOPMENT</span><br>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-10.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>DESING</span><br>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-11.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>UPHOLSTERERS</span><br>
+                          <span>FRENCH</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-12.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>PLANNING</span><br>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-13.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>COLOR & LIGHTNING SCHEMES</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-14.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>LAMPSHADE MAKERS</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-15.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>MANUFACTURE OF BESPOKE CABINETRY</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-16.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>SOURCING & SUPPLY OF FURNITURE</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-17.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>FLOOR & WALL COVERINGS</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-18.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>CURTAIN & CARPET FITTERS</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-19.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>LIGHTINIG</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-20.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>ANTIQUES & ART</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-21.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>PAINTERS</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-22.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>WALLPAPERS HANGERS</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-23.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>FURNITURE RESTORES</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-24.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>SEAMSTRESSES</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-25.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>SPECIALIST PLASTERERS</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+                <div class="col-md-3 col-sm-6 portfolio-item">
+                  <div class="portfolio-div">
+                        <a class="portfolio-div-icon" href="#"><img src="images/categories/icons/icon-26.png"/></a><br>
+                        <span class="span-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <div class="portfolio-div-text">
+                          <span>GILDERS & TROMPE L`OIEL ARTISTS</span>
+                        </div>      
+                  </div>
+                  <div class="portfolio-hover-div">
+                      <br><br><span>90 Available</span><br><br>
+                      <button class="btn btn-sm btn-block">View Jobs</button><br>
+                      <button class="btn btn-sm btn-block">Register Now</button>
+                  </div>   
+                </div>
+            </div>
+        </div>
+        <div class="white-down-arrow" style="margin-top:55px;">
+          <img width="100.5%" height="100px" src="images/white_down_arrow.gif"/>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 resources top-buffer text-center">
+                        <a href="#"><img src="images/logo.gif" /></a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 resources top-buffer text-center">
+                        <div class="col-centered">
+                            <span class="head">RESOURCES</span>
+                            <ul class="list-unstyled">
+                                <li><a href="#">HELP</a></li>
+                                <li><a href="#">TERMS OF USE</a></li>
+                                <li><a href="#">PRIVACY POLICY</a></li>
+                                <li><a href="#">COOKIE POLICY</a></li>
+                                <li><a href="contact_us.html">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 resources top-buffer text-center">
+                        <div class="col-centered">
+                            <span class="head">COMMUNITY</span>
+                            <ul class="list-unstyled">
+                                <li><a href="about_us.html">ABOUT US</a></li>
+                                <li><a href="#">CAREERS</a></li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">TESTIMONIALS</a></li>
+                                <li><a href="#">PARTNERS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 top-buffer contact text-center">
+                        <div class="col-centered">
+                        <div class="">
+                            <div class="col-md-1">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="col-centered">
+                                    <span class="head">ADDRESS INFORAMTION</span>
+                                    <ul class="list-unstyled">
+                                        <li>DieSachbearbeiter, Schonhauser Alle 167c 10435 Berlin, Germany</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="col-md-1">
+                                <i class="fa fa-envelope-o fa-2x"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="col-centered">
+                                    <span class="head">EMAIL</span>
+                                    <ul class="list-unstyled">
+                                        <li>moin@textgenerator.de</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="col-md-1">
+                                <i class="fa fa-phone fa-2x"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="col-centered">
+                                    <span class="head">TOLL FREE CALL</span>
+                                    <ul class="list-unstyled">
+                                        <li>+4930473726995</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row follow-us">
+            <div>
+                <h4>FOLLOW US</h4>
+                <div>
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#" class="googleplus"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <span>Copyright &copy; 2015 TRADELANCE</span>
+        </div>
+    </footer>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/_main.js"></script>
+  </body>
+</html>

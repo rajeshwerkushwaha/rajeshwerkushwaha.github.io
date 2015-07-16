@@ -1351,7 +1351,7 @@ button{
     position: relative;
 }
 a{
-    color: black;
+    color: #404040;
 }
 .row{
     margin-left: 0px;
@@ -1393,7 +1393,7 @@ a{
     height: 260px;
     width: 260px;
     background-color: white;
-    color: black;
+    color: #333;
     padding: 20px 0px;
 }
 .portfolio-div:hover{
@@ -2341,11 +2341,90 @@ div.blog-item-img:hover + .blog-date-tag{
   background: rgba(0, 0, 0, 0) url("../images/flags.png") repeat scroll -16px -43px;
 }
 .flag-ir{
-  background: rgba(0, 0, 0, 0) url("../images/flags.png") repeat scroll -64px -89px;
+  background: rgba(0, 0, 0, 0) url("../images/flags.png") repeat scroll -160px -43px;
 }
 .find-portfolio a{
   color: #777;
 }
 .find-portfolio a:hover{
   color: white;
+}
+.category-button button{
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  border-radius: 0px;
+}
+.category-button .active{
+  background-color: #dd5a2b;
+  border: 1px solid #e7e7e7;
+  color: white;
+}
+.category-button button:hover{
+  background-color: #dd5a2b;
+  border: 1px solid #e7e7e7;
+  color: white;
+}
+.category-items .portfolio-div{
+  background-color: #e7e7e7;
+  color: #000000;
+  padding: 20px 0;
+  height: auto;
+  width: auto;
+}
+.portfolio-hover-div{
+  background-color: #dd5a2b !important;
+  color: #ffffff;
+  display: none;
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 20px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 89%;
+  font-size: 12px;
+}
+.category-items .portfolio-item:hover .portfolio-hover-div{
+  display: block;
+}
+.category-items .portfolio-item .portfolio-hover-div span{
+  padding: 20px;
+}
+.category-items .portfolio-item .portfolio-hover-div button{
+  color: #777;
+  background-color: white;
+  border-radius: 25px;
+}
+.category-items .portfolio-item .portfolio-hover-div button:hover{
+  color: white;
+  background-color: #777;
+}
+.category-items .portfolio-item .span-line{
+  border-top: 1px solid #777777;
+  height: 1px;
+  margin-left: unset;
+}
+.category-items .portfolio-item .portfolio-div-text{
+  padding: 0px 10px;
+  height: 30px;
+  font-size: 10px;
+}
+.category-items .portfolio-square .portfolio-div{
+  width: 100%;
+}
+.category-items .portfolio-square .portfolio-item{
+  margin: 0 0 30px;
+}
+.fix-register-now-btn{
+  position: fixed;
+  right: 5.5%;
+  top: 100px;
+}
+body{
+  color: #404040;
+}
+#register-now-btn{
+  display: none;
+  z-index: 1;
 }

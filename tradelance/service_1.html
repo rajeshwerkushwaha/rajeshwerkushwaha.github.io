@@ -245,7 +245,8 @@
                     <div class="twisted-arrow-black" style="width: 100px;float:left;margin-left: 10px;margin-right:10px;"><img src="images/twisted-arrow-black.gif"></div>
                     <div class="xs-font text-center arrow-text">For great<br> job opportunities</div>
                   </div>
-                  <button class="btn btn-lg get-started-button">GET STARTED</button>
+                  <a href="signup.html"><button class="btn btn-lg get-started-button">GET STARTED</button></a>
+                  <a id="register-now-btn" href="signup.html"><button class="btn btn-lg get-started-button">GET STARTED</button></a>
                 </div>
                 
               </div>
@@ -361,5 +362,18 @@
     <script src="js/imagesloaded.js"></script>
     <script src="js/skrollr.js"></script>
     <script src="js/_main.js"></script>
+    <script>
+      $(function(){
+        // Check the initial Poistion of the Sticky Header
+        var stickyHeaderTop = $('#register-now-btn').offset().top;
+        $(window).scroll(function(){
+          if( $(window).scrollTop() > 200 ) {
+            $('#register-now-btn').css({position: 'fixed', top: '100px', right: '0px', display:'block'});
+          } else {
+            $('#register-now-btn').css({position: 'fixed', top: '100px', right: '0px', display:'none'});
+          }
+        });
+      });
+    </script>
   </body>
 </html>
