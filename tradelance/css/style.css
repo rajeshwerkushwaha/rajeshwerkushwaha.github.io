@@ -2430,14 +2430,14 @@ body{
 }
 .find-register-fix-div{
   position: fixed;
-  height: 50px;
+  height: auto;
   display: none;
   z-index: 1000000;
   background-color: #e0e0e0;
   width: 100%;
   padding: 10px;
 }
-.find-register-fix-div button:hover{
+.find-register-fix-div button{
   border: 1px solid #777;
 }
 .find-register-fix-div button:hover{
