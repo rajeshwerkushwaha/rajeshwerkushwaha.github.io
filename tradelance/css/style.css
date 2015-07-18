@@ -11,6 +11,51 @@ and open the template in the editor.
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+  /* Our Platform css start*/
+  #our_platform .updated-carousel-caption{
+    width: 100%;
+    top: 40px;
+  }
+  #our_platform .icon-lg-circle-div{
+    position: fixed;
+    width: 580px;
+    height: 510px;
+    top: 150px;
+    left: 10px;
+  }
+  #our_platform .icon-sm-circle-div{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 12px;
+  }
+  #our_platform .icon-sm-circle-div img{
+    cursor: pointer;
+  }
+  #our_platform .icon-lg-circle-text{
+    position: fixed;
+    top: 280px;
+    left: 505px;
+  }
+  #our_platform .icon-lg-circle-text h4{
+    margin: 0px;
+  }
+  #our_platform .icon-sm-circle-div:hover{
+    background-color: #dd5a2b;
+  }
+  #our_platform .active{
+    background-color: #dd5a2b;
+    transform: scale(1.5);
+    border: 2.9px solid white;
+  }
+  .icons-content{
+    position: fixed;
+    display: none;
+    top: 200px;
+    text-align: center;
+  }
+  /* Our Platform css end*/
   .about-us-text2 div:last-child{
     padding-bottom: 200px;
   }
@@ -105,6 +150,51 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
+    /* Our Platform css start*/
+  #our_platform .updated-carousel-caption{
+    width: 100%;
+    top: 40px;
+  }
+  #our_platform .icon-lg-circle-div{
+    position: fixed;
+    width: 580px;
+    height: 510px;
+    top: 150px;
+    left: 10px;
+  }
+  #our_platform .icon-sm-circle-div{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 12px;
+  }
+  #our_platform .icon-sm-circle-div img{
+    cursor: pointer;
+  }
+  #our_platform .icon-lg-circle-text{
+    position: fixed;
+    top: 280px;
+    left: 505px;
+  }
+  #our_platform .icon-lg-circle-text h4{
+    margin: 0px;
+  }
+  #our_platform .icon-sm-circle-div:hover{
+    background-color: #dd5a2b;
+  }
+  #our_platform .active{
+    background-color: #dd5a2b;
+    transform: scale(1.5);
+    border: 2.9px solid white;
+  }
+  .icons-content{
+    position: fixed;
+    display: none;
+    top: 200px;
+    text-align: center;
+  }
+  /* Our Platform css end*/
   .about-us-text2 div:last-child{
     padding-bottom: 200px;
   }
@@ -202,6 +292,52 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
+    /* Our Platform css start*/
+  #our_platform .updated-carousel-caption{
+    width: 100%;
+    top: 40px;
+  }
+  #our_platform .icon-lg-circle-div{
+    position: fixed;
+    width: 580px;
+    height: 510px;
+    top: 150px;
+    left: 10px;
+  }
+  #our_platform .icon-sm-circle-div{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 12px;
+  }
+  #our_platform .icon-sm-circle-div img{
+    cursor: pointer;
+  }
+  #our_platform .icon-lg-circle-text{
+    position: fixed;
+    top: 280px;
+    left: 505px;
+  }
+  #our_platform .icon-lg-circle-text h4{
+    margin: 0px;
+  }
+  #our_platform .icon-sm-circle-div:hover{
+    background-color: #dd5a2b;
+  }
+  #our_platform .active{
+    background-color: #dd5a2b;
+    transform: scale(1.5);
+    border: 2.9px solid white;
+  }
+  .icons-content{
+    position: fixed;
+    display: none;
+    top: 200px;
+    text-align: center;
+    width: 60%;
+  }
+  /* Our Platform css end*/
   .about-us-text2 div:last-child{
     padding-bottom: 200px;
   }
@@ -300,6 +436,52 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+    /* Our Platform css start*/
+  #our_platform .updated-carousel-caption{
+    width: 100%;
+    top: 40px;
+  }
+  #our_platform .icon-lg-circle-div{
+    position: fixed;
+    width: 580px;
+    height: 510px;
+    top: 150px;
+    left: 100px;
+  }
+  #our_platform .icon-sm-circle-div{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 12px;
+  }
+  #our_platform .icon-sm-circle-div img{
+    cursor: pointer;
+  }
+  #our_platform .icon-lg-circle-text{
+    position: fixed;
+    top: 280px;
+    left: 275px;
+  }
+  #our_platform .icon-lg-circle-text h4{
+    margin: 0px;
+  }
+  #our_platform .icon-sm-circle-div:hover{
+    background-color: #dd5a2b;
+  }
+  #our_platform .active{
+    background-color: #dd5a2b;
+    transform: scale(1.5);
+    border: 2.9px solid white;
+  }
+  .icons-content{
+    position: fixed;
+    display: none;
+    top: 200px;
+    text-align: center;
+    width: 60%;
+  }
+  /* Our Platform css end*/
   .find-work-padding{
     padding: 0px 90px !important;
   }
@@ -467,6 +649,51 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+    /* Our Platform css start*/
+  #our_platform .updated-carousel-caption{
+    width: 100%;
+    top: 40px;
+  }
+  #our_platform .icon-lg-circle-div{
+    position: fixed;
+    width: 580px;
+    height: 510px;
+    top: 150px;
+    left: 10px;
+  }
+  #our_platform .icon-sm-circle-div{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 12px;
+  }
+  #our_platform .icon-sm-circle-div img{
+    cursor: pointer;
+  }
+  #our_platform .icon-lg-circle-text{
+    position: fixed;
+    top: 280px;
+    left: 505px;
+  }
+  #our_platform .icon-lg-circle-text h4{
+    margin: 0px;
+  }
+  #our_platform .icon-sm-circle-div:hover{
+    background-color: #dd5a2b;
+  }
+  #our_platform .active{
+    background-color: #dd5a2b;
+    transform: scale(1.5);
+    border: 2.9px solid white;
+  }
+  .icons-content{
+    position: fixed;
+    display: none;
+    top: 200px;
+    text-align: center;
+  }
+  /* Our Platform css end*/
   .find-work-padding{
     padding: 0px 90px !important;
   }
@@ -633,6 +860,52 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+    /* Our Platform css start*/
+  #our_platform .updated-carousel-caption{
+    width: 100%;
+    top: 40px;
+  }
+  #our_platform .icon-lg-circle-div{
+    position: fixed;
+    width: 580px;
+    height: 510px;
+    top: 150px;
+    left: 100px;
+  }
+  #our_platform .icon-sm-circle-div{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 12px;
+  }
+  #our_platform .icon-sm-circle-div img{
+    cursor: pointer;
+  }
+  #our_platform .icon-lg-circle-text{
+    position: fixed;
+    top: 280px;
+    left: 275px;
+  }
+  #our_platform .icon-lg-circle-text h4{
+    margin: 0px;
+  }
+  #our_platform .icon-sm-circle-div:hover{
+    background-color: #dd5a2b;
+  }
+  #our_platform .active{
+    background-color: #dd5a2b;
+    transform: scale(1.5);
+    border: 2.9px solid white;
+  }
+  .icons-content{
+    position: fixed;
+    display: none;
+    top: 200px;
+    text-align: center;
+    width: 60%;
+  }
+  /* Our Platform css end*/
   .find-work-padding{
     padding: 0px 90px !important;
   }
@@ -797,6 +1070,51 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+    /* Our Platform css start*/
+  #our_platform .updated-carousel-caption{
+    width: 100%;
+    top: 40px;
+  }
+  #our_platform .icon-lg-circle-div{
+    position: fixed;
+    width: 580px;
+    height: 510px;
+    top: 150px;
+    left: 10px;
+  }
+  #our_platform .icon-sm-circle-div{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 12px;
+  }
+  #our_platform .icon-sm-circle-div img{
+    cursor: pointer;
+  }
+  #our_platform .icon-lg-circle-text{
+    position: fixed;
+    top: 280px;
+    left: 505px;
+  }
+  #our_platform .icon-lg-circle-text h4{
+    margin: 0px;
+  }
+  #our_platform .icon-sm-circle-div:hover{
+    background-color: #dd5a2b;
+  }
+  #our_platform .active{
+    background-color: #dd5a2b;
+    transform: scale(1.5);
+    border: 2.9px solid white;
+  }
+  .icons-content{
+    position: fixed;
+    display: none;
+    top: 200px;
+    text-align: center;
+  }
+  /* Our Platform css end*/
   .find-work-padding{
     padding: 0px 150px !important;
   }
@@ -961,6 +1279,53 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+    /* Our Platform css start*/
+  #our_platform .updated-carousel-caption{
+    width: 100%;
+    top: 40px;
+  }
+  #our_platform .icon-lg-circle-div{
+    position: fixed;
+    width: 580px;
+    height: 510px;
+    top: 150px;
+    left: 320px;
+  }
+  #our_platform .icon-sm-circle-div{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 12px;
+  }
+  #our_platform .icon-sm-circle-div img{
+    cursor: pointer;
+  }
+  #our_platform .icon-lg-circle-text{
+    position: fixed;
+    top: 280px;
+    left: 44.5%;
+  }
+  #our_platform .icon-lg-circle-text h4{
+    margin: 0px;
+  }
+  #our_platform .icon-sm-circle-div:hover{
+    background-color: #dd5a2b;
+  }
+  #our_platform .active{
+    background-color: #dd5a2b;
+    transform: scale(1.5);
+    border: 2.9px solid white;
+  }
+  .icons-content{
+    position: fixed;
+    display: none;
+    top: 200px;
+    text-align: center;
+    width: 60%;
+  }
+  /* Our Platform css end*/
+  
   .find-work-padding{
     padding: 0px 150px !important;
   }
@@ -1133,6 +1498,51 @@ only screen and (min-device-pixel-ratio : 1.5) {
 @media
 only screen and (max-device-width: 667px) 
 only screen and (-webkit-device-pixel-ratio: 2) {
+    /* Our Platform css start*/
+  #our_platform .updated-carousel-caption{
+    width: 100%;
+    top: 40px;
+  }
+  #our_platform .icon-lg-circle-div{
+    position: fixed;
+    width: 580px;
+    height: 510px;
+    top: 150px;
+    left: 10px;
+  }
+  #our_platform .icon-sm-circle-div{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 12px;
+  }
+  #our_platform .icon-sm-circle-div img{
+    cursor: pointer;
+  }
+  #our_platform .icon-lg-circle-text{
+    position: fixed;
+    top: 280px;
+    left: 505px;
+  }
+  #our_platform .icon-lg-circle-text h4{
+    margin: 0px;
+  }
+  #our_platform .icon-sm-circle-div:hover{
+    background-color: #dd5a2b;
+  }
+  #our_platform .active{
+    background-color: #dd5a2b;
+    transform: scale(1.5);
+    border: 2.9px solid white;
+  }
+  .icons-content{
+    position: fixed;
+    display: none;
+    top: 200px;
+    text-align: center;
+  }
+  /* Our Platform css end*/
   .about-us-text2 div:last-child{
     padding-bottom: 50px;
   }
@@ -2424,7 +2834,7 @@ div.blog-item-img:hover + .blog-date-tag{
 body{
   color: #484749;
 }
-#register-now-btn{
+#register-now-btn-fix{
   display: none;
   z-index: 1;
 }
@@ -2432,7 +2842,7 @@ body{
   position: fixed;
   height: auto;
   display: none;
-  z-index: 1000000;
+  z-index: 1031;
   background-color: #e0e0e0;
   width: 100%;
   padding: 10px;

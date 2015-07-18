@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Find Tradelancer and Work</title>
+    <title>Find Work</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -21,10 +21,10 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWq1T58h7aHXu0ZlbipmeyAk7-VIWy6Ag&sensor=false"></script>
     
   </head>
- <body onload="initialize()">
-   
+ <body>
+
   <section>
-      <div class="row find-register-fix-div text-center" style="display: block;">
+      <div class="row find-register-fix-div text-center">
         <div class="col-md-3 col-sm-6 col-xs-6 col-md-offset-3" style="border-right:1px solid #484749;">
           <span style="margin-right: 10px">Find Work</span><button class="btn btn-sm">Register For Free</button>
         </div>
@@ -219,7 +219,7 @@
                         <img style="float: none; margin: 30px auto 0px auto; width: 70px; height: 70px;" src="images/bulb.png"><br><br>
                         <h2 class="orange-font">CONCEPT &amp; DESIGN</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing</p>
-                        <a class="info" href="#">Read More</a>
+                        <a class="info" href="#">Search Jobs</a>
                     </div>
                   </div>  
                 </div>
@@ -232,7 +232,7 @@
                         <img style="float: none; margin: 30px auto 0px auto; width: 70px; height: 70px;" src="images/paint-brush.png"><br>
                         <h2 class="orange-font">HOME REFURBISHMENT <br>& CLEANING</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing</p>
-                        <a class="info" href="#">Read More</a>
+                        <a class="info" href="#">Search Jobs</a>
                     </div>
                   </div>  
                 </div>
@@ -245,7 +245,7 @@
                         <img style="float: none; margin: 30px auto 0px auto; width: 70px; height: 70px;" src="images/crain.png"><br>
                         <h2 class="orange-font">GENERAL CONSTRUCTION<br>& BUILD</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing</p>
-                        <a class="info" href="#">Read More</a>
+                        <a class="info" href="#">Search Jobs</a>
                     </div>
                   </div>  
                 </div>
@@ -524,9 +524,11 @@
           if( $(window).scrollTop() > 200 ) {
             $('.find-register-fix-div').css({display:'block'});
             $('#search').css({display:'none'});
+            $('#header-menu').css({display:'none'});
           } else {
             $('.find-register-fix-div').css({display:'none'});
             $('#search').css({display:'block'});
+            $('#header-menu').css({display:'block'});
           }
         });
       });
