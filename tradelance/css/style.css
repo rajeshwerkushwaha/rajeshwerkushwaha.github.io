@@ -54,7 +54,7 @@ and (max-device-width : 480px) {
   .icons-content{
     position: fixed;
     display: none;
-    top: 200px;
+    top: 130px;
     text-align: center;
   }
   /* Our Platform css end*/
@@ -195,7 +195,7 @@ and (min-width : 321px) {
   .icons-content{
     position: fixed;
     display: none;
-    top: 200px;
+    top: 130px;
     text-align: center;
   }
   /* Our Platform css end*/
@@ -339,7 +339,7 @@ and (max-width : 320px) {
   .icons-content{
     position: fixed;
     display: none;
-    top: 200px;
+    top: 130px;
     text-align: center;
     width: 60%;
   }

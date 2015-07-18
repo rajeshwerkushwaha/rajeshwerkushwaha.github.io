@@ -206,7 +206,42 @@
                    {'header':'Lorem Ipsum 5', 'content':'Lorem Ipsum dolar is the dummy text Lorem Ipsum dolar is the dummy text'},]
      
      function rotate_circle(degrees, no){
-       $(".icon-lg-circle-div").css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
+       
+         if($(window).width() < 720 ){
+           $(".icon-lg-circle-div").css({'-webkit-transform' : 'rotate('+ degrees +'deg) scale(0.6)',
+                                           '-moz-transform' : 'rotate('+ degrees +'deg) scale(0.6)',
+                                           '-ms-transform' : 'rotate('+ degrees +'deg) scale(0.6)',
+                                           'transform' : 'rotate('+ degrees +'deg) scale(0.6)',
+                                           '-webkit-transition': 'all 1s ease-in-out',
+                                           '-moz-transition': 'all 1s ease-in-out',
+                                           '-o-transition': 'all 1s ease-in-out',
+                                           'transition': 'all 1s ease-in-out'});
+           $(".icon-sm-circle-div").css({'-webkit-transform' : 'rotate('+ (-degrees) +'deg) scale(0.6)',
+                                             '-moz-transform' : 'rotate('+ (-degrees) +'deg) scale(0.6)',
+                                             '-ms-transform' : 'rotate('+ (-degrees) +'deg) scale(0.6)',
+                                             'transform' : 'rotate('+ (-degrees) +'deg) scale(0.6)',
+                                             '-webkit-transition': 'all 1s ease-in-out',
+                                             '-moz-transition': 'all 1s ease-in-out',
+                                             '-o-transition': 'all 1s ease-in-out',
+                                             'transition': 'all 1s ease-in-out'});
+
+           $(".icon-sm-circle-div .icon-img-"+no).parent().css({'-webkit-transform' : 'rotate('+ (-degrees) +'deg) scale(1.5)',
+                                             '-moz-transform' : 'rotate('+ (-degrees) +'deg) scale(1.5)',
+                                             '-ms-transform' : 'rotate('+ (-degrees) +'deg) scale(1.5)',
+                                             'transform' : 'rotate('+ (-degrees) +'deg) scale(1.5)',
+                                             '-webkit-transition': 'all 1s ease-in-out',
+                                             '-moz-transition': 'all 1s ease-in-out',
+                                             '-o-transition': 'all 1s ease-in-out',
+                                             'transition': 'all 1s ease-in-out'});
+           $(".icon-sm-circle-div").removeClass("active");
+           $(".icon-lg-circle-div img").removeClass("icon-img-left icon-img-right icon-img-top");
+           $(".icon-sm-circle-div .icon-img-"+no).parent().addClass('active');
+           $(".icons-content").css({'display': 'block', 'left': '-100px'});
+           $(".icons-content .header").html(data[no].header);
+           $(".icons-content .content").html(data[no].content);
+           $(".icons-content").animate({'left': '8%'}, 1000);
+         }else{
+           $(".icon-lg-circle-div").css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
                                            '-moz-transform' : 'rotate('+ degrees +'deg)',
                                            '-ms-transform' : 'rotate('+ degrees +'deg)',
                                            'transform' : 'rotate('+ degrees +'deg)',
@@ -214,35 +249,41 @@
                                            '-moz-transition': 'all 1s ease-in-out',
                                            '-o-transition': 'all 1s ease-in-out',
                                            'transition': 'all 1s ease-in-out'});
-         $(".icon-sm-circle-div").css({'-webkit-transform' : 'rotate('+ (-degrees) +'deg) scale(1)',
-                                           '-moz-transform' : 'rotate('+ (-degrees) +'deg) scale(1)',
-                                           '-ms-transform' : 'rotate('+ (-degrees) +'deg) scale(1)',
-                                           'transform' : 'rotate('+ (-degrees) +'deg) scale(1)',
-                                           '-webkit-transition': 'all 1s ease-in-out',
-                                           '-moz-transition': 'all 1s ease-in-out',
-                                           '-o-transition': 'all 1s ease-in-out',
-                                           'transition': 'all 1s ease-in-out'});
-       
-         $(".icon-sm-circle-div .icon-img-"+no).parent().css({'-webkit-transform' : 'rotate('+ (-degrees) +'deg) scale(1.5)',
-                                           '-moz-transform' : 'rotate('+ (-degrees) +'deg) scale(1.5)',
-                                           '-ms-transform' : 'rotate('+ (-degrees) +'deg) scale(1.5)',
-                                           'transform' : 'rotate('+ (-degrees) +'deg) scale(1.5)',
-                                           '-webkit-transition': 'all 1s ease-in-out',
-                                           '-moz-transition': 'all 1s ease-in-out',
-                                           '-o-transition': 'all 1s ease-in-out',
-                                           'transition': 'all 1s ease-in-out'});
+           $(".icon-sm-circle-div").css({'-webkit-transform' : 'rotate('+ (-degrees) +'deg) scale(1)',
+                                             '-moz-transform' : 'rotate('+ (-degrees) +'deg) scale(1)',
+                                             '-ms-transform' : 'rotate('+ (-degrees) +'deg) scale(1)',
+                                             'transform' : 'rotate('+ (-degrees) +'deg) scale(1)',
+                                             '-webkit-transition': 'all 1s ease-in-out',
+                                             '-moz-transition': 'all 1s ease-in-out',
+                                             '-o-transition': 'all 1s ease-in-out',
+                                             'transition': 'all 1s ease-in-out'});
+
+           $(".icon-sm-circle-div .icon-img-"+no).parent().css({'-webkit-transform' : 'rotate('+ (-degrees) +'deg) scale(1.5)',
+                                             '-moz-transform' : 'rotate('+ (-degrees) +'deg) scale(1.5)',
+                                             '-ms-transform' : 'rotate('+ (-degrees) +'deg) scale(1.5)',
+                                             'transform' : 'rotate('+ (-degrees) +'deg) scale(1.5)',
+                                             '-webkit-transition': 'all 1s ease-in-out',
+                                             '-moz-transition': 'all 1s ease-in-out',
+                                             '-o-transition': 'all 1s ease-in-out',
+                                             'transition': 'all 1s ease-in-out'});
+           $(".icon-sm-circle-div").removeClass("active");
+           $(".icon-lg-circle-div img").removeClass("icon-img-left icon-img-right icon-img-top");
+           $(".icon-sm-circle-div .icon-img-"+no).parent().addClass('active');
+           $(".icons-content").css({'display': 'block', 'left': '-100px'});
+           $(".icons-content .header").html(data[no].header);
+           $(".icons-content .content").html(data[no].content);
+           $(".icons-content").animate({'left': '20%'}, 1000);
+         }
          
-         $(".icon-sm-circle-div").removeClass("active");
-         $(".icon-lg-circle-div img").removeClass("icon-img-left icon-img-right icon-img-top");
-         $(".icon-sm-circle-div .icon-img-"+no).parent().addClass('active');
-         $(".icons-content").css({'display': 'block', 'left': '-100px'});
-         $(".icons-content .header").html(data[no].header);
-         $(".icons-content .content").html(data[no].content);
-         $(".icons-content").animate({'left': '20%'}, 1000);
      }
      
      function shift_element(element, pos){
-       $(element).animate({'top': pos+'px'}, 2000);
+       if($(window).width() < 720 ){
+         //$(element).animate({'top': (pos-100)+'px'}, 2000);
+       }else{
+         $(element).animate({'top': pos+'px'}, 2000);
+       }
+       
      }
      
      $(document).ready(function(){
@@ -257,7 +298,11 @@
          shift_element(".icon-lg-circle-text", 2000);
          $(".icon-img-top").parent().addClass('active');
          $(".icons-content").css({'display': 'block'});
-         $(".icons-content").animate({'left': '20%'}, 2000);
+         if($(window).width() < 720 ){
+           $(".icons-content").animate({'left': '8%'}, 2000);
+         }else{
+           $(".icons-content").animate({'left': '20%'}, 2000);
+         }
          
        }, 3000);
        
