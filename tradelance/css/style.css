@@ -21,7 +21,8 @@ and (max-device-width : 480px) {
     width: 580px;
     height: 510px;
     top: 150px;
-    left: 10px;
+    left: -130px;
+    transform: scale(0.6);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -35,8 +36,9 @@ and (max-device-width : 480px) {
   }
   #our_platform .icon-lg-circle-text{
     position: fixed;
-    top: 280px;
-    left: 505px;
+    top: 320px;
+    left: 42px;
+    transform: scale(.9);
   }
   #our_platform .icon-lg-circle-text h4{
     margin: 0px;
@@ -160,7 +162,8 @@ and (min-width : 321px) {
     width: 580px;
     height: 510px;
     top: 150px;
-    left: 10px;
+    left: -130px;
+    transform: scale(0.6);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -174,8 +177,9 @@ and (min-width : 321px) {
   }
   #our_platform .icon-lg-circle-text{
     position: fixed;
-    top: 280px;
-    left: 505px;
+    top: 320px;
+    left: 42px;
+    transform: scale(.9);
   }
   #our_platform .icon-lg-circle-text h4{
     margin: 0px;
@@ -302,7 +306,8 @@ and (max-width : 320px) {
     width: 580px;
     height: 510px;
     top: 150px;
-    left: 10px;
+    left: -130px;
+    transform: scale(0.6);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -316,8 +321,9 @@ and (max-width : 320px) {
   }
   #our_platform .icon-lg-circle-text{
     position: fixed;
-    top: 280px;
-    left: 505px;
+    top: 320px;
+    left: 42px;
+    transform: scale(.9);
   }
   #our_platform .icon-lg-circle-text h4{
     margin: 0px;
@@ -447,6 +453,7 @@ and (max-device-width : 1024px) {
     height: 510px;
     top: 150px;
     left: 100px;
+    transform: scale(1);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -660,6 +667,7 @@ and (orientation : landscape) {
     height: 510px;
     top: 150px;
     left: 10px;
+    transform: scale(1);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -871,6 +879,7 @@ and (orientation : portrait) {
     height: 510px;
     top: 150px;
     left: 100px;
+    transform: scale(1);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -1081,6 +1090,7 @@ and (min-width : 1224px) {
     height: 510px;
     top: 150px;
     left: 10px;
+    transform: scale(1);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -1290,6 +1300,7 @@ and (min-width : 1824px) {
     height: 510px;
     top: 150px;
     left: 320px;
+    transform: scale(1);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -1509,6 +1520,7 @@ only screen and (-webkit-device-pixel-ratio: 2) {
     height: 510px;
     top: 150px;
     left: 10px;
+    transform: scale(1);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
