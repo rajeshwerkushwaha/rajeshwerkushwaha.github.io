@@ -53,4 +53,24 @@ $(document).ready(function(){
      }                   
   });
   
+  $("body").on("click", ".category-button button", function(){
+    
+    $(".category-button button").removeClass("active");
+    $(this).addClass("active");
+    
+    if($(this).attr("for") == "sub_cat_1"){
+      $(".sub_cat").removeClass("active");
+      $(".sub_cat_1").addClass("active");
+    }else if($(this).attr("for") == "sub_cat_2"){
+      $(".sub_cat").removeClass("active");
+      $(".sub_cat_2").addClass("active");
+    }else if($(this).attr("for") == "sub_cat_3"){
+      $(".sub_cat").removeClass("active");
+      $(".sub_cat_3").addClass("active");
+    }else if($(this).attr("for") == "sub_cat_4"){
+      $(".sub_cat").removeClass("active");
+      $(".sub_cat_4").addClass("active");
+    }
+  });
+  
 });

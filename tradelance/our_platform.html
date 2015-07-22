@@ -17,7 +17,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-<!--     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+    <!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWq1T58h7aHXu0ZlbipmeyAk7-VIWy6Ag&sensor=false"></script>
     
   </head>
@@ -140,16 +140,7 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="images/our_platform/1.jpg"/>
-            </div>
-            <div class="item">
-              <img src="images/our_platform/2.jpg"/>
-            </div>
-            <div class="item">
-              <img src="images/our_platform/3.jpg"/>
-            </div>
-            <div class="item">
-              <img src="images/our_platform/4.jpg"/>
+              <img class="slider_img" src="images/our_platform/1.jpg"/>
             </div>
           </div>
           <div class="carousel-caption updated-carousel-caption">
@@ -157,16 +148,16 @@
               <div class="col-md-6 col-md-offset-3 text-center icon-lg-circle-div">
                 <img src="images/our_platform/icon-circle.png"/>
                 <div class="icon-sm-circle-div" style="left: 247px;top: 38px;">
-                  <img class="icon-img-1 icon-img-top" src="images/our_platform/icon-1.png">
+                  <img class="icon-img-1 initial-slide-down-1 icon-img-top" src="images/our_platform/icon-1.png">
                 </div>
                 <div class="icon-sm-circle-div" style="left: 437px;top: 176px;">
                   <img class="icon-img-2 icon-img-right" src="images/our_platform/icon-2.png">
                 </div>
                 <div class="icon-sm-circle-div" style="left: 372px;top: 386px;">
-                  <img class="icon-img-3" src="images/our_platform/icon-3.png">
+                  <img class="icon-img-3 initial-slide-down-3" src="images/our_platform/icon-3.png">
                 </div>
                 <div class="icon-sm-circle-div" style="left: 132px;top: 381px;">
-                  <img class="icon-img-4" src="images/our_platform/icon-4.png">
+                  <img class="icon-img-4 initial-slide-down-4" src="images/our_platform/icon-4.png">
                 </div>
                 <div class="icon-sm-circle-div" style="left: 70px;top: 172px;">
                   <img class="icon-img-5 icon-img-left" src="images/our_platform/icon-5.png">
@@ -199,13 +190,28 @@
     <script src="js/_main.js"></script>
    <script>
      
-     var data = [{},{'header':'Lorem Ipsum 1', 'content':'Lorem Ipsum dolar is the dummy text Lorem Ipsum dolar is the dummy text'},
-                   {'header':'Lorem Ipsum 2', 'content':'Lorem Ipsum dolar is the dummy text Lorem Ipsum dolar is the dummy text'},
-                   {'header':'Lorem Ipsum 3', 'content':'Lorem Ipsum dolar is the dummy text Lorem Ipsum dolar is the dummy text'},
-                   {'header':'Lorem Ipsum 4', 'content':'Lorem Ipsum dolar is the dummy text Lorem Ipsum dolar is the dummy text'},
-                   {'header':'Lorem Ipsum 5', 'content':'Lorem Ipsum dolar is the dummy text Lorem Ipsum dolar is the dummy text'},]
+     var data = [{},{'header':'Link between customers', 'content':'looking to outsource home/premises improvement projects, random chores or transportation jobs and verified contractors freelancers (tradelancers), who are looking to expand their client base, generate additional income and increase their business exposure.'},
+                   {'header':'Safe and secure platform', 'content':'that ensures your safety while you looking for work, hire, or pay online. We’ve integrated and invested greatly in industrys top and best in class systems, functionalities and tools to bring you that piece of mind and trust'},
+                   {'header':'End to end operations and projects support', 'content':'We care about both, our clients and service providers, and want to make your experience on Tradelance an unforgettable one (in the most positive way).'},
+                   {'header':'Projects and jobs hub', 'content':'set to create and develop new networking opportunities, business contacts and trading channels that help tradelancers grow, earn and become profitable and recognizable even in sluggish economic conditions; and for customers to avail of great savings on their project costs while outsourcing their projects to trusted and vetted service providers.'},
+                   {'header':'Network of versatile home improvements and construction professionals', 'content':'We are inviting top class professionals with years of experience and numerous completed projects to join Tradelance to ensure the best possible quality of work provided.'},]
+     
+     function lg_circle_down(i){
+       $(".icons-content .header").html(data[i].header);
+       $(".icons-content .content").html(data[i].content);
+       shift_element(".icon-lg-circle-div", 440);
+       shift_element(".icon-lg-circle-text", 2000);
+       $(".icon-img-top").parent().addClass('active');
+       $(".icons-content").css({'display': 'block'});
+       if($(window).width() < 720 ){
+         $(".icons-content").animate({'left': '8%'}, 3000);
+       }else{
+         $(".icons-content").animate({'left': '20%'}, 3000);
+       } 
+     }
      
      function rotate_circle(degrees, no){
+         lg_circle_down(no);
        
          if($(window).width() < 720 ){
            $(".icon-lg-circle-div").css({'-webkit-transform' : 'rotate('+ degrees +'deg) scale(0.6)',
@@ -288,9 +294,23 @@
      
      $(document).ready(function(){
        
-       var degrees = 0;
+       var degrees = 360;
        var negDegrees = 0;
+       $(".icon-lg-circle-div").animate({rotation: degrees},
+                          { duration: 5000, step: function(now, fx) {
+                                                   $(this).css({"transform": "rotate("+now+"deg)"});
+                                                 }
+                          });
+       $(".icon-sm-circle-div").animate({rotation: degrees},
+                          { duration: 5000, step: function(now, fx) {
+                                                   $(this).css({"transform": "rotate("+(-now)+"deg)"});
+                                                 }
+                          });
        
+       //$(".icon-sm-circle-div").animate({'transform':'rotate(-360deg)'}, 6000);
+       
+       
+       /*
        setTimeout(function(){
          $(".icons-content .header").html(data[1].header);
          $(".icons-content .content").html(data[1].content);
@@ -305,6 +325,48 @@
          }
          
        }, 3000);
+       */
+       
+       $(document).on("click", ".initial-slide-down-1", function(){
+         lg_circle_down(1);
+         $(".icon-lg-circle-div img").removeClass("initial-slide-down-1 initial-slide-down-3 initial-slide-down-4");
+         $(".icon-sm-circle-div .icon-img-1").parent().css({'-webkit-transform' : 'scale(1.5)',
+                                             '-moz-transform' : 'scale(1.5)',
+                                             '-ms-transform' : 'scale(1.5)',
+                                             'transform' : 'scale(1.5)'});
+         $(".icon-sm-circle-div .icon-img-1").parent().addClass('active');
+         $(".icon-img-5").addClass("icon-img-left");
+         $(".icon-img-2").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/1.jpg');
+         
+       });
+       $(document).on("click", ".initial-slide-down-3", function(){
+         lg_circle_down(1);
+         $(".icon-lg-circle-div img").removeClass("initial-slide-down-1 initial-slide-down-3 initial-slide-down-4");
+         $(".icon-sm-circle-div .icon-img-1").parent().css({'-webkit-transform' : 'scale(1.5)',
+                                             '-moz-transform' : 'scale(1.5)',
+                                             '-ms-transform' : 'scale(1.5)',
+                                             'transform' : 'scale(1.5)'});
+         $(".icon-sm-circle-div .icon-img-1").parent().addClass('active');
+         $(".icon-img-5").addClass("icon-img-left");
+         $(".icon-img-2").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/1.jpg');
+         
+       });
+       $(document).on("click", ".initial-slide-down-4", function(){
+         lg_circle_down(1);
+         $(".icon-lg-circle-div img").removeClass("initial-slide-down-1 initial-slide-down-3 initial-slide-down-4");
+         $(".icon-sm-circle-div .icon-img-1").parent().css({'-webkit-transform' : 'scale(1.5)',
+                                             '-moz-transform' : 'scale(1.5)',
+                                             '-ms-transform' : 'scale(1.5)',
+                                             'transform' : 'scale(1.5)'});
+         $(".icon-sm-circle-div .icon-img-1").parent().addClass('active');
+         $(".icon-img-5").addClass("icon-img-left");
+         $(".icon-img-2").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/1.jpg');
+         
+       });
+       
        
        $(document).on("click", ".icon-img-5.icon-img-left", function(){
          degrees = degrees + 72;
@@ -312,6 +374,7 @@
          
          $(".icon-img-4").addClass("icon-img-left");
          $(".icon-img-1").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/5.jpg');
          
        });
        $(document).on("click", ".icon-img-5.icon-img-right", function(){
@@ -320,6 +383,7 @@
          
          $(".icon-img-4").addClass("icon-img-left");
          $(".icon-img-1").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/5.jpg');
          
        });
        $(document).on("click", ".icon-img-4.icon-img-left", function(){
@@ -328,6 +392,7 @@
          
          $(".icon-img-3").addClass("icon-img-left");
          $(".icon-img-5").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/4.jpg');
          
        });
        $(document).on("click", ".icon-img-4.icon-img-right", function(){
@@ -336,6 +401,7 @@
          
          $(".icon-img-3").addClass("icon-img-left");
          $(".icon-img-5").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/4.jpg');
          
        });
        $(document).on("click", ".icon-img-3.icon-img-left", function(){
@@ -344,6 +410,7 @@
          
          $(".icon-img-2").addClass("icon-img-left");
          $(".icon-img-4").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/3.jpg');
          
        });
        $(document).on("click", ".icon-img-3.icon-img-right", function(){
@@ -351,7 +418,8 @@
          rotate_circle(degrees, 3);
          
          $(".icon-img-2").addClass("icon-img-left");
-         $(".icon-img-4").addClass("icon-img-right");   
+         $(".icon-img-4").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/3.jpg');
          
        });
        $(document).on("click", ".icon-img-2.icon-img-left", function(){
@@ -360,6 +428,7 @@
          
          $(".icon-img-1").addClass("icon-img-left");
          $(".icon-img-3").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/2.jpg');
          
        });
        $(document).on("click", ".icon-img-2.icon-img-right", function(){
@@ -368,6 +437,7 @@
          
          $(".icon-img-1").addClass("icon-img-left");
          $(".icon-img-3").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/2.jpg');
          
        });
        $(document).on("click", ".icon-img-1.icon-img-left", function(){
@@ -376,6 +446,7 @@
          
          $(".icon-img-5").addClass("icon-img-left");
          $(".icon-img-2").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/1.jpg');
          
        });
        $(document).on("click", ".icon-img-1.icon-img-right", function(){
@@ -384,6 +455,7 @@
          
          $(".icon-img-5").addClass("icon-img-left");
          $(".icon-img-2").addClass("icon-img-right");
+         $(".slider_img").attr('src', 'images/our_platform/1.jpg');
          
        });
 
