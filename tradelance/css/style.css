@@ -2468,6 +2468,10 @@ section.module.parallax-19 {
   background-image: url("../images/find/cup.jpg");
   background-position: 50% 40%;
 }
+section.module.parallax-20 {
+  background-image: url("../images/find/testimonial_cover2.jpg");
+  background-position: 50% 40%;
+}
 section.module.parallax-man-with-laptop{
   background-image: url("../images/about_us/man-with-laptop.jpg");
 }

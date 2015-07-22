@@ -23,60 +23,7 @@
   </head>
  <body onload="initialize()">
     <!-- Navigation -->
-    <section id="header-menu">
-        <div class="container">
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header page-scroll">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand page-scroll logo-sm" href="#page-top"><img src="images/logo.gif" class="header-logo"/></a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="hidden">
-                                <a href="#page-top"></a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">FIND TRADELANCERS<span class="vertical-line">|</span></a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">FIND WORK<span class="vertical-line">|</span></a>
-                            </li>
-                            <li class="margin-from-login">
-                                <a class="page-scroll" href="#">HOW IT WORKS</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll login-anchor" href="#">
-                                  <div style="background-color: #298fc8; width: 20px; border-radius: 50%; position: absolute; padding-left: 3px; left: -10px; top: 13px;">
-                                    <span style="color:white;"><i class="fa fa-sign-in"></i></span>
-                                  </div>
-                                  LOGIN
-                                </a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="signup.html" style="color:#dd5a2b;">
-                                  <div style="background-color: #dd5a2b; width: 20px; border-radius: 50%; position: absolute; padding-left: 5px; left: -10px; top: 13px;">
-                                    <span style="color:white;"><i class="fa fa-pencil"></i></span>
-                                  </div>
-                                  SIGNUP
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
-        </div>
-    </section>
+    <section id="header-menu"></section>
     
     <!-- Search -->
     <section id="search">
@@ -339,6 +286,10 @@
                 });
 
             }
+            $(function(){
+              $("#header-menu").load("header.html");
+              $("#footer").load("footer.html");
+            });
         </script>
 
     
