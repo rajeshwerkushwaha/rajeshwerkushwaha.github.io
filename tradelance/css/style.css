@@ -20,9 +20,9 @@ and (max-device-width : 480px) {
     position: fixed;
     width: 580px;
     height: 510px;
-    top: 150px;
+    top: 50px;
     left: -130px;
-    transform: scale(0.6);
+    transform: scale(0.5);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -36,9 +36,9 @@ and (max-device-width : 480px) {
   }
   #our_platform .icon-lg-circle-text{
     position: fixed;
-    top: 320px;
+    top: 220px;
     left: 42px;
-    transform: scale(.9);
+    transform: scale(.6);
   }
   #our_platform .icon-lg-circle-text h4{
     margin: 0px;
@@ -161,9 +161,9 @@ and (min-width : 321px) {
     position: fixed;
     width: 580px;
     height: 510px;
-    top: 150px;
+    top: 50px;
     left: -130px;
-    transform: scale(0.6);
+    transform: scale(0.5);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -177,9 +177,9 @@ and (min-width : 321px) {
   }
   #our_platform .icon-lg-circle-text{
     position: fixed;
-    top: 320px;
+    top: 220px;
     left: 42px;
-    transform: scale(.9);
+    transform: scale(.6);
   }
   #our_platform .icon-lg-circle-text h4{
     margin: 0px;
@@ -297,6 +297,12 @@ and (min-width : 321px) {
 @media only screen 
 and (max-width : 320px) {
     /* Our Platform css start*/
+  .icons-content h1{
+    font-size: 20px !important;
+  }
+  .icons-content h3{
+    font-size: 12px !important;
+  }
   #our_platform .updated-carousel-caption{
     width: 100%;
     top: 40px;
@@ -305,9 +311,8 @@ and (max-width : 320px) {
     position: fixed;
     width: 580px;
     height: 510px;
-    top: 150px;
+    top: 50px;
     left: -130px;
-    transform: scale(0.6);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -321,9 +326,9 @@ and (max-width : 320px) {
   }
   #our_platform .icon-lg-circle-text{
     position: fixed;
-    top: 320px;
+    top: 220px;
     left: 42px;
-    transform: scale(.9);
+    transform: scale(.6);
   }
   #our_platform .icon-lg-circle-text h4{
     margin: 0px;
@@ -341,7 +346,7 @@ and (max-width : 320px) {
     display: none;
     top: 130px;
     text-align: center;
-    width: 60%;
+    width: 100%;
   }
   /* Our Platform css end*/
   .about-us-text2 div:last-child{
@@ -453,7 +458,7 @@ and (max-device-width : 1024px) {
     height: 510px;
     top: 150px;
     left: 100px;
-    transform: scale(1);
+    transform: scale(0.5);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -667,7 +672,7 @@ and (orientation : landscape) {
     height: 510px;
     top: 150px;
     left: 10px;
-    transform: scale(1);
+    transform: scale(0.5);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -879,7 +884,7 @@ and (orientation : portrait) {
     height: 510px;
     top: 150px;
     left: 100px;
-    transform: scale(1);
+    transform: scale(0.5);
   }
   #our_platform .icon-sm-circle-div{
     position: absolute;
@@ -1088,7 +1093,7 @@ and (min-width : 1224px) {
     position: fixed;
     width: 580px;
     height: 510px;
-    top: 150px;
+    top: 110px;
     left: 10px;
     transform: scale(1);
   }
@@ -1104,8 +1109,9 @@ and (min-width : 1224px) {
   }
   #our_platform .icon-lg-circle-text{
     position: fixed;
-    top: 280px;
+    top: 250px;
     left: 505px;
+    transform: scale(1);
   }
   #our_platform .icon-lg-circle-text h4{
     margin: 0px;
@@ -1121,7 +1127,7 @@ and (min-width : 1224px) {
   .icons-content{
     position: fixed;
     display: none;
-    top: 200px;
+    top: 150px;
     text-align: center;
   }
   /* Our Platform css end*/
@@ -1299,7 +1305,7 @@ and (min-width : 1824px) {
     width: 580px;
     height: 510px;
     top: 150px;
-    left: 320px;
+    left: 12%;
     transform: scale(1);
   }
   #our_platform .icon-sm-circle-div{
@@ -1315,7 +1321,8 @@ and (min-width : 1824px) {
   #our_platform .icon-lg-circle-text{
     position: fixed;
     top: 280px;
-    left: 44.5%;
+    left: 45.9%;
+    transform: scale(1);
   }
   #our_platform .icon-lg-circle-text h4{
     margin: 0px;
@@ -1334,6 +1341,7 @@ and (min-width : 1824px) {
     top: 200px;
     text-align: center;
     width: 60%;
+    left: 5%;
   }
   /* Our Platform css end*/
   
