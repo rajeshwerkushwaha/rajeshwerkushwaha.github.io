@@ -2867,9 +2867,11 @@ body{
   height: auto;
   display: none;
   z-index: 1031;
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   width: 100%;
   padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 8px 6px -6px #eee;
 }
 .find-register-fix-div button{
   border: 1px solid #777;
@@ -2884,4 +2886,93 @@ body{
 }
 .active{
   display: block;  
+}
+#how_it_work_flow .dashed-circle{
+    margin-left: -139px;
+    margin-top: -4px;
+    position: absolute;
+}
+#how_it_work_flow .circle-icon{
+    position: absolute;
+    margin-left: -90px;
+    margin-top: 38px;
+}
+#how_it_work_flow .flow-item{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    cursor: pointer;
+}
+#how_it_work_flow .flow-item:hover .dashed-circle-hover{
+    display: block;
+}
+#how_it_work_flow .flow-item:hover + .header{
+    background-color: #dd5a2b;
+}
+#how_it_work_flow .dashed-circle-hover{
+    background-color: #dd5a2b;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    display: none;
+}
+#how_it_work_flow .dashed-circle-hover img{
+    position: absolute;
+    margin-left: -90px;
+    margin-top: 38px;
+}
+#how_it_work_flow .dashed-line{
+    padding: 0px 0px;
+    width: 55px;
+    margin-right: 10px;
+}
+#how_it_work_flow .dashed-line img{
+    position: relative;
+    margin-left: -90px;
+    margin-top: 38px;
+}
+#how_it_work_flow .header{
+    font-size: 16px;
+    padding: 5px 0px;
+    margin-top: 5px;
+}
+#how_it_work_flow .active-circle{
+    display: block;
+}
+#how_it_work_flow .active-header{
+    background-color: #dd5a2b;
+}
+#how_it_work_heading-links a{
+    color: #404040;
+    font-weight: 600;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+#how_it_work_heading-links a.active-link{
+    border-bottom: 3px solid #dd5a2b;
+    text-decoration: none;
+}
+#how_it_work_heading-links a:hover{
+    border-bottom: 3px solid #dd5a2b;
+    text-decoration: none;
+}
+#how_it_work_flow_content ul li{
+    padding-left: 10px;
+}
+#how_it_work_flow_content p{
+    line-height: 25px;
+    text-align: justify;
+}
+#how_it_work_flow_content ul li span{
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: #dd5a2b;
+    float: left;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+.gold{
+    color: gold;
 }
