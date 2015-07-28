@@ -11,6 +11,23 @@ and open the template in the editor.
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+  /* How it works css start*/
+  #how_it_work_flow .dashed-line{
+    margin-left: 136px;
+    margin-right: 10px;
+    margin-top: -12px;
+    padding: 0;
+    transform: rotate(90deg);
+    width: 55px;
+  }
+  #how_it_work_flow .circle-flow{
+      transform: scale(.6);
+      margin-top: -193px;
+  }
+  #how_it_work_flow .circle-flow h2{
+      margin-bottom: 10px;
+  }
+  /* How it works css end*/
   /* Our Platform css start*/
   #our_platform .updated-carousel-caption{
     width: 100%;
@@ -152,6 +169,23 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
+  /* How it works css start*/
+  #how_it_work_flow .dashed-line{
+    margin-left: 136px;
+    margin-right: 10px;
+    margin-top: -12px;
+    padding: 0;
+    transform: rotate(90deg);
+    width: 55px;
+  }
+  #how_it_work_flow .circle-flow{
+      transform: scale(.6);
+      margin-top: -193px;
+  }
+  #how_it_work_flow .circle-flow h2{
+      margin-bottom: 10px;
+  }
+  /* How it works css end*/
     /* Our Platform css start*/
   #our_platform .updated-carousel-caption{
     width: 100%;
@@ -296,6 +330,16 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
+  /* How it works css start*/
+  #how_it_work_flow .dashed-line{
+    margin-left: 136px;
+    margin-right: 10px;
+    margin-top: -12px;
+    padding: 0;
+    transform: rotate(90deg);
+    width: 55px;
+  }
+  /* How it works css end*/
     /* Our Platform css start*/
   .icons-content h1{
     font-size: 20px !important;
@@ -447,6 +491,21 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+  /* How it works css start*/
+  #how_it_work_flow .dashed-line{
+    padding: 0px 0px;
+    width: 55px;
+    margin-right: 10px;
+    display: none;
+  }
+  #how_it_work_flow .circle-flow{
+      transform: scale(1);
+      margin-top: -40px;
+  }
+  #how_it_work_flow .circle-flow h2{
+      margin-bottom: 10px;
+  }
+  /* How it works css end*/
     /* Our Platform css start*/
   #our_platform .updated-carousel-caption{
     width: 100%;
@@ -661,6 +720,17 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  /* How it works css start*/
+  #how_it_work_flow .dashed-line{
+    padding: 0px 0px;
+    width: 55px;
+    margin-right: 10px;
+    display: none;
+  }
+  #how_it_work_flow .circle-flow h2{
+      margin-bottom: 60px;
+  }
+  /* How it works css end*/
     /* Our Platform css start*/
   #our_platform .updated-carousel-caption{
     width: 100%;
@@ -873,6 +943,17 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  /* How it works css start*/
+  #how_it_work_flow .dashed-line{
+    padding: 0px 0px;
+    width: 55px;
+    margin-right: 10px;
+    display: none;
+  }
+  #how_it_work_flow .circle-flow h2{
+      margin-bottom: 60px;
+  }
+  /* How it works css end*/
     /* Our Platform css start*/
   #our_platform .updated-carousel-caption{
     width: 100%;
@@ -1084,6 +1165,21 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  /* How it works css start*/
+  #how_it_work_flow .dashed-line{
+    margin: -4px 15px;
+    padding: 0;
+    transform: rotate(0deg);
+    width: 55px;
+  }
+  #how_it_work_flow .circle-flow{
+      transform: scale(1);
+      margin-top: -22px;
+  }
+  #how_it_work_flow .circle-flow h2{
+      margin-bottom: 60px;
+  }
+  /* How it works css end*/
     /* Our Platform css start*/
   #our_platform .updated-carousel-caption{
     width: 100%;
@@ -1295,6 +1391,21 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+  /* How it works css start*/
+  #how_it_work_flow .dashed-line{
+    margin: -4px 41px;
+    padding: 0;
+    transform: rotate(0deg);
+    width: 55px;
+  }
+  #how_it_work_flow .circle-flow{
+      transform: scale(1);
+      margin-top: -22px;
+  }
+  #how_it_work_flow .circle-flow h2{
+      margin-bottom: 60px;
+  }
+  /* How it works css end*/
     /* Our Platform css start*/
   #our_platform .updated-carousel-caption{
     width: 100%;
@@ -1517,6 +1628,16 @@ only screen and (min-device-pixel-ratio : 1.5) {
 @media
 only screen and (max-device-width: 667px) 
 only screen and (-webkit-device-pixel-ratio: 2) {
+  /* How it works css start*/
+  #how_it_work_flow .dashed-line{
+    margin-left: 157px;
+    margin-right: 10px;
+    margin-top: -12px;
+    padding: 0;
+    transform: rotate(90deg);
+    width: 55px;
+  }
+  /* How it works css end*/
     /* Our Platform css start*/
   #our_platform .updated-carousel-caption{
     width: 100%;
@@ -2867,11 +2988,9 @@ body{
   height: auto;
   display: none;
   z-index: 1031;
-  background-color: #ffffff;
+  background-color: #e0e0e0;
   width: 100%;
   padding: 10px;
-  border-bottom: 1px solid #e0e0e0;
-  box-shadow: 0 8px 6px -6px #eee;
 }
 .find-register-fix-div button{
   border: 1px solid #777;
@@ -2887,6 +3006,14 @@ body{
 .active{
   display: block;  
 }
+#how_it_work_flow .flow-item{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    cursor: pointer;
+    float: none;
+    margin: auto;
+}
 #how_it_work_flow .dashed-circle{
     margin-left: -139px;
     margin-top: -4px;
@@ -2896,12 +3023,6 @@ body{
     position: absolute;
     margin-left: -90px;
     margin-top: 38px;
-}
-#how_it_work_flow .flow-item{
-    position: relative;
-    height: 130px;
-    width: 130px;
-    cursor: pointer;
 }
 #how_it_work_flow .flow-item:hover .dashed-circle-hover{
     display: block;
@@ -2921,11 +3042,6 @@ body{
     position: absolute;
     margin-left: -90px;
     margin-top: 38px;
-}
-#how_it_work_flow .dashed-line{
-    padding: 0px 0px;
-    width: 55px;
-    margin-right: 10px;
 }
 #how_it_work_flow .dashed-line img{
     position: relative;
