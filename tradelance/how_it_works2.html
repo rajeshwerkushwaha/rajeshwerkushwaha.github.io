@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>How it Works</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!--     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWq1T58h7aHXu0ZlbipmeyAk7-VIWy6Ag&sensor=false"></script>
+    
+  </head>
+ <body onload="initialize()">
+    <!-- Navigation -->
+    <section id="header-menu"></section>
+    
+    <!-- Search -->
+    <section id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 logo-lg">
+                    <a href="#"><img src="images/logo.gif" class="logo-lg-img" /></a>
+                </div>
+                <div class="col-md-9 col-sm-9 top-buffer">
+                    <div class="row">    
+                        <div class="col-md-8 col-md-offset-2 col-sm-8 col-xs-12">
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-default dropdown-toggle search-option-button" data-toggle="dropdown">
+                                        <span id="search_concept"></span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Search Tradelancers</a></li>
+                                      <li><a href="#">Search Jobs</a></li>
+                                      <li><a href="#">Search Portfolio Samples</a></li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="search_param" value="all" id="search_param">         
+                                <input type="text" class="form-control search-input" name="x" placeholder="Search...">
+                                <a href="#" class="search-button">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-default dropdown-toggle browse-option-button" data-toggle="dropdown">
+                                        <span id="browse_concept">Browse Categories</span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Interior Designers</a></li>
+                                      <li><a href="#">Architects</a></li>
+                                      <li><a href="#">Civil Engineers</a></li>
+                                      <li><a href="#">Domestic Electricians</a></li>
+                                      <li><a href="#">Domestic Plumbers</a></li>
+                                      <li><a href="#">Cleaners</a></li>
+                                      <li><a href="#">Handymen</a></li>
+                                      <li><a href="#">Industrial Electricians</a></li>
+                                      <li><a href="#">Industrial Plumbers</a></li>
+                                      <li><a href="#">General Builders</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Slide -->
+    <section id="how_it_work_flow">
+        <div class="row">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/our_platform/2.jpg">
+              <div class="carousel-caption" style="left: 0;right: 0;top: -34px;">
+                <div class="row parallax1-div text-right">
+                  <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center bottom-buffer-60">HOW IT WORKS FOR TRADELANCER</h2>
+                    <div class="col-md-2 col-md-offset-2" style="padding: 0px;">
+                        <div class="flow-item">
+                            <img class="circle-icon" src="images/how_it_works/icon-5.png">
+                            <img class="dashed-circle" height="150" width="150" src="images/how_it_works/dashed_circle.png">
+                            <div class="dashed-circle-hover">
+                                <img src="images/how_it_works/icon-5.png">
+                            </div>
+                        </div>
+                        <div class="header text-center">CREATE</div>
+                    </div>
+                    <div class="col-md-1 dashed-line">
+                        <img src="images/how_it_works/dashed_line.png">        
+                    </div>
+                    <div class="col-md-2" style="padding: 0px 0px">
+                        <div class="flow-item">
+                            <img class="dashed-circle" height="150" width="150" src="images/how_it_works/dashed_circle.png">
+                            <img class="circle-icon" src="images/how_it_works/icon-6.png">        
+                            <div class="dashed-circle-hover">
+                                <img src="images/how_it_works/icon-6.png">
+                            </div>
+                        </div>
+                        <div class="header text-center">CONNECT</div>
+                    </div>
+                    <div class="col-md-1 dashed-line">
+                        <img src="images/how_it_works/dashed_line.png">        
+                    </div>
+                    <div class="col-md-2" style="padding: 0px 0px">
+                        <div class="flow-item">
+                            <img class="dashed-circle" height="150" width="150" src="images/how_it_works/dashed_circle.png">
+                            <img class="circle-icon" src="images/how_it_works/icon-7.png">
+                            <div class="dashed-circle-hover">
+                                <img src="images/how_it_works/icon-7.png">
+                            </div>
+                        </div>
+                        <div class="header text-center">COLLECT</div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-8 col-md-offset-2 text-center top-buffer-50">
+                    <h3 style="font-family: inherit;">
+                        Connect with Customers and grow your Tradelance reputation metrics through outstanding customer service,work ethick and professionalizm . The more you work through Tradelance, the higher your Tradelance Level becomes which would put you on top of all customers search results in your category. Find rewarding jobs, expand your client network and grow your business with us!
+                    </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+       
+    <section id="how_it_work_heading-links">
+        <div class="container">
+            <div class="row text-center top-buffer-50 bottom-buffer-50">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-2 col-md-offset-2">
+                        <a class="active-link" href="#">FIND WORK</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">GET STARTED</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">GET HIRED</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">GET PAID</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="how_it_work_flow_content">
+        <div class="container">
+            <div class="row text-left top-buffer-50 bottom-buffer-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <div style="float:right;">
+                        <img src="images/how_it_works/icon-8.png">
+                    </div>
+                    <h2>WHAT <span class="orange-font">KIND OF JOBS</span> ARE POSTED ON TRADELANCE?</h2>
+                    <p>
+                        If  you are looking for jobs in construction, home improvements and 
+                        rennovations, random DIY tasks, in designing,engineering or architecture, 
+                        we have a number of diﬀerent available jobs that match your skills and 
+                        experience. Projects range from
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><span></span>Short or Long-term</li>
+                        <li><span></span>Entry to Professional level</li>
+                        <li><span></span>Individual or Team based</li>
+                    </ul>
+                    <p>
+                        Top Job Opportunities
+                    </p>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li><span></span>Interior Designers</li>
+                            <li><span></span>Architects</li>
+                            <li><span></span>Engineers</li>
+                            <li><span></span>Builders</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li><span></span>Plumbers</li>
+                            <li><span></span>Electricians</li>
+                            <li><span></span>Cleaners</li>
+                            <li><span></span>Handymen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-left top-buffer-50 bottom-buffer-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <div style="float:left;">
+                        <img src="images/how_it_works/icon-9.png">
+                    </div>
+                    <h2 style="text-align:right;">HOW DO I <span class="orange-font">GET STARTED?</span></h2>
+                    <p>
+                        To kick oﬀ your new career on Tradelance, you only need to create a 
+                        professional looking proﬁle. Its free! Make a proﬁle that leaves a lasting 
+                        impression. If your proﬁle is drab, nobody will be interested in working 
+                        with you. Would you? With a fully completed  proﬁle you can draw all the 
+                        attention and get hired quicker. We give you all the tools – the rest is up 
+                        to you! A word of advise on proﬁle completion - don’t stretch yourself 
+                        too much as you can’t be all things to all people and make sure all sup
+                        plied documentation, certiﬁcates and references are up to date and 
+                        real. Fully completed proﬁle, if you are on a free membership, would 
+                        also unlock a full set of free monthly invites to apply for jobs ,so we 
+                        would encourage you to spend some time making sure all requested in
+                        formation is supplied.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-left top-buffer-50 bottom-buffer-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <div style="float:right;">
+                        <img src="images/how_it_works/icon-10.png">
+                    </div>
+                    <h2>HOW DO I <span class="orange-font">CONNECT AND GET HIRED</span>?</h2>
+                    <p>
+                        Begin by browsing available jobs in your selected category/ies  - once you’ve 
+                        found an interesting project, apply by sending a customer a proposal with a 
+                        well-written cover letter.
+                        Fantastic cover letter will signiﬁcantly increase your chances of being notices 
+                        and invited for further interview or conversation, so be sure yours is:
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><span></span>Personalized and job speciﬁc– never use copy/pasted one done for previous job application</li>
+                        <li><span></span>Has a brief explanation to why you’re writing to the client</li>
+                        <li><span></span>Outlines your qualiﬁcations and which should be matched to the job/project spec</li>
+                        <li><span></span>Uses bullet points to get maximum impact with as few words as possible </li>
+                        <li><span></span>Speciﬁc – if you can include a ﬁgure or two, so much the better</li>
+                        <li><span></span>Thanks the person for his time and consideration</li>
+                        <li><span></span>Signed oﬀ with a positive statement to prompt the Client to take action</li>
+                        <li><span></span>Assertive and never apologetic</li>
+                    </ul>
+                    <p>
+                        Did you ﬁnd a few jobs you’re interested in? Apply to them all!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-left top-buffer-50 bottom-buffer-50">
+                <div class="col-md-8 col-md-offset-2">
+                    <div style="float:left;">
+                        <img src="images/how_it_works/bank.png">
+                    </div>
+                    <h2 style="text-align: right;">HOW DO I <span class="orange-font">COLLECT MY PAYMENTS?</span></h2>
+                    <p>
+                        Please make sure to register your PayPal account or your bank 
+                        ing details on Tradelance. All payments are made safely and se
+                        curely through Tradelance and PayPal platforms and you can 
+                        withdraw your payments from  your Tradelance account via:
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><span></span>PayPal</li>
+                        <li><span></span>Wire Transfer</li>
+                    </ul>
+                    <p>
+                        With our Escrow Payment Protection you will ALWAYS be sure to get paid for the work you have done. No more chasing clients 
+                        asking to get paid. In order to avail of this and many other protections, all communications, agreements and proposals with your 
+                        Clients have to be done via Tradelance.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="white-down-arrow" style="margin-top: -10px;">
+          <img width="100.5%" height="100px" src="images/white_down_arrow.gif"/>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="footer"></footer>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/_main.js"></script>
+    <script type="text/javascript">
+            $(function(){
+              $("#header-menu").load("header.html");
+              $("#footer").load("footer.html");
+            });
+    </script>
+
+  </body>
+</html>
