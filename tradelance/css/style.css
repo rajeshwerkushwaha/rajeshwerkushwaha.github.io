@@ -2988,9 +2988,11 @@ body{
   height: auto;
   display: none;
   z-index: 1031;
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   width: 100%;
   padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 8px 6px -6px #eee;
 }
 .find-register-fix-div button{
   border: 1px solid #777;
