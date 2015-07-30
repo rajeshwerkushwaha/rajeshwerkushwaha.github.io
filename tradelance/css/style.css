@@ -2449,6 +2449,18 @@ section h4{
     font-size: 23px;
     margin: 20px auto;
 }
+.get-started-trans{
+    background-color: transparent;
+    border-radius: 0;
+    color: white;
+    font-size: 23px;
+    margin: 20px auto;
+    border: 1px solid white;
+}
+.get-started-trans:hover{
+  background-color: #dd5a2b;
+  color: white;
+}
 /* Ready section Css End*/
 
 /* Portfolio Css Start*/
@@ -2991,7 +3003,7 @@ body{
   background-color: #ffffff;
   width: 100%;
   padding: 10px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 3px solid #dd5a2b;
   box-shadow: 0 8px 6px -6px #eee;
 }
 .find-register-fix-div button{
@@ -3061,17 +3073,24 @@ body{
 #how_it_work_flow .active-header{
     background-color: #dd5a2b;
 }
-#how_it_work_heading-links a{
+#how_it_work_heading_links{
+    position: relative;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+}
+#how_it_work_heading_links a{
     color: #404040;
     font-weight: 600;
     padding-bottom: 5px;
     text-decoration: none;
 }
-#how_it_work_heading-links a.active-link{
+#how_it_work_heading_links a.active-link{
     border-bottom: 3px solid #dd5a2b;
     text-decoration: none;
 }
-#how_it_work_heading-links a:hover{
+#how_it_work_heading_links a:hover{
     border-bottom: 3px solid #dd5a2b;
     text-decoration: none;
 }

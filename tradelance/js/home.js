@@ -30,6 +30,18 @@ $(document).ready(function(){
         if (item.length) { return item; }
       });
 
+  // Cache selectors
+  var lastId1,
+      topMenu1 = $(".fullslide-nav"),
+      topMenuHeight1 = topMenu1.outerHeight()+50,
+      // All list items
+      menuItems1 = topMenu1.find("a"),
+      // Anchors corresponding to menu items
+      scrollItems1 = menuItems1.map(function(){
+        var item1 = $($(this).attr("href"));
+        if (item1.length) { return item1; }
+      });
+
   // Bind to scroll
   $(window).scroll(function(){
      // Get container scroll position
@@ -47,6 +59,7 @@ $(document).ready(function(){
      if (lastId !== id) {
          lastId = id;
          // Set/remove active class
+         console.log(menuItems.parent());
          menuItems
            .parent().removeClass("active")
            .end().filter("[href=#"+id+"]").parent().addClass("active");
