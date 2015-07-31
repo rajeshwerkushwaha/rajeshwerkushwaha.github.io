@@ -1947,10 +1947,7 @@ a{
     color: #333;
     padding: 20px 0px;
 }
-.portfolio-div:hover{
-    background-color: #dd5a2b;
-    color: white;
-}
+
 .arrow-up {
 	width: 0; 
 	height: 0; 
@@ -2258,12 +2255,6 @@ a{
 }
 .portfolio-div-icon{
     font-size: 65px;
-}
-.portfolio-div:hover a{
-    color: white;
-}
-.portfolio-div:hover span{
-    color: white;
 }
 .portfolio-div-text{
     padding: 10px 20px;

@@ -83,19 +83,10 @@
     <!-- Slide -->
     <section>
       <div class="row">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="carousel">
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="images/categories/7.jpg">
-            </div>
-            <div class="item">
-              <img src="images/categories/8.jpg">
-            </div>
-            <div class="item">
-              <img src="images/categories/9.jpg">
-            </div>
-            <div class="item">
-              <img src="images/categories/10.jpg">
+              <img src="images/categories/cat_3/4.jpg">
             </div>
           </div>
         </div>
@@ -122,16 +113,16 @@
             </div>
             <div class="row row-centered category-button">
                 <div class="col-md-3 col-sm-6 portfolio-item">
-                    <button class="btn btn-lg btn-block active" for="sub_cat_1">Plumber</button>
+                    <button class="btn btn-lg btn-block active" for="sub_cat_1" onclick="changeBanner(4)">Plumber</button>
                 </div>
                 <div class="col-md-3 col-sm-6 portfolio-item">
-                    <button class="btn btn-lg btn-block" for="sub_cat_2">Electrician</button>
+                    <button class="btn btn-lg btn-block" for="sub_cat_2" onclick="changeBanner(3)">Electrician</button>
                 </div>
                 <div class="col-md-3 col-sm-6 portfolio-item">
-                    <button class="btn btn-lg btn-block" for="sub_cat_3">Handyman</button>
+                    <button class="btn btn-lg btn-block" for="sub_cat_3" onclick="changeBanner(1)">Handyman</button>
                 </div>
                 <div class="col-md-3 col-sm-6 portfolio-item">
-                    <button class="btn btn-lg btn-block" for="sub_cat_4">Cleaners</button>
+                    <button class="btn btn-lg btn-block" for="sub_cat_4" onclick="changeBanner(2)">Cleaners</button>
                 </div>
             </div>
             <div class="row row-centered portfolio-square sub_cat sub_cat_1 active">
@@ -1318,6 +1309,10 @@
     <script src="js/skrollr.js"></script>
     <script src="js/_main.js"></script>
     <script>
+      function changeBanner(no){
+        var src='images/categories/cat_3/'+no+'.jpg';
+        $("#myCarousel img").attr({'src':src});
+      }
       $(function(){
         $("#header-menu").load("header.html");
         $("#footer").load("footer.html");

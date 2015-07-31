@@ -150,7 +150,9 @@
                 concentrate on other important to you matters. There is no better way to cut costs than to 
                 outsource work for which you either have no time or lack the skills to undertake yourself.</p>
                 <p style="line-height:2.5;">Tradelance now and get connected!</p>
-                <a href="#"><button class="btn btn-lg register-button" style="pa">GET STARTED</button></a>
+                
+                <a id="register-now-btn" href="signup.html"><button class="btn btn-lg get-started-button">GET STARTED</button></a>
+                <a id="register-now-btn-fix" href="signup.html"><button class="btn btn-lg get-started-button">GET STARTED</button></a>
               </div>
             </div>
         </div>
@@ -266,6 +268,18 @@
     <script src="js/_main.js"></script>
     <script>
       $(function(){
+        
+        // Check the initial Poistion of the Sticky Header
+        var stickyHeaderTop = $('#register-now-btn').offset().top;
+        $(window).scroll(function(){
+          //alert("Window_scroll= "+($(window).scrollTop()+600)+"  Sticky header= "+stickyHeaderTop);
+          if( $(window).scrollTop() > 700 && ($(window).scrollTop()+650) < stickyHeaderTop) {
+            $('#register-now-btn-fix').css({position: 'fixed', top: '100px', right: '0px', display:'block'});
+          } else {
+            $('#register-now-btn-fix').css({display:'none'});
+          }
+        });
+        
         $("#header-menu").load("header.html"); 
         $("#footer").load("footer.html");
       });
