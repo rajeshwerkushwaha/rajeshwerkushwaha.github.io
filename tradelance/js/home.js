@@ -59,7 +59,6 @@ $(document).ready(function(){
      if (lastId !== id) {
          lastId = id;
          // Set/remove active class
-         console.log(menuItems.parent());
          menuItems
            .parent().removeClass("active")
            .end().filter("[href=#"+id+"]").parent().addClass("active");
@@ -85,5 +84,10 @@ $(document).ready(function(){
       $(".sub_cat_4").addClass("active");
     }
   });
+  
+  function changeBanner(cat,no){
+        var src='images/categories/'+cat+'/'+no+'.jpg';
+        $("#myCarousel img").attr({'src':src});
+      }
   
 });
