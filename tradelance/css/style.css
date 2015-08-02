@@ -3104,3 +3104,6 @@ body{
 .gold{
     color: gold;
 }
+select option[default] {
+    color: #333;
+}
