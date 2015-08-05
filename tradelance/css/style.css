@@ -745,7 +745,7 @@ and (orientation : landscape) {
     display: none;
   }
   #how_it_work_flow .circle-flow h2{
-      margin-bottom: 60px;
+      margin-bottom: 40px;
   }
   /* How it works css end*/
     /* Our Platform css start*/
@@ -978,7 +978,7 @@ and (orientation : portrait) {
     display: none;
   }
   #how_it_work_flow .circle-flow h2{
-      margin-bottom: 60px;
+      margin-bottom: 40px;
   }
   /* How it works css end*/
     /* Our Platform css start*/
@@ -1214,7 +1214,7 @@ and (min-width : 1224px) {
       margin-top: -22px;
   }
   #how_it_work_flow .circle-flow h2{
-      margin-bottom: 60px;
+      margin-bottom: 40px;
   }
   /* How it works css end*/
     /* Our Platform css start*/
@@ -1450,7 +1450,7 @@ and (min-width : 1824px) {
       margin-top: -22px;
   }
   #how_it_work_flow .circle-flow h2{
-      margin-bottom: 60px;
+      margin-bottom: 40px;
   }
   /* How it works css end*/
     /* Our Platform css start*/
