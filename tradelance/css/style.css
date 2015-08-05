@@ -347,6 +347,12 @@ and (max-width : 320px) {
   .icons-content h3{
     font-size: 12px !important;
   }
+  .icons-content h1 > span{
+    font-size: 20px !important;
+  }
+  .icons-content h3 > span{
+    font-size: 12px !important;
+  }
   #our_platform .updated-carousel-caption{
     width: 100%;
     top: 40px;
@@ -507,6 +513,13 @@ and (max-device-width : 1024px) {
   }
   /* How it works css end*/
     /* Our Platform css start*/
+
+  .icons-content h1 > span{
+    font-size: 42px !important;
+  }
+  .icons-content h3 > span{
+    font-size: 20px !important;
+  }
   #our_platform .updated-carousel-caption{
     width: 100%;
     top: 40px;
@@ -516,7 +529,9 @@ and (max-device-width : 1024px) {
     width: 580px;
     height: 510px;
     top: 150px;
-    left: 100px;
+    margin: 1% auto;
+    left: 0px;
+    right: 0px;
     transform: scale(0.5);
   }
   #our_platform .icon-sm-circle-div{
@@ -532,7 +547,9 @@ and (max-device-width : 1024px) {
   #our_platform .icon-lg-circle-text{
     position: fixed;
     top: 280px;
-    left: 275px;
+    margin: 2% auto;
+    left: 0px;
+    right: 0px;
   }
   #our_platform .icon-lg-circle-text h4{
     margin: 0px;
@@ -732,6 +749,12 @@ and (orientation : landscape) {
   }
   /* How it works css end*/
     /* Our Platform css start*/
+  .icons-content h1 > span{
+    font-size: 42px !important;
+  }
+  .icons-content h3 > span{
+    font-size: 20px !important;
+  }
   #our_platform .updated-carousel-caption{
     width: 100%;
     top: 40px;
@@ -741,7 +764,9 @@ and (orientation : landscape) {
     width: 580px;
     height: 510px;
     top: 150px;
-    left: 10px;
+    margin: 1% auto;
+    left: 0px;
+    right: 0px;
     transform: scale(0.5);
   }
   #our_platform .icon-sm-circle-div{
@@ -757,7 +782,9 @@ and (orientation : landscape) {
   #our_platform .icon-lg-circle-text{
     position: fixed;
     top: 280px;
-    left: 505px;
+    margin: 2% auto;
+    left: 0px;
+    right: 0px;
   }
   #our_platform .icon-lg-circle-text h4{
     margin: 0px;
@@ -955,6 +982,12 @@ and (orientation : portrait) {
   }
   /* How it works css end*/
     /* Our Platform css start*/
+  .icons-content h1 > span{
+    font-size: 42px !important;
+  }
+  .icons-content h3 > span{
+    font-size: 20px !important;
+  }
   #our_platform .updated-carousel-caption{
     width: 100%;
     top: 40px;
@@ -964,7 +997,9 @@ and (orientation : portrait) {
     width: 580px;
     height: 510px;
     top: 150px;
-    left: 100px;
+    margin: 1% auto;
+    left: 0px;
+    right: 0px;
     transform: scale(0.5);
   }
   #our_platform .icon-sm-circle-div{
@@ -980,7 +1015,9 @@ and (orientation : portrait) {
   #our_platform .icon-lg-circle-text{
     position: fixed;
     top: 280px;
-    left: 275px;
+    margin: 2% auto;
+    left: 0px;
+    right: 0px;
   }
   #our_platform .icon-lg-circle-text h4{
     margin: 0px;
@@ -1181,6 +1218,12 @@ and (min-width : 1224px) {
   }
   /* How it works css end*/
     /* Our Platform css start*/
+  .icons-content h1 > span{
+    font-size: 42px !important;
+  }
+  .icons-content h3 > span{
+    font-size: 20px !important;
+  }
   #our_platform .updated-carousel-caption{
     width: 100%;
     top: 40px;
@@ -1190,7 +1233,9 @@ and (min-width : 1224px) {
     width: 580px;
     height: 510px;
     top: 110px;
-    left: 10px;
+    margin: 1% auto;
+    left: 0px;
+    right: 0px;
     transform: scale(1);
   }
   #our_platform .icon-sm-circle-div{
@@ -1206,7 +1251,9 @@ and (min-width : 1224px) {
   #our_platform .icon-lg-circle-text{
     position: fixed;
     top: 250px;
-    left: 505px;
+    margin: 2% auto;
+    left: 0px;
+    right: 0px;
     transform: scale(1);
   }
   #our_platform .icon-lg-circle-text h4{
@@ -1407,6 +1454,12 @@ and (min-width : 1824px) {
   }
   /* How it works css end*/
     /* Our Platform css start*/
+  .icons-content h1 > span{
+    font-size: 42px !important;
+  }
+  .icons-content h3 > span{
+    font-size: 20px !important;
+  }
   #our_platform .updated-carousel-caption{
     width: 100%;
     top: 40px;
@@ -1416,7 +1469,9 @@ and (min-width : 1824px) {
     width: 580px;
     height: 510px;
     top: 150px;
-    left: 12%;
+    margin: 1% auto;
+    left: 0px;
+    right: 0px;
     transform: scale(1);
   }
   #our_platform .icon-sm-circle-div{
@@ -1432,7 +1487,9 @@ and (min-width : 1824px) {
   #our_platform .icon-lg-circle-text{
     position: fixed;
     top: 280px;
-    left: 45.9%;
+    margin: 2% auto;
+    left: 0px;
+    right: 0px;
     transform: scale(1);
   }
   #our_platform .icon-lg-circle-text h4{

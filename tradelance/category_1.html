@@ -110,8 +110,12 @@
                       <div class="div2"></div>
                       <div class="div3"></div>
                   </div>
-                  <h3 class="orange-font">Lorem ipsum</h3>
-                  <h4>Lorem ipsum is simply a dummy text for printing various protection guarantees, we are an ultimate out-of-box customer experience</h4>
+                  <h3 class="orange-font cnd_head">Interior Design</h3>
+                  <h4 class="cnd_content">Designing the perfect interior is a fine balance between a personal vision and professional
+counterpoise. Hire an interior designer for your home or office and consult with qualified and 
+knowledgeable interior designers to help create the perfect environment with your personal 
+touch. From consultation and planning, to supply, production and laborers, Tradelance gives you 
+access to all logistical segments of completing your ideal interior.</h4>
                 </div>
             </div>
             <div class="row row-centered category-button">
@@ -726,8 +730,18 @@
     <script>
       
       function changeBanner(no){
+        
+        var head = ['', 'Interior Design', 'Engineers', 'Architects'];
+        var content = [ '',
+                       'Designing the perfect interior is a fine balance between a personal vision and professional counterpoise. Hire an interior designer for your home or office and consult with qualified and knowledgeable interior designers to help create the perfect environment with your personal touch. From consultation and planning, to supply, production and laborers, Tradelance gives you access to all logistical segments of completing your ideal interior.',
+                       'Engineering consists of a wide range of responsibilities, and just as much accountability to match them. This bold, essential field of application is a pivotal assessment in virtually every function of society and requires confidence, dependability and intellect. Hire engineers at Tradelance today, they\'re ready and willing to put their expertise to work for you.',
+                       'Architecture is an intricate process with many complexities and variables necessary to consider well before anything is built. Hire architects at Tradelance who you can rely on to advance development from its ideas and concepts stage, to construction, production, and reality. You can find architectural consultation and design experts for every stage of development right here at Tradelance.'
+                      ];
+        
         var src='images/categories/cat_1/'+no+'.jpg';
         $("#myCarousel img").attr({'src':src});
+        $(".cnd_head").html(head[no]);
+        $(".cnd_content").html(content[no]);
       }
       
       $(function(){
