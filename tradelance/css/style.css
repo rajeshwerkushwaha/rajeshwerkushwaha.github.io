@@ -11,6 +11,15 @@ and open the template in the editor.
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+  .benefits-hide-line{
+    background-color: #e0e0e0;
+    display: none;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
   .benefits-cust{
     border: 10px solid rgb(235, 235, 235);
     width: 280px;
@@ -18,10 +27,11 @@ and (max-device-width : 480px) {
     border-radius: 50%;
   }
   .benefits-banner{
-    background-size: 100% 300px;
+    background-size: 100% 900px;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    padding-top: 100%:padding-bottom:10px;;
+    padding-top: 100%;
+    padding-bottom: 275px;
   }
   /* How it works css start*/
   #how_it_work_flow .dashed-line{
@@ -181,6 +191,15 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
+  .benefits-hide-line{
+    background-color: #e0e0e0;
+    display: none;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
   .benefits-cust{
     border: 10px solid rgb(235, 235, 235);
     width: 280px;
@@ -188,10 +207,11 @@ and (min-width : 321px) {
     border-radius: 50%;
   }
   .benefits-banner{
-    background-size: 100% 300px;
+    background-size: 100% 900px;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    padding-top: 100%:padding-bottom:10px;;
+    padding-top: 100%;
+    padding-bottom: 275px;
   }
   /* How it works css start*/
   #how_it_work_flow .dashed-line{
@@ -354,17 +374,27 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
+  .benefits-hide-line{
+    background-color: #e0e0e0;
+    display: none;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
   .benefits-cust{
     border: 10px solid rgb(235, 235, 235);
     width: 280px;
     height: 280px;
     border-radius: 50%;
   }
-  .benefits-banner{  
-    background-size: 100% 300px;
+  .benefits-banner{
+    background-size: 100% 900px;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    padding-top: 100%:padding-bottom:10px;;
+    padding-top: 100%;
+    padding-bottom: 275px;
   }
   /* How it works css start*/
   #how_it_work_flow .dashed-line{
@@ -533,6 +563,15 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+  .benefits-hide-line{
+    background-color: #e0e0e0;
+    display: none;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
   .benefits-cust{
     border: 10px solid rgb(235, 235, 235);
     width: 300px;
@@ -540,10 +579,11 @@ and (max-device-width : 1024px) {
     border-radius: 50%;
   }
   .benefits-banner{
-    background-size: 100% 500px;
+    background-size: 100% 900px;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    padding-top: 100%:padding-bottom:10px;;
+    padding-top: 100%;
+    padding-bottom: 120px;
   }
   /* How it works css start*/
   #how_it_work_flow .dashed-line{
@@ -785,6 +825,15 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  .benefits-hide-line{
+    background-color: #e0e0e0;
+    display: none;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
   .benefits-cust{
     border: 10px solid rgb(235, 235, 235);
     width: 300px;
@@ -792,10 +841,11 @@ and (orientation : landscape) {
     border-radius: 50%;
   }
   .benefits-banner{
-    background-size: 100% 500px;
+    background-size: 100% 900px;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    padding-top: 100%:padding-bottom:10px;;
+    padding-top: 100%;
+    padding-bottom: 120px;
   }
   /* How it works css start*/
   #how_it_work_flow .dashed-line{
@@ -1030,6 +1080,15 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  .benefits-hide-line{
+    background-color: #e0e0e0;
+    display: none;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
   .benefits-cust{
     border: 10px solid rgb(235, 235, 235);
     width: 300px;
@@ -1040,7 +1099,8 @@ and (orientation : portrait) {
     background-size: 100% 900px;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    padding-top: 100%:padding-bottom:10px;;
+    padding-top: 100%;
+    padding-bottom: 120px;
   }
   /* How it works css start*/
   #how_it_work_flow .dashed-line{
@@ -1274,6 +1334,15 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  .benefits-hide-line{
+    background-color: #e0e0e0;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    display: block;
+  }
   .benefits-cust{
     border: 10px solid rgb(235, 235, 235);
     width: 400px;
@@ -1285,12 +1354,11 @@ and (min-width : 1224px) {
     z-index:10;
   }
   .benefits-banner{
-    
     background-size: 100% 900px;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     padding-top: 100%;
-    padding-bottom: 200px;
+    padding-bottom: 275px;
   }
   /* How it works css start*/
   #how_it_work_flow .dashed-line{
@@ -1528,6 +1596,15 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
+  .benefits-hide-line{
+    background-color: #e0e0e0;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    display: block;
+  }
   .benefits-cust{
     border: 10px solid rgb(235, 235, 235);
     width: 500px;
@@ -1538,7 +1615,8 @@ and (min-width : 1824px) {
     background-size: 100% 900px;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    padding-top: 100%:padding-bottom:10px;;
+    padding-top: 100%;
+    padding-bottom:10px;
   }
   /* How it works css start*/
   #how_it_work_flow .dashed-line{
@@ -1787,6 +1865,15 @@ only screen and (min-device-pixel-ratio : 1.5) {
 @media
 only screen and (max-device-width: 667px) 
 only screen and (-webkit-device-pixel-ratio: 2) {
+  .benefits-hide-line{
+    background-color: #e0e0e0;
+    display: none;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
   .benefits-cust{
     border: 10px solid rgb(235, 235, 235);
     width: 300px;
@@ -1794,10 +1881,11 @@ only screen and (-webkit-device-pixel-ratio: 2) {
     border-radius: 50%;
   }
   .benefits-banner{
-    background-size: 100% 300px;
+    background-size: 100% 900px;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    padding-top: 100%:padding-bottom:10px;;
+    padding-top: 100%;
+    padding-bottom: 275px;
   }
   /* How it works css start*/
   #how_it_work_flow .dashed-line{
