@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Information Visualization Experiment</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="//koding.com/hello/css/style.css">
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<style>
+.grid1{
+    float: auto;
+    margin: auto;
+    height:272px;
+    width:272px;
+}
+.grid2{
+    float: auto;
+    margin: auto;
+    height:272px;
+    width:272px;
+    background-color:#3FBFBF;
+}
+.innerdiv{
+    height:30px;
+    width:30px;
+    float:left;
+    margin:2px;
+}
+</style>
+<!--[if IE]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="container">
+  <div>
+    <h2>Information Visualization Experiment</h2>
+    <h2>Run 1</h2>
+  </div>
+  
+  <div class="grid1">
+  </div>
+  <br>
+  
+  <div style="text-align:center;display:none;" class="next">
+      <br><a href="g2_run21.html">Run 2</a>
+  </div>
+  
+  <footer>
+  
+  </footer>
+</div>
+<script>
+    $(document).ready(function(){
+        var g1colors = ["C0C040","C0C040","C08040","B1B1B1","C0C040","4040C0","B1B1B1","B1B1B1",
+                      "C0C040","B1B1B1","BF3FBF","BF7F3F","C0C040","40C040","B0B0B0","B1B1B1",
+                      "C0C040","B1B1B1","3F3FBF","B1B1B1","B1B1B1","C0C040","B1B1B1","C040C0",
+                      "C0C040","B0B0B0","C08040","BF7F3F","4040C0","B0B0B0","B0B0B0","BFBF3F",
+                      "B0B0B0","40C040","BFBF3F","BFBF3F","B0B0B0","3F3FBF","B0B0B0","3F3FBF",
+                      "B0B0B0","40C040","40C040","B1B1B1","3FBFBF","40C040","BF7F3F","BF3FBF",
+                      "3F3FBF","3FBF3F","BF3FBF","BF3FBF","BF7F3F","B0B0B0","B0B0B0","B0B0B0",
+                      "B0B0B0","B0B0B0","B0B0B0","4040C0","C08040","C0C040","3F3FBF","B1B1B1"];
+        var unique = '3FBFBF';
+                      
+        var g1Elements = [];
+        for(var i=0; i<64; i++){
+            
+            if(i==44){
+                var temp = "<div class='innerdiv uniquediv' style='background-color:#"+unique+";'></div>";
+                g1Elements.push(temp);
+            }else{
+                var temp = "<div class='innerdiv normaldiv' style='background-color:#"+g1colors[i]+";'></div>";
+                g1Elements.push(temp);
+            }
+            
+        }
+        $('.grid1').html(g1Elements);
+        
+        $('.uniquediv').on('click', function(){
+            alert('Congratulations! You won...');
+            $(".next").css('display','block');
+        });
+        $('.normaldiv').on('click', function(){
+            alert('Sorry! You loose...Try Again');
+        });
+    });
+</script>
+</body>
+</html>
