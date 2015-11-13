@@ -38,6 +38,7 @@
     <h2>Information Visualization Experiment</h2>
     <h2>Run 1</h2>
     <a style="margin-left:200px;" href="test.html">HOME</a>
+    <div style="float:right;margin-right: 150px;"><span><b>Timer: </b></span><span id="timer"></span></div>
   </div>
   
   <div class="grid1">
@@ -53,6 +54,32 @@
   </footer>
 </div>
 <script>
+    var m = 0;
+    var s = 0;
+    var t;
+    function startTime() {
+        
+        if(s==60){
+            m=m+1;
+            s=0;
+        }else{
+            s=s+1;
+        }
+        m = m;
+        s = s;
+        console.log(s);
+        console.log(m);
+        document.getElementById("timer").innerHTML = checkTime(m) + ":" + checkTime(s);
+        t = setTimeout(function(){ startTime() }, 1000);
+    }
+    function checkTime(i) {
+        if (i<10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    startTime();
+
     $(document).ready(function(){
         var g1colors = ["C0C040","C0C040","C08040","B1B1B1","C0C040","4040C0","B1B1B1","B1B1B1",
                       "C0C040","B1B1B1","BF3FBF","BF7F3F","C0C040","40C040","B0B0B0","B1B1B1",
@@ -79,6 +106,7 @@
         $('.grid1').html(g1Elements);
         
         $('.uniquediv').on('click', function(){
+            clearTimeout(t);
             alert('Congratulations! You won...');
             $(".next").css('display','block');
         });
