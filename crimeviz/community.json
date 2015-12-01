@@ -1,0 +1,310 @@
+[
+  {
+    "Community_id":1,
+    "Name":"ROGERS PARK"
+  },
+  {
+    "Community_id":2,
+    "Name":"WEST RIDGE"
+  },
+  {
+    "Community_id":3,
+    "Name":"UPTOWN"
+  },
+  {
+    "Community_id":4,
+    "Name":"LINCOLN SQUARE"
+  },
+  {
+    "Community_id":5,
+    "Name":"NORTH CENTER"
+  },
+  {
+    "Community_id":6,
+    "Name":"LAKE VIEW"
+  },
+  {
+    "Community_id":7,
+    "Name":"LINCOLN PARK"
+  },
+  {
+    "Community_id":8,
+    "Name":"NEAR NORTH SIDE"
+  },
+  {
+    "Community_id":9,
+    "Name":"EDISON PARK"
+  },
+  {
+    "Community_id":10,
+    "Name":"NORWOOD PARK"
+  },
+  {
+    "Community_id":11,
+    "Name":"JEFFERSON PARK"
+  },
+  {
+    "Community_id":12,
+    "Name":"FOREST GLEN"
+  },
+  {
+    "Community_id":13,
+    "Name":"NORTH PARK"
+  },
+  {
+    "Community_id":14,
+    "Name":"ALBANY PARK"
+  },
+  {
+    "Community_id":15,
+    "Name":"PORTAGE PARK"
+  },
+  {
+    "Community_id":16,
+    "Name":"IRVING PARK"
+  },
+  {
+    "Community_id":17,
+    "Name":"DUNNING"
+  },
+  {
+    "Community_id":18,
+    "Name":"MONTCLARE"
+  },
+  {
+    "Community_id":19,
+    "Name":"BELMONT CRAGIN"
+  },
+  {
+    "Community_id":20,
+    "Name":"HERMOSA"
+  },
+  {
+    "Community_id":21,
+    "Name":"AVONDALE"
+  },
+  {
+    "Community_id":22,
+    "Name":"LOGAN SQUARE"
+  },
+  {
+    "Community_id":23,
+    "Name":"HUMBOLDT PARK"
+  },
+  {
+    "Community_id":24,
+    "Name":"WEST TOWN"
+  },
+  {
+    "Community_id":25,
+    "Name":"AUSTIN"
+  },
+  {
+    "Community_id":26,
+    "Name":"WEST GARFIELD PARK"
+  },
+  {
+    "Community_id":27,
+    "Name":"EAST GARFIELD PARK"
+  },
+  {
+    "Community_id":28,
+    "Name":"NEAR WEST SIDE"
+  },
+  {
+    "Community_id":29,
+    "Name":"NORTH LAWNDALE"
+  },
+  {
+    "Community_id":30,
+    "Name":"SOUTH LAWNDALE"
+  },
+  {
+    "Community_id":31,
+    "Name":"LOWER WEST SIDE"
+  },
+  {
+    "Community_id":32,
+    "Name":"LOOP"
+  },
+  {
+    "Community_id":33,
+    "Name":"NEAR SOUTH SIDE"
+  },
+  {
+    "Community_id":34,
+    "Name":"ARMOUR SQUARE"
+  },
+  {
+    "Community_id":35,
+    "Name":"DOUGLAS"
+  },
+  {
+    "Community_id":36,
+    "Name":"OAKLAND"
+  },
+  {
+    "Community_id":37,
+    "Name":"FULLER PARK"
+  },
+  {
+    "Community_id":38,
+    "Name":"GRAND BOULEVARD"
+  },
+  {
+    "Community_id":39,
+    "Name":"KENWOOD"
+  },
+  {
+    "Community_id":40,
+    "Name":"WASHINGTON PARK"
+  },
+  {
+    "Community_id":41,
+    "Name":"HYDE PARK"
+  },
+  {
+    "Community_id":42,
+    "Name":"WOODLAWN"
+  },
+  {
+    "Community_id":43,
+    "Name":"SOUTH SHORE"
+  },
+  {
+    "Community_id":44,
+    "Name":"CHATHAM"
+  },
+  {
+    "Community_id":45,
+    "Name":"AVALON PARK"
+  },
+  {
+    "Community_id":46,
+    "Name":"SOUTH CHICAGO"
+  },
+  {
+    "Community_id":47,
+    "Name":"BURNSIDE"
+  },
+  {
+    "Community_id":48,
+    "Name":"CALUMET HEIGHTS"
+  },
+  {
+    "Community_id":49,
+    "Name":"ROSELAND"
+  },
+  {
+    "Community_id":50,
+    "Name":"PULLMAN"
+  },
+  {
+    "Community_id":51,
+    "Name":"SOUTH DEERING"
+  },
+  {
+    "Community_id":52,
+    "Name":"EAST SIDE"
+  },
+  {
+    "Community_id":53,
+    "Name":"WEST PULLMAN"
+  },
+  {
+    "Community_id":54,
+    "Name":"RIVERDALE"
+  },
+  {
+    "Community_id":55,
+    "Name":"HEGEWISCH"
+  },
+  {
+    "Community_id":56,
+    "Name":"GARFIELD RIDGE"
+  },
+  {
+    "Community_id":57,
+    "Name":"ARCHER HEIGHTS"
+  },
+  {
+    "Community_id":58,
+    "Name":"BRIGHTON PARK"
+  },
+  {
+    "Community_id":59,
+    "Name":"MCKINLEY PARK"
+  },
+  {
+    "Community_id":60,
+    "Name":"BRIDGEPORT"
+  },
+  {
+    "Community_id":61,
+    "Name":"NEW CITY"
+  },
+  {
+    "Community_id":62,
+    "Name":"WEST ELSDON"
+  },
+  {
+    "Community_id":63,
+    "Name":"GAGE PARK"
+  },
+  {
+    "Community_id":64,
+    "Name":"CLEARING"
+  },
+  {
+    "Community_id":65,
+    "Name":"WEST LAWN"
+  },
+  {
+    "Community_id":66,
+    "Name":"CHICAGO LAWN"
+  },
+  {
+    "Community_id":67,
+    "Name":"WEST ENGLEWOOD"
+  },
+  {
+    "Community_id":68,
+    "Name":"ENGLEWOOD"
+  },
+  {
+    "Community_id":69,
+    "Name":"GREATER GRAND CROSSING"
+  },
+  {
+    "Community_id":70,
+    "Name":"ASHBURN"
+  },
+  {
+    "Community_id":71,
+    "Name":"AUBURN GRESHAM"
+  },
+  {
+    "Community_id":72,
+    "Name":"BEVERLY"
+  },
+  {
+    "Community_id":73,
+    "Name":"WASHINGTON HEIGHTS"
+  },
+  {
+    "Community_id":74,
+    "Name":"MOUNT GREENWOOD"
+  },
+  {
+    "Community_id":75,
+    "Name":"MORGAN PARK"
+  },
+  {
+    "Community_id":76,
+    "Name":"OHARE"
+  },
+  {
+    "Community_id":77,
+    "Name":"EDGEWATER"
+  }
+]
