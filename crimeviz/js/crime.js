@@ -2,9 +2,109 @@ lat=41.874035;
 lon=-87.639999;
 col = "orange";
 offset = 0;
+url = "";
 function getFilterData(val){
+    
+    map = new google.maps.Map(d3.select("#map").node(), {
+          zoom: 10,
+          center: new google.maps.LatLng(lat, lon),
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        });
+        
     limit = 0;
     switch (val) {
+        case 'time1':
+            var year = [2015,2014,2013,2012,2011];
+            var month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            var day = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+            
+            yobj = "<div class='col-md-3' style='padding-top:5px;font-weight:bold;'>From: </div><div class='col-md-3 smallsize' style='float:left;padding-left:0px;'><select name='year' class='options select-year selectpicker' data-max-options='1' title='Year' style='float:left;margin-top:10px;'>";
+            for(var i=0;i<year.length; i++){
+                if(i==0){
+                    temp = "<option value='"+year[i]+"' selected>"+year[i]+"</option>"; 
+                }else{
+                    temp = "<option value='"+year[i]+"'>"+year[i]+"</option>";
+                }
+                yobj = yobj + temp;
+            }
+            yobj = yobj+"</select></div>";
+            
+            mobj = "<div class='col-md-3 smallsize' style='float:left;padding-left:0px;'><select name='month' class='select-month selectpicker' data-max-options='1' title='Month' style='float:left;margin-top:10px;margin-left:10px;'>";
+            for(var i=0;i<month.length; i++){
+                if(i==0){
+                    temp = "<option value='"+(i+1)+"' selected>"+month[i]+"</option>";
+                }else{
+                    temp = "<option value='"+(i+1)+"'>"+month[i]+"</option>";
+                }
+                
+                mobj = mobj + temp;
+            }
+            mobj = mobj+"</select></div>";
+            
+            dobj = "<div class='col-md-3 smallsize' style='float:left;padding-left:0px;'><select name='day' class='select-day selectpicker' data-max-options='1' title='Day' style='float:left;margin-top:10px;margin-left:10px;'>";
+            for(var i=0;i<day.length; i++){
+                if(i==0){
+                    temp = "<option value='"+checkDay(day[i])+"' selected>"+day[i]+"</option>"
+                }else{
+                    temp = "<option value='"+checkDay(day[i])+"'>"+day[i]+"</option>";
+                }
+                
+                dobj = dobj + temp;
+            }
+            dobj = dobj+"</select></div><br>";
+            var d1 = yobj+mobj+dobj;
+            yobj = "<div class='col-md-3' style='padding-top:5px;font-weight:bold;'>To: </div><div class='col-md-3 smallsize' style='float:left;padding-left:0px;'><select name='year1' class='options select-year selectpicker' data-max-options='1' title='Year' style='float:left;margin-top:10px;'>";
+            for(var i=0;i<year.length; i++){
+                if(i==0){
+                    temp = "<option value='"+year[i]+"' selected>"+year[i]+"</option>";
+                }else{
+                    temp = "<option value='"+year[i]+"'>"+year[i]+"</option>";
+                }
+                
+                yobj = yobj + temp;
+            }
+            yobj = yobj+"</select></div>";
+            
+            mobj = "<div class='col-md-3 smallsize' style='float:left;padding-left:0px;'><select name='month1' class='select-month selectpicker' data-max-options='1' title='Month' style='float:left;margin-top:10px;margin-left:10px;'>";
+            for(var i=0;i<month.length; i++){
+                if(i==0){
+                    temp = "<option value='"+(i+1)+"' selected>"+month[i]+"</option>";
+                }else{
+                    temp = "<option value='"+(i+1)+"'>"+month[i]+"</option>";
+                }
+                
+                mobj = mobj + temp;
+            }
+            mobj = mobj+"</select></div>";
+            
+            dobj = "<div class='col-md-3 smallsize' style='float:left;padding-left:0px;'><select name='day1' class='select-day selectpicker' data-max-options='1' title='Day' style='float:left;margin-top:10px;margin-left:10px;'>";
+            for(var i=0;i<day.length; i++){
+                if(i==0){
+                    temp = "<option value='"+checkDay(day[i])+"' selected>"+day[i]+"</option>";
+                }else{
+                    temp = "<option value='"+checkDay(day[i])+"'>"+day[i]+"</option>";
+                }
+                
+                dobj = dobj + temp;
+            }
+            dobj = dobj+"</select></div>";
+            var d2 = yobj+mobj+dobj;
+            
+            var list1 = '<select title="Select Crime Categories" multiple class="selectpicker" name="crimeTypes"><option value="ASSAULT" selected>ASSAULT</option><option value="CRIMINAL TRESPASS">CRIMINAL TRESPASS</option><option value="KIDNAPPING">KIDNAPPING</option><option value="LIQUOR LAW VIOLATION">LIQUOR LAW VIOLATION</option><option value="MOTOR VEHICAL THEFT">MOTOR VEHICAL THEFT</option><option value="PROSTITUTION">PROSTITUTION</option><option value="ROBBERY">ROBBERY</option><option value="SEX OFFENSE">SEX OFFENSE</option><option value="THEFT">THEFT</option></select><br>';
+            var obj1 = "<ul class='nav collegend' style='margin-top:10px;margin-left:10px;'>";
+            $.each(crimejson, function(key,value){
+                var temp1 = "<li colid='"+value.Color+"'><div style='height:15px;width:15px;background-color:"+value.Color+";float:left;margin-right:10px;margin-top:2px'></div>"+value.Name+"</li>";
+                obj1 = obj1 + temp1;
+            });
+            obj1 = obj1+"</ul>"
+            
+            var list2 = '<select title="Select Districts" multiple class="selectpicker" name="districtTypes"><option value="001" selected>Central</option><option value="002">Wentworth</option><option value="003">Grand Crossing</option><option value="004">South Chicago</option><option value="005">Calumet</option><option value="006">Gresham</option><option value="7">Englewood</option><option value="008">Chicago Lawn</option><option value="009">Deering</option><option value="010">Ogden</option><option value="011">Harrison</option><option value="012">Near West</option><option value="014">Shakespear</option><option value="015">Austin</option><option value="016">Jefferson Park</option><option value="017">Albany Park</option><option value="018">Near North</option><option value="019">Town Hall</option><option value="020">Foster</option><option value="022">Morgan Park</option><option value="024">Rogers Park</option><option value="025">Grand Central</option></select><br>';
+            
+            $('.filterData1').html(list1+list2+obj1);
+            $('.filterData').html(d1+d2);
+            $('.selectpicker').selectpicker();
+            
+            break;
         case 'time':
             var year = [2011,2012,2013,2014,2015];
             var month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -58,11 +158,17 @@ function getFilterData(val){
             
             break;
         case 'crimeType':
+            $('.filterData1').css({'display':'none'});
             var obj = "<select name='crimeTypes' class='selectpicker' multiple title='Select Crime Categories'>";
             var obj1 = "<ul class='nav collegend' style='margin-top:10px;margin-left:10px;'>";
             
             for(var i=0;i<crimeList.length; i++){
-                temp = "<option value='"+crimeList[i]+"'>"+crimeList[i]+"</option>";
+                if(i==0){
+                    temp = "<option value='"+crimeList[i]+"' selected>"+crimeList[i]+"</option>";
+                }else{
+                    temp = "<option value='"+crimeList[i]+"'>"+crimeList[i]+"</option>";    
+                }
+                
                 obj = obj + temp;
             }
             $.each(crimejson, function(key,value){
@@ -76,14 +182,20 @@ function getFilterData(val){
             
             break;
         case 'community':
+            $('.filterData1').css({'display':'none'});
             var obj = "<select name='communities' class='selectpicker' multiple title='Select Communities'>";
-            d3.json('community.json',
+            d3.json('json/community.json',
                 function (data, textStatus, jqXHR) {
                     $.each(data, function(key,value){
-                        var temp = "<option value='"+value.Community_id+"'>"+value.Name+"</option>";
+                        if(key==0){
+                            var temp = "<option value='"+value.Community_id+"' selected>"+value.Name+"</option>";    
+                        }else{
+                            var temp = "<option value='"+value.Community_id+"'>"+value.Name+"</option>";
+                        }
+                        
                         obj = obj + temp;
                     });
-                    obj = obj+"</select>";
+                    obj = obj+"</select><br>";
                     $('.filterData').html(obj);
                     $('.selectpicker').selectpicker();
                 }
@@ -91,12 +203,18 @@ function getFilterData(val){
             
             break;
         case 'district':
+            $('.filterData1').css({'display':'none'});
             var obj = "<select name='districts' class='selectpicker' multiple title='Select Districts'>";
             var obj1 = "<ul class='nav collegend' style='margin-top:10px;margin-left:10px;'>";
-            d3.json('districts.json',
+            d3.json('json/districts.json',
                 function (data, textStatus, jqXHR) {
                     $.each(data, function(key,value){
-                        var temp = "<option value='"+value.District_id+"'>"+value.Name+"</option>";
+                        if(key==0){
+                            var temp = "<option value='"+value.District_id+"' selected>"+value.Name+"</option>";
+                        }else{
+                            var temp = "<option value='"+value.District_id+"'>"+value.Name+"</option>";
+                        }
+                        
                         var temp1 = "<li colid='"+value.Color+"'><div style='height:15px;width:15px;background-color:"+value.Color+";float:left;margin-right:10px;margin-top:2px'></div>"+value.Name+"</li>";
                         obj = obj + temp;
                         obj1 = obj1 + temp1;
@@ -111,12 +229,17 @@ function getFilterData(val){
             
             break;
         case 'crimeLocationType':
+            $('.filterData1').css({'display':'none'});
             var list = ["SCHOOL","APARTMENT,CHURCH/SYNAGOGUE/PLACE OF WORSHIP","CONSTRUCTION SITE","DEPARTMENT STORE","HOSPITAL BUILDING/GROUNDS","RESIDENCE","STREET","TAXICAB"];
             var obj = "<select name='crimeLocationTypes' class='selectpicker' multiple>";
             var obj1 = "<ul class='nav collegend' style='margin-top:10px;margin-left:10px;'>";
             
             for(var i=0;i<list.length; i++){
-                temp = "<option value='"+list[i]+"'>"+list[i]+"</option>";
+                if(i==0){
+                    temp = "<option value='"+list[i]+"' selected>"+list[i]+"</option>";
+                }else{
+                    temp = "<option value='"+list[i]+"'>"+list[i]+"</option>";
+                }
                 obj = obj + temp;
             }
             $.each(crimeLocationTypeJson, function(key,value){
@@ -130,12 +253,14 @@ function getFilterData(val){
             $('.selectpicker').selectpicker();
             break;
         case 'arrest':
-            var obj = "<select name='arrest' class='selectpicker' multiple data-max-options='1'><option value='true'>Yes</option><option value='false'>No</option></select>"
+            $('.filterData1').css({'display':'none'});
+            var obj = "<select name='arrest' class='selectpicker'><option value='true'>Yes</option><option value='false'>No</option></select>"
             $('.filterData').html(obj);
             $('.selectpicker').selectpicker();
             break;
         case 'domestic':
-            var obj = "<select name='domestic' class='selectpicker' multiple data-max-options='1'><option value='true'>Yes</option><option value='false'>No</option></select>"
+            $('.filterData1').css({'display':'none'});
+            var obj = "<select name='domestic' class='selectpicker'><option value='true'>Yes</option><option value='false'>No</option></select>"
             $('.filterData').html(obj);
             $('.selectpicker').selectpicker();
             break;
@@ -196,6 +321,57 @@ $(document).ready(function(){
         });
         
         switch(type){
+            case 'Time1':
+                var year = $("select[name='year']").val();
+                var month = $("select[name='month']").val();
+                var day = $("select[name='day']").val();
+                
+                var year1 = $("select[name='year1']").val();
+                var month1 = $("select[name='month1']").val();
+                var day1 = $("select[name='day1']").val();
+                
+                if(year==null || year1==null){
+                    alert("Please select years");
+                    return false;
+                }
+                
+                month = checkDay(month);
+                var date1 = year+'-'+month+'-'+day+'T00:00:00';
+                var date2 = year1+'-'+month1+'-'+day1+'T23:59:59';
+                
+                var crimeTypes = $("select[name='crimeTypes']").val();
+                var districtTypes = $("select[name='districtTypes']").val();
+                
+                var tempobj = [];
+                var tempobj1 = [];
+                $.each(crimeTypes, function(key, value){
+                    tempobj[key]='"'+value+'"';
+                });
+                
+                $.each(districtTypes, function(key, value){
+                    tempobj1[key]='"'+value+'"';
+                });
+                
+                for(var i=0; i<crimeTypes.length; i++){
+                    var col = '';
+                    $.each(crimejson, function(key,value){
+                        if(value.Name==crimeTypes[i]){
+                            col = value.Color;
+                        }
+                    });
+                    if(month==null || day==null){
+                        var date1 = year+'0101T00:00:00';
+                        var date2 = year1+'1231T23:59:59';
+                        var url1 = "https://data.cityofchicago.org/resource/6zsd-86xi.json?$where=district IN("+tempobj1+") AND primary_type IN("+tempobj[i]+") AND date BETWEEN '"+date1+"' AND '"+date2+"'";
+                    }else{
+                        var url1 = "https://data.cityofchicago.org/resource/6zsd-86xi.json?$where=district IN("+tempobj1+") AND primary_type IN("+tempobj[i]+") AND date BETWEEN '"+date1+"' AND '"+date2+"'";
+                    }
+                    
+                    plotCrime(url1,col);    
+                }
+                
+                
+                break;
             case 'Time':
                 var year = $("select[name='year']").val();
                 var month = $("select[name='month']").val();
@@ -234,7 +410,6 @@ $(document).ready(function(){
                     $.each(crimejson, function(key,value){
                         if(value.Name==data[i]){
                             col = value.Color;
-                            console.log(col);
                         }
                     });
                     var url1 = "https://data.cityofchicago.org/resource/6zsd-86xi.json?primary_type="+tempval;
@@ -254,7 +429,7 @@ $(document).ready(function(){
                 var data = $("select[name='districts']").val();
                 
                 if(data.length==1){
-                    d3.json("districts.json", function(data) {
+                    d3.json("json/districts.json", function(data) {
                         console.log(data[0]);
                         $.each(data, function(key,value){
                             if(value.Name==data[0].Name){
@@ -310,22 +485,14 @@ $(document).ready(function(){
                 break;
             case 'Arrest':
                 var data = $("select[name='arrest']").val();
-                
-                for(var i=0; i<data.length; i++){
-                    tempval = data[i];
-                    var url1 = "https://data.cityofchicago.org/resource/6zsd-86xi.json?arrest="+tempval;
-                    plotCrime(url1);
-                }
+                var url1 = "https://data.cityofchicago.org/resource/6zsd-86xi.json?arrest="+data;
+                plotCrime(url1);
 
                 break;
             case 'Domestic':
                 var data = $("select[name='domestic']").val();
-                
-                for(var i=0; i<data.length; i++){
-                    tempval = data[i];
-                    var url1 = "https://data.cityofchicago.org/resource/6zsd-86xi.json?domestic="+tempval;
-                    plotCrime(url1);
-                }
+                var url1 = "https://data.cityofchicago.org/resource/6zsd-86xi.json?domestic="+data;
+                plotCrime(url1);
 
                 break;
             
