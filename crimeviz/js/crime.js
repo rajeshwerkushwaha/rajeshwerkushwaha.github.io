@@ -13,7 +13,7 @@ function getFilterData(val){
         
     limit = 0;
     switch (val) {
-        case 'time1':
+        case 'time':
             $('.filterData1').css({'display':'block'});
             var year = [2015,2014,2013,2012,2011];
             var month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -102,58 +102,6 @@ function getFilterData(val){
             var list2 = '<select title="Select Districts" multiple class="selectpicker" name="districtTypes"><option value="001" selected>Central</option><option value="002">Wentworth</option><option value="003">Grand Crossing</option><option value="004">South Chicago</option><option value="005">Calumet</option><option value="006">Gresham</option><option value="7">Englewood</option><option value="008">Chicago Lawn</option><option value="009">Deering</option><option value="010">Ogden</option><option value="011">Harrison</option><option value="012">Near West</option><option value="014">Shakespear</option><option value="015">Austin</option><option value="016">Jefferson Park</option><option value="017">Albany Park</option><option value="018">Near North</option><option value="019">Town Hall</option><option value="020">Foster</option><option value="022">Morgan Park</option><option value="024">Rogers Park</option><option value="025">Grand Central</option></select><br>';
             
             $('.filterData1').html(list1+list2+obj1);
-            $('.filterData').html(d1+d2);
-            $('.selectpicker').selectpicker();
-            
-            break;
-        case 'time':
-            var year = [2011,2012,2013,2014,2015];
-            var month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-            var day = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
-            
-            yobj = "<div class='col-md-3' style='padding-top:5px;font-weight:bold;'>From: </div><div class='col-md-3 smallsize' style='float:left;padding-left:0px;'><select name='year' class='options select-year selectpicker' data-max-options='1' title='Year' style='float:left;margin-top:10px;'>";
-            for(var i=0;i<year.length; i++){
-                temp = "<option value='"+year[i]+"'>"+year[i]+"</option>";
-                yobj = yobj + temp;
-            }
-            yobj = yobj+"</select></div>";
-            
-            mobj = "<div class='col-md-3 smallsize' style='float:left;padding-left:0px;'><select name='month' class='select-month selectpicker' data-max-options='1' title='Month' style='float:left;margin-top:10px;margin-left:10px;'>";
-            for(var i=0;i<month.length; i++){
-                temp = "<option value='"+(i+1)+"'>"+month[i]+"</option>";
-                mobj = mobj + temp;
-            }
-            mobj = mobj+"</select></div>";
-            
-            dobj = "<div class='col-md-3 smallsize' style='float:left;padding-left:0px;'><select name='day' class='select-day selectpicker' data-max-options='1' title='Day' style='float:left;margin-top:10px;margin-left:10px;'>";
-            for(var i=0;i<day.length; i++){
-                temp = "<option value='"+checkDay(day[i])+"'>"+day[i]+"</option>"
-                dobj = dobj + temp;
-            }
-            dobj = dobj+"</select></div><br>";
-            var d1 = yobj+mobj+dobj;
-            yobj = "<div class='col-md-3' style='padding-top:5px;font-weight:bold;'>To: </div><div class='col-md-3 smallsize' style='float:left;padding-left:0px;'><select name='year1' class='options select-year selectpicker' data-max-options='1' title='Year' style='float:left;margin-top:10px;'>";
-            for(var i=0;i<year.length; i++){
-                temp = "<option value='"+year[i]+"'>"+year[i]+"</option>";
-                yobj = yobj + temp;
-            }
-            yobj = yobj+"</select></div>";
-            
-            mobj = "<div class='col-md-3 smallsize' style='float:left;padding-left:0px;'><select name='month1' class='select-month selectpicker' data-max-options='1' title='Month' style='float:left;margin-top:10px;margin-left:10px;'>";
-            for(var i=0;i<month.length; i++){
-                temp = "<option value='"+(i+1)+"'>"+month[i]+"</option>";
-                mobj = mobj + temp;
-            }
-            mobj = mobj+"</select></div>";
-            
-            dobj = "<div class='col-md-3 smallsize' style='float:left;padding-left:0px;'><select name='day1' class='select-day selectpicker' data-max-options='1' title='Day' style='float:left;margin-top:10px;margin-left:10px;'>";
-            for(var i=0;i<day.length; i++){
-                temp = "<option value='"+checkDay(day[i])+"'>"+day[i]+"</option>"
-                dobj = dobj + temp;
-            }
-            dobj = dobj+"</select></div>";
-            var d2 = yobj+mobj+dobj;
-            
             $('.filterData').html(d1+d2);
             $('.selectpicker').selectpicker();
             
