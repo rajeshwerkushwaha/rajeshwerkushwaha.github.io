@@ -252,11 +252,11 @@ RESPONSIVE
 \*----------------------------*/
  .nav-logo {
      float:left;
+     font-size: 22px;
 }
  .nav-logo .logo {
      line-height: 70px;
      display:inline-block;
-     font-size: 22px;
 }
  .nav-logo .logo > img {
      width: 100%;
