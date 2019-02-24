@@ -68,26 +68,3 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				<!-- /row -->
 			</div>
 			<!-- /container -->
-<script type="text/javascript">
-
-	const scriptURL = 'https://script.google.com/macros/s/AKfycbx3NJ2YK0OEmaLr97vRnDCIGVbxtRw6SQPRyKIOfzgJqp7PTi4/exec'
-  	const form = document.forms['newsletter-form']
-
-  	form.addEventListener('submit', e => {
-    	e.preventDefault()
-    	fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      		.then(response => {
-      			$(".fa-paper-plane").addClass("fa-check").removeClass("fa-paper-plane");
-      			$(".fa-check").css({'color':'limegreen'});
-      			$("#email").val('');
-      			$("#email").attr("placeholder", "Thank you!");
-      		})
-      		.catch(error => console.error('Error!', error.message))
-      	setTimeout(function(){
-		    $(".fa-check").addClass("fa-paper-plane").removeClass("fa-check");
-		    $(".fa-paper-plane").css({'color':''});
-		    $("#email").attr("placeholder", "Enter your email");
-		},5000);
-  	})
-
-</script>
