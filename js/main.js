@@ -86,6 +86,10 @@
 		stickyShares($(this).scrollTop());
 	});
 
+
+	$("#header").load("header.html"); 
+	$("#footer").load("footer.html"); 
+
 	setStickyPos();
 
 })(jQuery);
