@@ -270,6 +270,76 @@
 
 		<!-- Footer -->
 		<footer id="footer">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-5">
+						<div class="footer-widget">
+							<div class="footer-logo">
+								<a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+							</div>
+							<ul class="footer-nav">
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Advertisement</a></li>
+							</ul>
+							<div class="footer-copyright">
+								<span>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="footer-widget">
+									<h3 class="footer-title">About Us</h3>
+									<ul class="footer-links">
+										<li><a href="about.html">About Me</a></li>
+										<!-- <li><a href="#">Join Us</a></li> -->
+										<li><a href="contact.html">Contacts</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="footer-widget">
+									<h3 class="footer-title">Catagories</h3>
+									<ul class="footer-links">
+										<li><a href="#" class="cat-1">Statistics</a></li>
+										<li><a href="#" class="cat-2">Data Science</a></li>
+										<li><a href="#" class="cat-3">Deep Learning</a></li>
+										<li><a href="#" class="cat-4">Machine Learning</a></li>
+										<li><a href="#" class="cat-5">Data Visualization</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="footer-widget">
+							<h3 class="footer-title">Join our Newsletter</h3>
+							<div class="footer-newsletter">
+								<form name="newsletter-form">
+									<input id="email" class="input" type="email" name="email" value="" placeholder="Enter your email">
+									<button class="newsletter-btn" type="submit"><i class="fa fa-paper-plane"></i></i></button>
+								</form>
+							</div>
+							<ul class="footer-social">
+								<li><a href="https://www.linkedin.com/in/rajeshk1988"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://github.com/rajeshwerkushwaha"><i class="fa fa-github"></i></a></li>
+								<li><a href="https://www.facebook.com/rajeshwerkushwaha"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/rajeshwer18"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
 		</footer>
 		<!-- /Footer -->
 
@@ -277,32 +347,28 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
-		<script> 
-			$(document).ready(function(){ 
-			  $.get("footer.html", function(data) {
-			    $("#footer").html(data);
+		<script type="text/javascript">
 
-			    const scriptURL = 'https://script.google.com/macros/s/AKfycbx3NJ2YK0OEmaLr97vRnDCIGVbxtRw6SQPRyKIOfzgJqp7PTi4/exec'
-			  	const form = document.forms['newsletter-form']
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbx3NJ2YK0OEmaLr97vRnDCIGVbxtRw6SQPRyKIOfzgJqp7PTi4/exec'
+		  	const form = document.forms['newsletter-form']
 
-			  	form.addEventListener('submit', e => {
-			    	e.preventDefault()
-			    	fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-			      		.then(response => {
-			      			$(".fa-paper-plane").addClass("fa-check").removeClass("fa-paper-plane");
-			      			$(".fa-check").css({'color':'limegreen'});
-			      			$("#email").val('');
-			      			$("#email").attr("placeholder", "Thank you!");
-			      		})
-			      		.catch(error => console.error('Error!', error.message))
-			      	setTimeout(function(){
-					    $(".fa-check").addClass("fa-paper-plane").removeClass("fa-check");
-					    $(".fa-paper-plane").css({'color':''});
-					    $("#email").attr("placeholder", "Enter your email");
-					},5000);
-			  	})
-			  });
-			}); 
-		</script> 
+		  	form.addEventListener('submit', e => {
+		    	e.preventDefault()
+		    	fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		      		.then(response => {
+		      			$(".fa-paper-plane").addClass("fa-check").removeClass("fa-paper-plane");
+		      			$(".fa-check").css({'color':'limegreen'});
+		      			$("#email").val('');
+		      			$("#email").attr("placeholder", "Thank you!");
+		      		})
+		      		.catch(error => console.error('Error!', error.message))
+		      	setTimeout(function(){
+				    $(".fa-check").addClass("fa-paper-plane").removeClass("fa-check");
+				    $(".fa-paper-plane").css({'color':''});
+				    $("#email").attr("placeholder", "Enter your email");
+				},5000);
+		  	})
+
+		</script>
 	</body>
 </html>
