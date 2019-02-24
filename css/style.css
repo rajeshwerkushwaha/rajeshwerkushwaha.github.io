@@ -303,6 +303,9 @@ RESPONSIVE
  .nav-menu li.cat-4 a:after {
      background-color: #8d00ff;
 }
+ .nav-menu li.cat-5 a:after {
+     background-color: #ff00ff;
+}
  .nav-menu li a:hover, .nav-menu li a:focus {
      background-color: transparent;
      text-decoration: none;
@@ -318,6 +321,9 @@ RESPONSIVE
 }
  .nav-menu li.cat-4 a:hover, .nav-menu li.cat-4 a:focus {
      color: #8d00ff;
+}
+ .nav-menu li.cat-5 a:hover, .nav-menu li.cat-5 a:focus {
+     color: #ff00ff;
 }
 /*----------------------------*\
 	search
@@ -554,6 +560,9 @@ RESPONSIVE
 }
  .post-meta .post-category.cat-4 {
      background-color: #0078ff;
+}
+ .post-meta .post-category.cat-5 {
+     background-color: #ff00ff;
 }
  .post-meta .post-date {
      font-size: 13px;
@@ -810,6 +819,9 @@ RESPONSIVE
  .category-widget ul li > a.cat-4 > span {
      background-color: #0078ff;
 }
+ .category-widget ul li > a.cat-5 > span {
+     background-color: #ff00ff;
+}
  .category-widget ul li > a:hover, .category-widget ul li > a:focus {
      text-decoration:none;
 }
@@ -824,6 +836,9 @@ RESPONSIVE
 }
  .category-widget ul li > a.cat-4:hover, .category-widget ul li > a.cat-4:focus {
      color: #8d00ff;
+}
+ .category-widget ul li > a.cat-5:hover, .category-widget ul li > a.cat-5:focus {
+     color: #ff00ff;
 }
 /*----------------------------*\
 	tags
