@@ -446,7 +446,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			  console.log('Image URL: ' + profile.getImageUrl());
 			  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 			  $("#signinbutton").hide()
-			  $("#welcometext").text('Hi, ' + profile.getName);
+			  $("#welcometext").text('Hi, ' + profile.getName());
 			  $("#profileimg").attr("src", profile.getImageUrl());
 			  $("#profileimg").show();
 			  $('#profileimg').on({
