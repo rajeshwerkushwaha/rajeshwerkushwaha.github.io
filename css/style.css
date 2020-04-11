@@ -993,3 +993,23 @@ RESPONSIVE
          display:none;
     }
 }
+
+/*=========================================================
+	My CCS
+===========================================================*/
+.signindiv{
+     position: inherit;
+     float: left;
+     padding-top: 15px;
+}
+
+.profileimg {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
