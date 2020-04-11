@@ -56,13 +56,13 @@
 						<!-- /nav -->
 						
 						
-						<div>
-							<div id="signinbutton" class="g-signin2" data-onsuccess="onSignIn"></div>
-							<span id="welcometext"></span><img id="profileimg" src="">
-							<button id="signoutbutton" onclick="signOut()">Sign out</button>
-						</div>
 						<!-- search & aside toggle -->
 						<div class="nav-btns">
+							<div class="signindiv">
+								<div id="signinbutton" class="g-signin2" data-onsuccess="onSignIn"></div>
+								<span id="welcometext"></span><img id="profileimg" class="profileimg" src="">
+								<button id="signoutbutton" onclick="signOut() display="">Sign out</button>
+							</div>
 							<button class="aside-btn"><i class="fa fa-bars"></i></button>
 							<!-- <button class="search-btn"><i class="fa fa-search"></i></button>
 							<div class="search-form">
@@ -437,6 +437,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<script type="text/javascript">
+			$("#signoutbutton").hide();
+
 			function onSignIn(googleUser) {
 			  var profile = googleUser.getBasicProfile();
 			  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
@@ -446,9 +448,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			  $("#signinbutton").hide()
 			  $("#welcometext").text('Hi, ' + profile.getName);
 			  $("#profileimg").attr("src", profile.getImageUrl());
+			  $("#profileimg").show();
 			  $('#profileimg').on({
 				    'click': function(){
-				        $("#signoutbutton").show()
+				        $("#signoutbutton").show();
 				    }
 				});
 
