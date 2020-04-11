@@ -54,7 +54,13 @@
 							<li class="cat-4"><a href="category.html">Jquery</a></li>
 						</ul>
 						<!-- /nav -->
-						<div class="g-signin2" data-onsuccess="onSignIn"></div>
+						
+						
+						<div>
+							<div id="signinbutton" class="g-signin2" data-onsuccess="onSignIn"></div>
+							<span id="welcometext"></span><img id="profileimg" src="">
+							<button id="signoutbutton" onclick="signOut()">Sign out</button>
+						</div>
 						<!-- search & aside toggle -->
 						<div class="nav-btns">
 							<button class="aside-btn"><i class="fa fa-bars"></i></button>
@@ -427,18 +433,34 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				    $("#email").attr("placeholder", "Enter your email");
 				},5000);
 		  	})
+		</script>
 
-
-		  	function onSignIn(googleUser) {
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script type="text/javascript">
+			function onSignIn(googleUser) {
 			  var profile = googleUser.getBasicProfile();
 			  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
 			  console.log('Name: ' + profile.getName());
 			  console.log('Image URL: ' + profile.getImageUrl());
 			  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-			}
-		</script>
+			  $("#signinbutton").hide()
+			  $("#welcometext").text('Hi, ' + profile.getName);
+			  $("#profileimg").attr("src", profile.getImageUrl());
+			  $('#profileimg').on({
+				    'click': function(){
+				        $("#signoutbutton").show()
+				    }
+				});
 
-		<script src="https://apis.google.com/js/platform.js" async defer></script>
+			}
+
+		  	function signOut() {
+		    	var auth2 = gapi.auth2.getAuthInstance();
+		    	auth2.signOut().then(function () {
+		      	console.log('User signed out.');
+		    });
+		  }
+		</script>
 
 	</body>
 </html>
