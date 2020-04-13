@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="This is a webpage which helps to scan the QR code and show the data inside it." />
+  <meta name="keywords" content="qr scanner, qrcode scanner, scan qr, scan qrcode, qr code scanner online, webcam qrcode scanner">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>QR Code Scanner</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<style type="text/css">
+.np{
+  padding: 0px;
+}
+#scandata{
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+li {
+    padding: 10px;
+    border-bottom: 1px solid #343a40;
+}
+#canvas { 
+  height: 480px; 
+  width: 640px; 
+  margin: 60px 80px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- Header -->
+  <header class="bg-dark text-center py-3">
+    <div class="container">
+      <h1 class="font-weight-light text-white">QR Scanner</h1>
+    </div>
+  </header>
+  <div class="container" style="height:100vh;">
+    <!-- Content here -->
+    <div class="row h-100">
+      <div class="col-xl-3 col-md-6 bg-secondary np">
+        <h3 class="font-weight-light text-white text-center">QR Scan Data</h3>
+        <ul id="scandata">
+          
+        </ul>
+      </div>
+      <div class="col-xl-9 col-md-6 h-100">
+        <div id="loadingMessage" hidden="">⌛ Loading video...</div>
+        <canvas id="canvas"></canvas>
+        <p>Credit: Thanks to Cosmo Wolfe for his amazing work <a href="https://github.com/cozmo/jsQR">jsQR</a>. <br>This UI is extended version of the original demo. Github <a href="http://rajeshwerkushwaha.github.com/qrcode/">Link</a> for this demo. 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="./jsQR.js"></script>
+
+    <script>
+    var video = document.createElement("video");
+    var canvasElement = document.getElementById("canvas");
+    var canvas = canvasElement.getContext("2d");
+    var loadingMessage = document.getElementById("loadingMessage");
+    var outputMessage = document.getElementById("outputMessage");
+    var outputData = "";
+
+    function drawLine(obj, begin, end, color) {
+      obj.beginPath();
+      obj.moveTo(begin.x, begin.y);
+      obj.lineTo(end.x, end.y);
+      obj.lineWidth = 4;
+      obj.strokeStyle = color;
+      obj.stroke();
+    }
+
+    // Use facingMode: environment to attemt to get the front camera on phones
+    navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } }).then(function(stream) {
+      video.srcObject = stream;
+      video.setAttribute("playsinline", true); // required to tell iOS safari we don't want fullscreen
+      video.play();
+      requestAnimationFrame(tick);
+    });
+
+    function tick() {
+      loadingMessage.innerText = "⌛ Loading video..."
+      if (video.readyState === video.HAVE_ENOUGH_DATA) {
+        loadingMessage.hidden = true;
+        canvasElement.hidden = false;
+
+
+        canvasElement.height = video.videoHeight;
+        canvasElement.width = video.videoWidth;
+        canvas.drawImage(video, 0, 0, canvasElement.width, canvasElement.height);
+        var imageData = canvas.getImageData(0, 0, canvasElement.width, canvasElement.height);
+
+        checkimage(imageData);
+      }
+      requestAnimationFrame(tick);
+    }
+
+    function checkimage(imageData){
+      var code = jsQR(imageData.data, imageData.width, imageData.height, {
+          inversionAttempts: "dontInvert",
+        });
+      if (code) {
+        drawLine(canvas, code.location.topLeftCorner, code.location.topRightCorner, "#FF3B58");
+        drawLine(canvas, code.location.topRightCorner, code.location.bottomRightCorner, "#FF3B58");
+        drawLine(canvas, code.location.bottomRightCorner, code.location.bottomLeftCorner, "#FF3B58");
+        drawLine(canvas, code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF3B58");
+
+        console.log(code.data)
+
+        if(code.data != outputData && code.data!=''){
+          el = document.createElement('li');
+          el.innerHTML = code.data;
+          var list = document.getElementById("scandata");
+          list.insertBefore(el, list.childNodes[0]);
+
+          $('ul li:first').effect('highlight', {}, 1000);
+        }     
+        outputData = code.data;   
+        // drawResultImage(imageData, code);
+
+      }
+    }
+
+    // function drawResultImage(imageData, code){
+    //   const canvas = document.getElementById('resultcanvas');
+    //   const ctx = canvas.getContext('2d');
+
+    //   // Draw image data to the canvas
+    //   ctx.putImageData(imageData, 0, 0);
+      
+    //   drawLine(ctx, code.location.topLeftCorner, code.location.topRightCorner, "#FF3B58");
+    //   drawLine(ctx, code.location.topRightCorner, code.location.bottomRightCorner, "#FF3B58");
+    //   drawLine(ctx, code.location.bottomRightCorner, code.location.bottomLeftCorner, "#FF3B58");
+    //   drawLine(ctx, code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF3B58");
+
+      
+    // }
+  </script>
+</body>
+</html>
