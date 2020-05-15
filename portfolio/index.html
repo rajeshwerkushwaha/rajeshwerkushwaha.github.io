@@ -117,7 +117,7 @@ body, html {
 $(document).ready(function(){
     $(".hoverdiv").hover(function(){
         var className = $(this).attr('class');
-        $("body").css("background-image", "url(file:///Users/rkumar/Documents/sublime/edtech/portfolio/img/" + className.slice(-1) + ".jpg)");
+        $("body").css("background-image", "url(img/" + className.slice(-1) + ".jpg)");
     });
 
     $(document).on('click','body',function(){
