@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+		<meta name="google-signin-client_id" content="421289883562-dgjnci681nvftirvdh0df81jsevbbgoi.apps.googleusercontent.com">
 		<title>Learning Blog</title>
 
 		<!-- Google font -->
@@ -54,9 +54,15 @@
 							<li class="cat-4"><a href="category.html">Jquery</a></li>
 						</ul>
 						<!-- /nav -->
-
+						
+						
 						<!-- search & aside toggle -->
 						<div class="nav-btns">
+							<div class="signindiv">
+								<div id="signinbutton" class="g-signin2" data-onsuccess="onSignIn"></div>
+								<span id="welcometext"></span><img id="profileimg" class="profileimg" src="">
+								<button id="signoutbutton" onclick="signOut()">Sign out</button>
+							</div>
 							<button class="aside-btn"><i class="fa fa-bars"></i></button>
 							<!-- <button class="search-btn"><i class="fa fa-search"></i></button>
 							<div class="search-form">
@@ -427,7 +433,42 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				    $("#email").attr("placeholder", "Enter your email");
 				},5000);
 		  	})
-
 		</script>
+
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script type="text/javascript">
+			$("#signoutbutton").hide();
+
+			function onSignIn(googleUser) {
+			  var profile = googleUser.getBasicProfile();
+			  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+			  console.log('Name: ' + profile.getName());
+			  console.log('Image URL: ' + profile.getImageUrl());
+			  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+			  $("#signinbutton").hide()
+			  $("#welcometext").text('Welcome, ' + profile.getName() + ' ');
+			  $("#welcometext").show();
+			  $("#profileimg").attr("src", profile.getImageUrl());
+			  $("#profileimg").show();
+			  $('#profileimg').on({
+				    'click': function(){
+				        $("#signoutbutton").show();
+				    }
+				});
+
+			}
+
+		  	function signOut() {
+		    	var auth2 = gapi.auth2.getAuthInstance();
+		    	auth2.signOut().then(function () {
+		      	console.log('User signed out.');
+		      	$("#signinbutton").show();
+		      	$("#welcometext").hide();
+				$("#profileimg").hide();
+				$("#signoutbutton").hide();
+		    });
+		  }
+		</script>
+
 	</body>
 </html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style type="text/css">
+body, html {
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  background-image: url('img/1.jpg');
+}
+.hoverdiv {
+    height: 100vh;
+    width: 19%;
+    /*border: 1px solid;*/
+    float: left;
+}   
+.description {
+    height: 100vh;
+    width: 600px;
+    position: absolute;
+    left: -600px;
+    background-color: #6F2DA8;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.hidden{
+    display: none;
+}
+.name {
+    display: block;
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+}
+.about {
+    margin: 20px;
+}
+.about h3 {
+    font-size: 50px;
+}
+.contact {
+    margin: 20px;
+    list-style-type: none;
+    bottom: 0px;
+    position: absolute;
+}
+.contact li {
+    display: inline-block;
+    font-size: 50px;
+    padding-right: 10px;
+}
+.contact ul {
+    padding: 0px;
+    margin-top: 10px;
+}
+.contact span{
+    font-size: 20px;
+}
+.contact h5{
+    margin-bottom: 10px;
+}
+.contact .fa{
+    color: white;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="hoverdiv div1"></div>
+    <div class="hoverdiv div2"></div>
+    <div class="hoverdiv div3"></div>
+    <div class="hoverdiv div4"></div>
+    <div class="hoverdiv div5"></div>
+</div>
+<div class="description">
+    <div class="about">
+        <h3>Hire Me!</h3>
+        <p>Hi, my name is Rajesh Kumar. I'm having 7+ years of experience in various fields like UX development, Database Management, Data Analysis and Web Scraping. </p>
+        <h5>Hands-on Tools & Tech:</h5>
+        <ul>
+            <li>Full Stack Development</li>
+            <li>Web Scraping</li>
+            <li>API Integration</li>
+            <li>Data Analysis</li>
+            <li>Github</li>
+            <li>ELK Stack</li>
+            <li>AWS Solution Architect</li>
+        </ul>
+    </div>
+    <div class="contact">
+        <h5>Contact Me:</h5>
+        <span>rajeshwerkushwaha@gmail.com</span>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/rajeshk1988/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="https://twitter.com/rajeshwer18" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href="https://www.facebook.com/rajeshwerkushwaha" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="https://github.com/rajeshwerkushwaha" target="_blank"><i class="fa fa-github-square"></i></a></li>
+        </ul>
+    </div>
+</div>
+<img src="img/name.png" class="name">
+</body>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".hoverdiv").hover(function(){
+        var className = $(this).attr('class');
+        $("body").css("background-image", "url(img/" + className.slice(-1) + ".jpg)");
+    });
+
+    $(document).on('click','div.hoverdiv',function(){
+        if ($("div.description").css("left")=='-600px') {
+            $("div.description").animate({ left: '0px'}, 300);
+        }else{
+            $("div.description").animate({ left: '-600px'}, 300);
+        }
+        
+    });
+});
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</html>
