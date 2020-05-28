@@ -24,9 +24,9 @@ li {
     padding: 10px;
     border-bottom: 1px solid #343a40;
 }
-#canvas { 
-  height: 480px; 
-  width: 640px; 
+#canvas {
+  height: 480px;
+  width: 640px;
   margin: 60px 80px;
 }
 </style>
@@ -45,13 +45,13 @@ li {
       <div class="col-xl-3 col-md-6 bg-secondary np">
         <h3 class="font-weight-light text-white text-center">QR Scan Data</h3>
         <ul id="scandata">
-          
+
         </ul>
       </div>
       <div class="col-xl-9 col-md-6 h-100">
         <div id="loadingMessage" hidden="">⌛ Loading video...</div>
         <canvas id="canvas"></canvas>
-        <p>Credit: Thanks to Cosmo Wolfe for his amazing work <a href="https://github.com/cozmo/jsQR">jsQR</a>. <br>This UI is extended version of the original demo. Github <a href="http://rajeshwerkushwaha.github.com/qrcode/">Link</a> for this demo. 
+        <p>Credit: Thanks to Cosmo Wolfe for his amazing work <a href="https://github.com/cozmo/jsQR">jsQR</a>. <br>This UI is extended version of the original demo. Github <a href="https://github.com/rajeshwerkushwaha/rajeshwerkushwaha.github.io/tree/master/qrcode" target="_blank">Link</a> for this demo. 
         </p>
       </div>
     </div>
@@ -125,27 +125,10 @@ li {
           list.insertBefore(el, list.childNodes[0]);
 
           $('ul li:first').effect('highlight', {}, 1000);
-        }     
-        outputData = code.data;   
-        // drawResultImage(imageData, code);
-
+        }
+        outputData = code.data;
       }
     }
-
-    // function drawResultImage(imageData, code){
-    //   const canvas = document.getElementById('resultcanvas');
-    //   const ctx = canvas.getContext('2d');
-
-    //   // Draw image data to the canvas
-    //   ctx.putImageData(imageData, 0, 0);
-      
-    //   drawLine(ctx, code.location.topLeftCorner, code.location.topRightCorner, "#FF3B58");
-    //   drawLine(ctx, code.location.topRightCorner, code.location.bottomRightCorner, "#FF3B58");
-    //   drawLine(ctx, code.location.bottomRightCorner, code.location.bottomLeftCorner, "#FF3B58");
-    //   drawLine(ctx, code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF3B58");
-
-      
-    // }
   </script>
 </body>
 </html>
