@@ -10,7 +10,7 @@
   "dependencies": {
     "@aws-amplify/ui-vue": "^0.2.7",
     "aws-amplify": "^3.0.15",
-    "axios": "^0.20.2",
+    "axios": "^0.21.2",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-router": "^3.3.2",
